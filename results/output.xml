@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-03T19:00:47.841458" rpa="false" schemaversion="5">
+<suite id="s1" name="QAX" source="C:\QAX">
+<suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
+<suite id="s1-s1-s1" name="Smartbit" source="C:\QAX\Projects\Smartbit">
+<suite id="s1-s1-s1-s1" name="Testes" source="C:\QAX\Projects\Smartbit\testes">
+<suite id="s1-s1-s1-s1-s1" name="Login" source="C:\QAX\Projects\Smartbit\testes\login.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Deve logar com o gestor da academia" line="11">
+<kw name="Start sesion" owner="Base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-04-03T19:00:49.156107" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\0e47acfa-b6b3-477b-bb0b-d4f2cf90dda9"}</msg>
+<msg time="2024-04-03T19:00:49.973853" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\0e47acfa-b6b3-477b-bb0b-d4f2cf90dda9"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-04-03T19:00:49.155107" elapsed="0.818746"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-04-03T19:00:49.974852" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2024-04-03T19:00:49.992851" level="INFO">Successfully created context. </msg>
+<msg time="2024-04-03T19:00:49.992851" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-04-03T19:00:49.973853" elapsed="0.018998"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-04-03T19:00:51.338594" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-04-03T19:00:49.993852" elapsed="1.344742"/>
+</kw>
+<status status="PASS" start="2024-04-03T19:00:49.155107" elapsed="2.183487"/>
+</kw>
+<kw name="Go to login page" owner="Login">
+<kw name="Go To" owner="Browser">
+<msg time="2024-04-03T19:00:51.426874" level="INFO">Successfully opened URL http://localhost:3000/login</msg>
+<arg>http://localhost:3000/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-04-03T19:00:51.339867" elapsed="0.088009"/>
+</kw>
+<status status="PASS" start="2024-04-03T19:00:51.339867" elapsed="0.088009"/>
+</kw>
+<kw name="submit login form" owner="Login">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-04-03T19:00:51.429877" level="INFO">Fills the text 'sac@smartbit.com' in the given field.</msg>
+<arg>css=input[id=email]</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-04-03T19:00:51.428879" elapsed="0.057062"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-04-03T19:00:51.486940" level="INFO">Fills the text 'pwd123' in the given field.</msg>
+<arg>css=input[id=password]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-04-03T19:00:51.485941" elapsed="0.018999"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=button &gt;&gt; text=Entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-04-03T19:00:51.504940" elapsed="0.039442"/>
+</kw>
+<arg>sac@smartbit.com</arg>
+<arg>pwd123</arg>
+<status status="PASS" start="2024-04-03T19:00:51.427876" elapsed="0.117508"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2024-04-03T19:00:51.742021" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-04-03T19:00:51.545384" elapsed="0.196637"/>
+</kw>
+<status status="PASS" start="2024-04-03T19:00:49.151106" elapsed="2.591909"/>
+</test>
+<doc>Deve realizar o login na aplicação</doc>
+<status status="PASS" start="2024-04-03T19:00:47.871460" elapsed="3.936554"/>
+</suite>
+<status status="PASS" start="2024-04-03T19:00:47.870461" elapsed="3.944555"/>
+</suite>
+<status status="PASS" start="2024-04-03T19:00:47.868462" elapsed="3.947552"/>
+</suite>
+<status status="PASS" start="2024-04-03T19:00:47.866462" elapsed="3.951554"/>
+</suite>
+<status status="PASS" start="2024-04-03T19:00:47.849458" elapsed="3.969558"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="QAX">QAX</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Smartbit">QAX.Projects.Smartbit</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Testes">QAX.Projects.Smartbit.Testes</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Login">QAX.Projects.Smartbit.Testes.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

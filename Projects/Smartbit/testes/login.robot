@@ -11,4 +11,5 @@ Test Teardown    Take Screenshot
 Deve logar com o gestor da academia
     
     Go to login page
-    submit login form                                       
+    submit login form    sac@smartbit.com    pwd123
+    User loged in        sac@smartbit.com 

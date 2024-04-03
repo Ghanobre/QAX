@@ -12,3 +12,6 @@ submit login form
     
     Fill Text    css=input[id=email]        ${email}
     Fill Text    css=input[id=password]    ${password}
+
+    Click    css=button >> text=Entrar
+
