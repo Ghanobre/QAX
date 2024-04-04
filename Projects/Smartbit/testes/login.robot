@@ -28,14 +28,24 @@ Login com usuárioi não registrado
 
     Go to login page
     submit login form    sac@teste.com    abc123
-    toast should be    As credenciais de acesso fornecidas são inválidas. Tente novamente! 
+    toast should be    As credenciais de acesso fornecidas são inválidas. Tente novamente!
 
+
+temtativa de login com dados incorretos
+    [Tags]     notice
+    [Template]    Login whit verify notices
+
+    ${EMPTY}    ${EMPTY}    Os campos email e senha são obrigatórios.
+    ${EMPTY}    pwd123      Os campos email e senha são obrigatórios.
+    sac@smartbit.com    ${EMPTY}    Os campos email e senha são obrigatórios.
+    sac#smartbit.com    pwd123    Oops! O email informado é inválido   
 
 *** Keywords ***
 
 Login whit verify notices
-    [Tags]     notice
+    
     [Arguments]    ${email}    ${password}    ${output_message}
 
     Go to login page
     submit login form    ${email}    ${password}
+    Notice should be    ${output_message}
