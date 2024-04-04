@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-04T13:33:32.228004" rpa="false" schemaversion="5">
-<suite id="s1" name="Signup" source="C:\QAX\Projects\Smartbit\testes\signup.robot">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-04T14:36:37.511651" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="C:\QAX\Projects\RobotFramework\Smartbit\testes\signup.robot">
 <test id="s1-t1" name="Deve iniciar o cadastro do cliente" line="11">
 <kw name="Start sesion" owner="Base" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-04-04T13:33:37.089180" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\Projects\\Smartbit\\logs\\browser\\traces\\532b784e-1db5-48be-a1ba-a5e37fce329f"}</msg>
-<msg time="2024-04-04T13:33:45.141980" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\Projects\\Smartbit\\logs\\browser\\traces\\532b784e-1db5-48be-a1ba-a5e37fce329f"}</msg>
+<msg time="2024-04-04T14:36:40.451532" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\Projects\\RobotFramework\\Smartbit\\logs\\browser\\traces\\2b8f98f4-6e40-4196-a5a4-3c5d9e517f05"}</msg>
+<msg time="2024-04-04T14:36:44.661359" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\Projects\\RobotFramework\\Smartbit\\logs\\browser\\traces\\2b8f98f4-6e40-4196-a5a4-3c5d9e517f05"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-04-04T13:33:37.088300" elapsed="8.053680"/>
+<status status="PASS" start="2024-04-04T14:36:40.451532" elapsed="4.209827"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2024-04-04T13:33:45.144607" level="INFO">{
+<msg time="2024-04-04T14:36:44.661359" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -28,32 +28,32 @@
     "width": 1920
   }
 }</msg>
-<msg time="2024-04-04T13:33:45.164894" level="INFO">Successfully created context. </msg>
-<msg time="2024-04-04T13:33:45.164894" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<msg time="2024-04-04T14:36:44.683515" level="INFO">Successfully created context. </msg>
+<msg time="2024-04-04T14:36:44.683515" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-04-04T13:33:45.141980" elapsed="0.022914"/>
+<status status="PASS" start="2024-04-04T14:36:44.661359" elapsed="0.022156"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-04-04T13:33:50.770025" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg time="2024-04-04T14:36:50.388637" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
 <arg>http://localhost:3000/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-04-04T13:33:45.165725" elapsed="5.604300"/>
+<status status="PASS" start="2024-04-04T14:36:44.684041" elapsed="5.704596"/>
 </kw>
-<status status="PASS" start="2024-04-04T13:33:37.087260" elapsed="13.682765"/>
+<status status="PASS" start="2024-04-04T14:36:40.451532" elapsed="9.937105"/>
 </kw>
 <kw name="Get Fake Account" owner="Account">
-<msg time="2024-04-04T13:33:50.772081" level="INFO">${account} = {'name': 'Vitória Nascimento', 'email': 'vicentelima@example.net', 'cpf': '37910862512'}</msg>
+<msg time="2024-04-04T14:36:50.389646" level="INFO">${account} = {'name': 'Antônio Fernandes', 'email': 'cunhacaroline@example.net', 'cpf': '67248390178'}</msg>
 <var>${account}</var>
-<status status="PASS" start="2024-04-04T13:33:50.771531" elapsed="0.000550"/>
+<status status="PASS" start="2024-04-04T14:36:50.389646" elapsed="0.000000"/>
 </kw>
 <kw name="Submit signup form" owner="Landing">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-04-04T13:33:50.842329" level="INFO">Text: 'Faça seu cadastro e venha para a Smartbit!'</msg>
+<msg time="2024-04-04T14:36:50.445240" level="INFO">Text: 'Faça seu cadastro e venha para a Smartbit!'</msg>
 <arg>css=#signup h2</arg>
 <arg>equal</arg>
 <arg>Faça seu cadastro e venha para a Smartbit!</arg>
@@ -61,97 +61,79 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-04-04T13:33:50.773089" elapsed="0.069240"/>
+<status status="PASS" start="2024-04-04T14:36:50.390640" elapsed="0.054600"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-04-04T13:33:50.842329" level="INFO">Fills the text 'Vitória Nascimento' in the given field.</msg>
+<msg time="2024-04-04T14:36:50.445240" level="INFO">Fills the text 'Antônio Fernandes' in the given field.</msg>
 <arg>id=name</arg>
 <arg>${account}[name]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-04-04T13:33:50.842329" elapsed="0.034954"/>
+<status status="PASS" start="2024-04-04T14:36:50.445240" elapsed="0.026555"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-04-04T13:33:50.877283" level="INFO">Fills the text 'vicentelima@example.net' in the given field.</msg>
+<msg time="2024-04-04T14:36:50.471795" level="INFO">Fills the text 'cunhacaroline@example.net' in the given field.</msg>
 <arg>id=email</arg>
 <arg>${account}[email]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-04-04T13:33:50.877283" elapsed="0.016016"/>
+<status status="PASS" start="2024-04-04T14:36:50.471795" elapsed="0.016511"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-04-04T13:33:50.899672" level="INFO">Fills the text '37910862512' in the given field.</msg>
+<msg time="2024-04-04T14:36:50.489307" level="INFO">Fills the text '67248390178' in the given field.</msg>
 <arg>id=cpf</arg>
 <arg>${account}[cpf]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-04-04T13:33:50.899672" elapsed="0.017222"/>
+<status status="PASS" start="2024-04-04T14:36:50.488306" elapsed="0.018874"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>css=button &gt;&gt; text=Cadastrar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-04-04T13:33:50.916894" elapsed="0.069103"/>
+<status status="PASS" start="2024-04-04T14:36:50.508185" elapsed="0.039758"/>
 </kw>
 <arg>${account}</arg>
-<status status="PASS" start="2024-04-04T13:33:50.773089" elapsed="0.212908"/>
+<status status="PASS" start="2024-04-04T14:36:50.390640" elapsed="0.157303"/>
 </kw>
 <kw name="Verify welcome message" owner="Welcome">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-04-04T13:34:01.232668" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2024-04-04T13:34:01.232668" level="INFO">See also file:///C:/QAX/Projects/Smartbit/logs/playwright-log.txt for additional details.</msg>
-<msg time="2024-04-04T13:34:01.232668" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('text=Falta pouco para fazer parte da família Smartbit!') to be visible[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
+<msg time="2024-04-04T14:36:53.975106" level="INFO">Waited for Element with selector text=Falta pouco para fazer parte da família Smartbit! at state visible</msg>
 <arg>text=Falta pouco para fazer parte da família Smartbit!</arg>
 <arg>visible</arg>
 <arg>10</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="FAIL" start="2024-04-04T13:33:50.987000" elapsed="10.247618">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('text=Falta pouco para fazer parte da família Smartbit!') to be visible[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+<status status="PASS" start="2024-04-04T14:36:50.547943" elapsed="3.427163"/>
 </kw>
-<status status="FAIL" start="2024-04-04T13:33:50.987000" elapsed="10.247618">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('text=Falta pouco para fazer parte da família Smartbit!') to be visible[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+<status status="PASS" start="2024-04-04T14:36:50.547943" elapsed="3.427163"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
-<msg time="2024-04-04T13:34:01.444700" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-04T14:36:54.215696" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-04-04T13:34:01.234618" elapsed="0.210082"/>
+<status status="PASS" start="2024-04-04T14:36:53.975106" elapsed="0.240590"/>
 </kw>
 <tag>smoke</tag>
-<status status="FAIL" start="2024-04-04T13:33:37.081339" elapsed="24.363361">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('text=Falta pouco para fazer parte da família Smartbit!') to be visible[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+<status status="PASS" start="2024-04-04T14:36:40.450837" elapsed="13.764859"/>
 </test>
 <doc>Cenarios de teste de pre cadastro dna Webapp</doc>
-<status status="FAIL" start="2024-04-04T13:33:32.231525" elapsed="29.373503"/>
+<status status="PASS" start="2024-04-04T14:36:37.511651" elapsed="16.794338"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">smoke</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Signup">Signup</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Signup">Signup</stat>
 </suite>
 </statistics>
 <errors>
