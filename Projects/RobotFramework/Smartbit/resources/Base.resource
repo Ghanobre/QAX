@@ -13,6 +13,6 @@ Resource    pages/components/BoxNotices.resource
 
 *** Keywords ***
 Start sesion
-    New Browser    browser=chromium    headless=True
+    New Browser    browser=chromium    headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page    http://localhost:3000/
