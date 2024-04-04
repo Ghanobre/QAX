@@ -12,12 +12,3 @@ Submit signup form
     Fill Text   id=email        ${account}[email]
     Fill Text   id=cpf          ${account}[cpf] 
     Click       css=button >> text=Cadastrar
-    Sleep    2
-
-Notice should be
-    [Arguments]    ${target}
-    
-    ${element}    Set Variable    css=form .notice
-
-    Wait For Elements State    ${element}    visible    5
-    Get Text    ${element}    equal   ${target}

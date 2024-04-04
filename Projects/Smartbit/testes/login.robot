@@ -15,24 +15,27 @@ Deve logar com o gestor da academia
     submit login form    sac@smartbit.com    pwd123
     User loged in        sac@smartbit.com
 
-Login com email invalido
-    [Tags]     invalid
-
-    Go to login page
-    submit login form    sac#smartbit.com    pwd123
-    Notice Alrte         Oops! O email informado é inválido
-
 Login com senha invalido
-    [Tags]    invalid
+    [Tags]    invpass
 
     Go to login page
-    submit login form    sac@smartbit.com    abc123
-    toast should be    As credenciais de acesso fornecidas são inválidas. Tente novamente!
+    submit login form        sac@smartbit.com    abc123
+    toast should be          As credenciais de acesso fornecidas são inválidas. Tente novamente!
 
 
 Login com usuárioi não registrado
-    [Tags]    invalid
+    [Tags]    invuser
 
     Go to login page
     submit login form    sac@teste.com    abc123
     toast should be    As credenciais de acesso fornecidas são inválidas. Tente novamente! 
+
+
+*** Keywords ***
+
+Login whit verify notices
+    [Tags]     notice
+    [Arguments]    ${email}    ${password}    ${output_message}
+
+    Go to login page
+    submit login form    ${email}    ${password}
