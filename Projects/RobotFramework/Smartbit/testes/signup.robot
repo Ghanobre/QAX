@@ -6,16 +6,27 @@ Resource    ../resources/Base.resource
 Test Setup       Start sesion
 Test Teardown    Take Screenshot
 
-
 *** Test Cases ***
-Deve iniciar o cadastro do cliente
-    [Tags]    smoke
+Deve iniciar o cadastro do cliente aleatório
+    [Tags]    smokea
 
     ${account}     Get Fake Account
-    
+
     Submit signup form    ${account}
     Verify welcome message
-        
+
+Deve iniciar o cadastro do cliente fixo
+    [Tags]    smokef
+    
+    ${account}    Create Dictionary    
+    ...    name=Usuario de tetse    
+    ...    email=teste@tetse.com    
+    ...    cpf=07256491352
+
+    Delete Acount By Email    ${account}[email]
+    Submit signup form    ${account}
+    Verify welcome message
+
 Campo nome deve ser obrigatorio
     [Tags]    required
 
@@ -28,8 +39,8 @@ Campo email deve ser obrigatorio
     [Tags]    required
     
     ${account}    Create Dictionary    name=New User    email=${EMPTY}     cpf=31479026506
-
     Submit signup form    ${account}
+
     Click    css=button >> text=Cadastrar
     Notice should be   Por favor, informe o seu melhor e-mail
 
