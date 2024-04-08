@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Arquivo principal do projeto robot
 
+Library    JSONLibrary
 Library    Browser
 Library    libs/Account.py
 Library    libs/DataBase.py
@@ -19,3 +20,10 @@ Start sesion
     New Browser    browser=chromium    headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       http://localhost:3000/
+
+Get Json fixture
+    [Arguments]    ${file_name}    ${scenario}
+    ${data}     Load Json From File    ${EXECDIR}/resources/fixtures/${file_name}.json
+
+    RETURN    ${data}[${scenario}]  
+
