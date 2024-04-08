@@ -19,8 +19,8 @@ Deve iniciar o cadastro do cliente fixo
     [Tags]    smokef
     
     ${account}    Create Dictionary    
-    ...    name=Usuario de tetse    
-    ...    email=teste@tetse.com    
+    ...    name=Usuario de teste    
+    ...    email=teste@teste.com    
     ...    cpf=07256491352
 
     Delete Acount By Email    ${account}[email]

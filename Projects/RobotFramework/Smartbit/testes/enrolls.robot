@@ -13,13 +13,9 @@ deve poder realizar uma nova adesão
     submit login form    sac@smartbit.com    pwd123
     User loged in        sac@smartbit.com
     Entrar e validar a tela memberships
-    Sleep    10
-
-*** Keywords ***
-Entrar e validar a tela memberships
-    Click    css=a[href="/memberships"]
-
-    Wait For Elements State    css= div h1    visible    5
-
-    Get Text    css=div h1    equal    Matrículas
-    
+    Go to enroll form
+    Select account    Usuario de teste    07256491352
+    Select plan        Plano Black
+    Fill payment card    4242424242424242    Usuario de teste    11    2029    123
+    Submit form
+    toast should be    Matrícula cadastrada com sucesso.

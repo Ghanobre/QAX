@@ -11,6 +11,7 @@ Resource   pages/Login.resource
 Resource   pages/Account.resource
 Resource   pages/components/Toast.resource
 Resource   pages/components/BoxNotices.resource
+Resource    pages/form.resource
 
 
 *** Keywords ***

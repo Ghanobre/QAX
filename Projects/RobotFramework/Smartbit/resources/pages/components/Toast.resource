@@ -12,3 +12,5 @@ toast should be
 
     Wait For Elements State    ${element}    visible    5
     Get Text    ${element}    equal   ${expected_text}
+
+    Take Screenshot    selector=${element}
