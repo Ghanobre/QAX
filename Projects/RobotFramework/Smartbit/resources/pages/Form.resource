@@ -10,7 +10,7 @@ Entrar e validar a tela memberships
     Wait For Elements State    css= div h1 >> text=Matrículas   visible    5
     Get Text    css=div h1    equal    Matrículas
 
-Go to enroll form
+Go to memberships form
     
     Click    css=a[href="/memberships/new"]
     Wait For Elements State    css= div h1 >> text="Nova matrícula"   visible    5
@@ -26,13 +26,13 @@ Select plan
     Click        css=div[class$=option] >> text=${plano}
 
 Fill payment card
-    [Arguments]     ${number}    ${holder}    ${month}    ${year}    ${cvv}
+    [Arguments]     ${credit_card}
 
-    Fill Text    css=input[name=card_number]        ${number}
-    Fill Text    css=input[name=card_holder]        ${holder} 
-    Fill Text    css=input[name=card_month]         ${month}    
-    Fill Text    css=input[name=card_year]          ${year}
-    Fill Text    css=input[name=card_cvv]           ${cvv}
+    Fill Text    css=input[name=card_number]        ${credit_card}[number]
+    Fill Text    css=input[name=card_holder]        ${credit_card}[holder] 
+    Fill Text    css=input[name=card_month]         ${credit_card}[month]    
+    Fill Text    css=input[name=card_year]          ${credit_card}[year]
+    Fill Text    css=input[name=card_cvv]           ${credit_card}[cvv]
 
 Submit form
 
