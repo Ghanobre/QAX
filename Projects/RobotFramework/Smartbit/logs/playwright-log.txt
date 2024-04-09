@@ -1,127 +1,387 @@
-{"level":30,"time":"2024-04-08T22:03:50.351Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Listening on 54275"}
-(node:20676) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-04-09T18:54:43.837Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Listening on 49306"}
+(node:15704) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-04-08T22:03:50.401Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:50.402Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:50.404Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:50.404Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:50.408Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2024-04-08T22:03:50.869Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
-{"level":30,"time":"2024-04-08T22:03:50.869Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method newBrowser"}
-{"level":30,"time":"2024-04-08T22:03:50.869Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2024-04-08T22:03:50.874Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method newContext"}
-{"level":30,"time":"2024-04-08T22:03:50.874Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-04-08T22:03:50.874Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Trace file: "}
-{"level":30,"time":"2024-04-08T22:03:50.882Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active context"}
-{"level":30,"time":"2024-04-08T22:03:50.883Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method newContext"}
-{"level":30,"time":"2024-04-08T22:03:50.886Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method newPage"}
-{"level":30,"time":"2024-04-08T22:03:50.886Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-04-08T22:03:51.045Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Video path: undefined"}
-{"level":30,"time":"2024-04-08T22:03:51.045Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active page"}
-{"level":30,"time":"2024-04-08T22:03:51.955Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method newPage"}
-{"level":30,"time":"2024-04-08T22:03:53.738Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method goTo"}
-{"level":30,"time":"2024-04-08T22:03:53.805Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method goTo"}
-{"level":30,"time":"2024-04-08T22:03:53.809Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:53.809Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[id=email] in page."}
-{"level":30,"time":"2024-04-08T22:03:53.844Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:53.847Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:53.847Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[id=password] in page."}
-{"level":30,"time":"2024-04-08T22:03:53.859Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:53.862Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
-{"level":30,"time":"2024-04-08T22:03:53.862Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=button >> text=Entrar in page."}
-{"level":30,"time":"2024-04-08T22:03:53.899Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
-{"level":30,"time":"2024-04-08T22:03:53.903Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-04-08T22:03:53.904Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.logged-user in page."}
-{"level":30,"time":"2024-04-08T22:03:55.756Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-04-08T22:03:55.759Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
-{"level":30,"time":"2024-04-08T22:03:55.759Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.logged-user in page."}
-{"level":30,"time":"2024-04-08T22:03:55.776Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.logged-user containing sac@smartbit.com"}
-{"level":30,"time":"2024-04-08T22:03:55.776Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
-{"level":30,"time":"2024-04-08T22:03:55.779Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
-{"level":30,"time":"2024-04-08T22:03:55.779Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=a[href=\"/memberships\"] in page."}
-{"level":30,"time":"2024-04-08T22:03:55.814Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
-{"level":30,"time":"2024-04-08T22:03:55.817Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-04-08T22:03:55.817Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css= div h1 >> text=Matrículas in page."}
-{"level":30,"time":"2024-04-08T22:03:55.822Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-04-08T22:03:55.824Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
-{"level":30,"time":"2024-04-08T22:03:55.824Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=div h1 in page."}
-{"level":30,"time":"2024-04-08T22:03:55.834Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=div h1 containing Matrículas"}
-{"level":30,"time":"2024-04-08T22:03:55.834Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
-{"level":30,"time":"2024-04-08T22:03:55.837Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
-{"level":30,"time":"2024-04-08T22:03:55.837Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=a[href=\"/memberships/new\"] in page."}
-{"level":30,"time":"2024-04-08T22:03:55.890Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
-{"level":30,"time":"2024-04-08T22:03:55.893Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-04-08T22:03:55.893Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css= div h1 >> text=\"Nova matrícula\" in page."}
-{"level":30,"time":"2024-04-08T22:03:55.898Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-04-08T22:03:55.901Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:55.901Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[aria-label=\"select_account\"] in page."}
-{"level":30,"time":"2024-04-08T22:03:55.923Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:55.926Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
-{"level":30,"time":"2024-04-08T22:03:55.926Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=[data-testid=\"85419627337\"] in page."}
-{"level":30,"time":"2024-04-08T22:03:56.156Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
-{"level":30,"time":"2024-04-08T22:03:56.159Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.160Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[aria-label=\"select_plan\"] in page."}
-{"level":30,"time":"2024-04-08T22:03:56.178Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.180Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
-{"level":30,"time":"2024-04-08T22:03:56.181Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=div[class$=option] >> text=Plano Black in page."}
-{"level":30,"time":"2024-04-08T22:03:56.205Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
-{"level":30,"time":"2024-04-08T22:03:56.209Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.209Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_number] in page."}
-{"level":30,"time":"2024-04-08T22:03:56.222Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.225Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.225Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_holder] in page."}
-{"level":30,"time":"2024-04-08T22:03:56.238Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.240Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.241Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_month] in page."}
-{"level":30,"time":"2024-04-08T22:03:56.253Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.256Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.256Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_year] in page."}
-{"level":30,"time":"2024-04-08T22:03:56.265Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.267Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.268Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_cvv] in page."}
-{"level":30,"time":"2024-04-08T22:03:56.277Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
-{"level":30,"time":"2024-04-08T22:03:56.280Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
-{"level":30,"time":"2024-04-08T22:03:56.280Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=button[form=formMembership] >> text=Cadastrar in page."}
-{"level":30,"time":"2024-04-08T22:03:56.310Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
-{"level":30,"time":"2024-04-08T22:03:56.314Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-04-08T22:03:56.314Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
-{"level":30,"time":"2024-04-08T22:03:57.135Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-04-08T22:03:57.137Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
-{"level":30,"time":"2024-04-08T22:03:57.137Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
-{"level":30,"time":"2024-04-08T22:03:57.145Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.Toastify__toast-body containing Matrícula cadastrada com sucesso."}
-{"level":30,"time":"2024-04-08T22:03:57.145Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
-{"level":30,"time":"2024-04-08T22:03:57.148Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2024-04-08T22:03:57.148Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","Take screenshot with options: ":{"path":"C:\\QAX\\Projects\\RobotFramework\\Smartbit\\logs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2024-04-08T22:03:57.148Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
-{"level":30,"time":"2024-04-08T22:03:57.148Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","Using selecotr: ":"css=.Toastify__toast-body"}
-{"level":30,"time":"2024-04-08T22:03:57.406Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2024-04-08T22:03:57.410Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2024-04-08T22:03:57.410Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","Take screenshot with options: ":{"path":"C:\\QAX\\Projects\\RobotFramework\\Smartbit\\logs\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2024-04-08T22:03:57.555Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2024-04-08T22:03:57.559Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.561Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.562Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.564Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.565Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active context"}
-{"level":30,"time":"2024-04-08T22:03:57.565Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changing current active page: page=78424976-2930-4cee-b844-afffe5a853fc"}
-{"level":30,"time":"2024-04-08T22:03:57.565Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active page"}
-{"level":30,"time":"2024-04-08T22:03:57.570Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.571Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.573Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2024-04-08T22:03:57.573Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2024-04-08T22:03:57.575Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2024-04-08T22:03:57.575Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2024-04-08T22:03:57.577Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changing current active page: page=78424976-2930-4cee-b844-afffe5a853fc"}
-{"level":30,"time":"2024-04-08T22:03:57.577Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active page"}
-{"level":30,"time":"2024-04-08T22:03:57.579Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.580Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.581Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active context"}
-{"level":30,"time":"2024-04-08T22:03:57.581Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changing current active page: page=78424976-2930-4cee-b844-afffe5a853fc"}
-{"level":30,"time":"2024-04-08T22:03:57.581Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active page"}
-{"level":30,"time":"2024-04-08T22:03:57.582Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method closeContext"}
-{"level":30,"time":"2024-04-08T22:03:57.592Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Removed page=b38e6e08-8829-447e-8327-57b5d0d9302d from context=3a51efce-4c7b-4d10-8930-88abc1896b91 page stack"}
-{"level":30,"time":"2024-04-08T22:03:57.616Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method closeContext"}
-{"level":30,"time":"2024-04-08T22:03:57.622Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.622Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-04-08T22:03:57.655Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-04-08T22:03:57.786Z","pid":20676,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-04-09T18:54:43.883Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:43.883Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:43.885Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:43.885Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:43.889Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-04-09T18:54:44.281Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-04-09T18:54:44.281Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-04-09T18:54:44.281Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-04-09T18:54:44.284Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-04-09T18:54:44.285Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-04-09T18:54:44.285Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Trace file: "}
+{"level":30,"time":"2024-04-09T18:54:44.293Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active context"}
+{"level":30,"time":"2024-04-09T18:54:44.293Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method newContext"}
+{"level":30,"time":"2024-04-09T18:54:44.297Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-04-09T18:54:44.298Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-04-09T18:54:44.458Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Video path: undefined"}
+{"level":30,"time":"2024-04-09T18:54:44.459Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active page"}
+{"level":30,"time":"2024-04-09T18:54:45.384Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method newPage"}
+{"level":30,"time":"2024-04-09T18:54:45.387Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:45.387Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.headline h2 in page."}
+{"level":30,"time":"2024-04-09T18:54:45.429Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.headline h2 containing Sua Jornada Fitness Começa aqui!"}
+{"level":30,"time":"2024-04-09T18:54:45.429Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:47.074Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-04-09T18:54:47.140Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method goTo"}
+{"level":30,"time":"2024-04-09T18:54:47.144Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:47.144Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[id=email] in page."}
+{"level":30,"time":"2024-04-09T18:54:47.170Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:47.174Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:47.174Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[id=password] in page."}
+{"level":30,"time":"2024-04-09T18:54:47.186Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:47.189Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:47.190Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=button >> text=Entrar in page."}
+{"level":30,"time":"2024-04-09T18:54:47.226Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:47.229Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:47.229Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.logged-user in page."}
+{"level":30,"time":"2024-04-09T18:54:49.091Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:49.094Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:49.094Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.logged-user in page."}
+{"level":30,"time":"2024-04-09T18:54:49.108Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.logged-user containing sac@smartbit.com"}
+{"level":30,"time":"2024-04-09T18:54:49.108Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:49.111Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:49.111Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=a[href=\"/memberships\"] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.150Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:49.153Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:49.154Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css= div h1 >> text=Matrículas in page."}
+{"level":30,"time":"2024-04-09T18:54:49.157Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:49.159Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:49.159Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=div h1 in page."}
+{"level":30,"time":"2024-04-09T18:54:49.169Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=div h1 containing Matrículas"}
+{"level":30,"time":"2024-04-09T18:54:49.170Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:49.172Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:49.172Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=a[href=\"/memberships/new\"] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.227Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:49.230Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:49.230Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css= div h1 >> text=\"Nova matrícula\" in page."}
+{"level":30,"time":"2024-04-09T18:54:49.235Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:49.237Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.238Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[aria-label=\"select_account\"] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.258Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.261Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:49.261Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=[data-testid=\"85693142051\"] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.595Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:49.597Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.597Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[aria-label=\"select_plan\"] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.616Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.619Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:49.619Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=div[class$=option] >> text=Plano Black in page."}
+{"level":30,"time":"2024-04-09T18:54:49.651Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:49.654Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.654Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_number] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.666Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.668Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.668Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_holder] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.679Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.681Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.681Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_month] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.692Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.695Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.695Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_year] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.706Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.708Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.708Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_cvv] in page."}
+{"level":30,"time":"2024-04-09T18:54:49.718Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:49.720Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:49.720Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=button[form=formMembership] >> text=Cadastrar in page."}
+{"level":30,"time":"2024-04-09T18:54:49.749Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:55.753Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:55.753Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=a[href=\"/memberships/new\"] in page."}
+{"level":30,"time":"2024-04-09T18:54:55.799Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:55.802Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:55.802Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css= div h1 >> text=\"Nova matrícula\" in page."}
+{"level":30,"time":"2024-04-09T18:54:55.808Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:55.810Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:55.810Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[aria-label=\"select_account\"] in page."}
+{"level":30,"time":"2024-04-09T18:54:55.830Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:55.832Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:55.832Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=[data-testid=\"85693142051\"] in page."}
+{"level":30,"time":"2024-04-09T18:54:56.060Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:56.063Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.063Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[aria-label=\"select_plan\"] in page."}
+{"level":30,"time":"2024-04-09T18:54:56.080Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.083Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:56.083Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=div[class$=option] >> text=Plano Black in page."}
+{"level":30,"time":"2024-04-09T18:54:56.109Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:56.112Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.112Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_number] in page."}
+{"level":30,"time":"2024-04-09T18:54:56.124Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.126Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.126Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_holder] in page."}
+{"level":30,"time":"2024-04-09T18:54:56.137Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.139Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.139Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_month] in page."}
+{"level":30,"time":"2024-04-09T18:54:56.149Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.151Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.152Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_year] in page."}
+{"level":30,"time":"2024-04-09T18:54:56.164Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.166Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.166Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=input[name=card_cvv] in page."}
+{"level":30,"time":"2024-04-09T18:54:56.180Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method fillText"}
+{"level":30,"time":"2024-04-09T18:54:56.182Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-09T18:54:56.182Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=button[form=formMembership] >> text=Cadastrar in page."}
+{"level":30,"time":"2024-04-09T18:54:56.207Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method click"}
+{"level":30,"time":"2024-04-09T18:54:56.210Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:56.210Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.213Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-04-09T18:54:56.215Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.215Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.225Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.Toastify__toast-body containing Matrícula cadastrada com sucesso."}
+{"level":30,"time":"2024-04-09T18:54:56.225Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.237Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.237Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.246Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.Toastify__toast-body containing Matrícula cadastrada com sucesso."}
+{"level":30,"time":"2024-04-09T18:54:56.247Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.259Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.259Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.268Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.Toastify__toast-body containing Matrícula cadastrada com sucesso."}
+{"level":30,"time":"2024-04-09T18:54:56.268Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.280Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.280Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.289Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.Toastify__toast-body containing Matrícula cadastrada com sucesso."}
+{"level":30,"time":"2024-04-09T18:54:56.289Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.301Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.301Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.311Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.Toastify__toast-body containing Matrícula cadastrada com sucesso."}
+{"level":30,"time":"2024-04-09T18:54:56.311Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.323Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.323Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.332Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.Toastify__toast-body containing Matrícula cadastrada com sucesso."}
+{"level":30,"time":"2024-04-09T18:54:56.332Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.344Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.345Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.353Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.Toastify__toast-body containing Matrícula cadastrada com sucesso."}
+{"level":30,"time":"2024-04-09T18:54:56.354Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.366Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.366Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.387Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.387Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.417Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.417Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.429Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.430Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.457Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.457Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.469Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.469Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.497Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.498Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.509Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.509Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.537Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.537Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.549Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.549Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.577Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.577Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.588Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+================= Original suppressed error =================
+{"level":30,"time":"2024-04-09T18:54:56.588Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.616Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.616Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.628Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+================= Original suppressed error =================
+{"level":30,"time":"2024-04-09T18:54:56.628Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.657Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.657Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.667Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.667Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.696Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.696Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.706Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.706Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.735Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.735Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.746Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.746Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.774Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.774Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.784Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.784Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.813Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.813Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":50,"time":"2024-04-09T18:54:56.823Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","err":{"type":"Error","message":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n","stack":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"Error"},"msg":"locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:\n    1) <div class=\"Toastify__toast-body\">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\\.$/ }).nth(1)\n    2) <div role=\"alert\" class=\"Toastify__toast-body\">…</div> aka getByRole('alert')\n\nCall log:\n  \u001b[2m- waiting for locator('.Toastify__toast-body')\u001b[22m\n"}
+{"level":30,"time":"2024-04-09T18:54:56.823Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Error: strict mode violation: locator('.Toastify__toast-body') resolved to 2 elements:
+    1) <div class="Toastify__toast-body">…</div> aka locator('div').filter({ hasText: /^Matrícula cadastrada com sucesso\.$/ }).nth(1)
+    2) <div role="alert" class="Toastify__toast-body">…</div> aka getByRole('alert')
+
+Call log:
+  [2m- waiting for locator('.Toastify__toast-body')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-04-09T18:54:56.852Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.852Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.860Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Retrieved text for element css=.Toastify__toast-body containing O usuário já possui matrícula."}
+{"level":30,"time":"2024-04-09T18:54:56.860Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-09T18:54:56.863Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-04-09T18:54:56.863Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","Take screenshot with options: ":{"path":"C:\\QAX\\Projects\\RobotFramework\\Smartbit\\logs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-04-09T18:54:56.863Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body in page."}
+{"level":30,"time":"2024-04-09T18:54:56.863Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","Using selecotr: ":"css=.Toastify__toast-body"}
+{"level":30,"time":"2024-04-09T18:54:57.109Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-04-09T18:54:57.113Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-04-09T18:54:57.113Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","Take screenshot with options: ":{"path":"C:\\QAX\\Projects\\RobotFramework\\Smartbit\\logs\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-04-09T18:54:57.275Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-04-09T18:54:57.279Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.281Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.282Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.283Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.285Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active context"}
+{"level":30,"time":"2024-04-09T18:54:57.285Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changing current active page: page=29efc610-5581-47dd-8878-8af70f63e2f7"}
+{"level":30,"time":"2024-04-09T18:54:57.285Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active page"}
+{"level":30,"time":"2024-04-09T18:54:57.289Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.291Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.293Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-04-09T18:54:57.293Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-04-09T18:54:57.295Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-04-09T18:54:57.295Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-04-09T18:54:57.297Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changing current active page: page=29efc610-5581-47dd-8878-8af70f63e2f7"}
+{"level":30,"time":"2024-04-09T18:54:57.297Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active page"}
+{"level":30,"time":"2024-04-09T18:54:57.299Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.300Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.301Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active context"}
+{"level":30,"time":"2024-04-09T18:54:57.301Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changing current active page: page=29efc610-5581-47dd-8878-8af70f63e2f7"}
+{"level":30,"time":"2024-04-09T18:54:57.301Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active page"}
+{"level":30,"time":"2024-04-09T18:54:57.302Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-04-09T18:54:57.311Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Removed page=65d3bedd-f9dc-4727-a9e4-270a8e3573fc from context=e4ff0459-e8c7-486f-9db8-39f4cc8ee680 page stack"}
+{"level":30,"time":"2024-04-09T18:54:57.337Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-04-09T18:54:57.343Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.343Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-09T18:54:57.380Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-04-09T18:54:57.507Z","pid":15704,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method closeAllBrowsers"}

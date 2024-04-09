@@ -10,7 +10,7 @@ Test Teardown    Take Screenshot
 *** Test Cases ***
 Deve logar com o gestor da academia
     [Tags]    smoke
-
+    
     Go to login page
     submit login form    sac@smartbit.com    pwd123
     User loged in        sac@smartbit.com

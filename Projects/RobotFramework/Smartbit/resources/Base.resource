@@ -12,7 +12,13 @@ Resource   pages/Login.resource
 Resource   pages/Account.resource
 Resource   pages/components/Toast.resource
 Resource   pages/components/BoxNotices.resource
-Resource    pages/form.resource
+Resource   pages/components/Navbar.resource
+Resource   pages/Memberships.resource
+
+*** Variables ***
+    
+${ADMIN_EMAIL}    sac@smartbit.com
+${ADMIN_PASS}     pwd123
 
 
 *** Keywords ***
@@ -20,10 +26,20 @@ Start sesion
     New Browser    browser=chromium    headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       http://localhost:3000/
+    Get Text    css=.headline h2    equal    Sua Jornada Fitness Começa aqui!
+
 
 Get Json fixture
     [Arguments]    ${file_name}    ${scenario}
     ${data}     Load Json From File    ${EXECDIR}/resources/fixtures/${file_name}.json
 
-    RETURN    ${data}[${scenario}]  
+    RETURN    ${data}[${scenario}]
+
+SigIn admin
+
+    Go to login page
+    submit login form    ${ADMIN_EMAIL}    ${ADMIN_PASS}
+    User loged in        ${ADMIN_EMAIL}    
+
+
 

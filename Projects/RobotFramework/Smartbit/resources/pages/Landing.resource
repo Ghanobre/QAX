@@ -4,6 +4,7 @@ Documentation    Ações e elementos da landing page
 Library    Browser
 
 *** Keywords ***
+
 Submit signup form
     [Arguments]    ${account}        
 

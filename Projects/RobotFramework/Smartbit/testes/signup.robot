@@ -7,6 +7,7 @@ Test Setup       Start sesion
 Test Teardown    Take Screenshot
 
 *** Test Cases ***
+
 Deve iniciar o cadastro do cliente aleatório
     [Tags]    smokea
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-09T14:21:48.776743" rpa="false" schemaversion="5">
+<suite id="s1" name="QAX" source="C:\QAX">
+<suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
+<suite id="s1-s1-s1" name="RobotFramework" source="C:\QAX\Projects\RobotFramework">
+<suite id="s1-s1-s1-s1" name="Smartbit" source="C:\QAX\Projects\RobotFramework\Smartbit">
+<suite id="s1-s1-s1-s1-s1" name="Testes" source="C:\QAX\Projects\RobotFramework\Smartbit\testes">
+<suite id="s1-s1-s1-s1-s1-s1" name="Slogan" source="C:\QAX\Projects\RobotFramework\Smartbit\testes\slogan.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Deve exibir o slogan ma landing poage" line="7">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-04-09T14:21:50.099986" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\b7d6559e-7ab3-42d4-a46e-2b5700f47513"}</msg>
+<msg time="2024-04-09T14:21:50.587416" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\b7d6559e-7ab3-42d4-a46e-2b5700f47513"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-04-09T14:21:50.099986" elapsed="0.488430"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-04-09T14:21:51.718767" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg time="2024-04-09T14:21:51.719768" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-04-09T14:21:50.588416" elapsed="1.131352"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-04-09T14:21:51.768780" level="INFO">Text: 'Sua Jornada Fitness Começa aqui!'</msg>
+<arg>css=.headline h2</arg>
+<arg>equal</arg>
+<arg>Sua Jornada Fitness Começa aqui!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-04-09T14:21:51.720765" elapsed="0.048015"/>
+</kw>
+<status status="PASS" start="2024-04-09T14:21:50.095983" elapsed="1.673795"/>
+</test>
+<doc>Teste para verificar o slogan da smartbit</doc>
+<status status="PASS" start="2024-04-09T14:21:48.805256" elapsed="3.036032"/>
+</suite>
+<status status="PASS" start="2024-04-09T14:21:48.804260" elapsed="3.044030"/>
+</suite>
+<status status="PASS" start="2024-04-09T14:21:48.802261" elapsed="3.048028"/>
+</suite>
+<status status="PASS" start="2024-04-09T14:21:48.800256" elapsed="3.052035"/>
+</suite>
+<status status="PASS" start="2024-04-09T14:21:48.799258" elapsed="3.054031"/>
+</suite>
+<status status="PASS" start="2024-04-09T14:21:48.781259" elapsed="3.074031"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="QAX">QAX</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="RobotFramework">QAX.Projects.RobotFramework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Smartbit">QAX.Projects.RobotFramework.Smartbit</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Testes">QAX.Projects.RobotFramework.Smartbit.Testes</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1" name="Slogan">QAX.Projects.RobotFramework.Smartbit.Testes.Slogan</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

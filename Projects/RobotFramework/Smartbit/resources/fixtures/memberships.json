@@ -13,5 +13,20 @@
             "year":"2029",    
             "cvv":"123"
         }
+    },
+    "duplicate":{
+        "account":{
+            "name": "Joana Ramos",
+            "email": "jr56@example.net",
+            "cpf": "85693142051"
+        },
+        "plan": "Plano Black",
+        "credit_card":{
+            "number":"4242424242424242",
+            "holder":"Luna Azevedo",    
+            "month":"11",    
+            "year":"2029",    
+            "cvv":"123"
+        }
     }
 }
