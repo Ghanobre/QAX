@@ -1,10 +1,10 @@
 import psycopg2
 
 db_con = """
-        host='isabelle.db.elephantsql.com'
-        dbname='zzclsbls'
-        user='zzclsbls'
-        password='NIT8j7FTdgqiHIfceKUiIbqqD3J_6vMs'
+        host='localhost'
+        dbname='smartbit'
+        user='postgres'
+        password='QAx@123'
         """
                                                               
 def execut_query(query):
