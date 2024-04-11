@@ -1,0 +1,11 @@
+{
+  "name": "expressmark",
+  "version": "1.0.0",
+  "description": "Projeto de testes de ponta a ponta no Mark L",
+  "main": "index.js",
+  "author": "Ghanobre",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "12.2.0"
+  }
+}
