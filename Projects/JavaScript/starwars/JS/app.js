@@ -1,12 +1,84 @@
-console.log('Olá Javascript!')
+const LIST =[
+    {
+    id:1,
+    nome:'Mestre Yoda',
+    avatar:'images/yoda.png'
+    },
+    {
+    id:2,
+    nome:'Luke Skywalker',
+    avatar:'images/luke.png'
+    },
+    {
+    id:3,
+     nome:'Princesa Leia',
+    avatar:'images/leia.png'
+    },
+    {
+    id:4,
+    nome:'Han-Solo',
+    avatar:'images/hansolo.png'
+    },
+    {
+    id:5,
+    nome:'Darth Vader',
+    avatar:'images/vader.png'
+    },
+    {
+    id:6,
+    nome:'Chewbacca',
+    avatar:'images/chewbacca.png'
+    },
+    {
+    id:7,
+     nome:'R2d2',
+    avatar:'images/r2d2.png'
+    },
+    {
+    id:8,
+    nome:'C3pO',
+    avatar:'images/c3po.png'
+    }
+]
 
-var username="Jedi"
+const App = new Vue({
+    el:'#app',
+    data:{
+        title:'Star Wars Lego',
+        username:'Jedi',
+        characters: LIST,
+        searchName:''
+    },
+    methods:{
+        like(username){
+            alert(`O personagem ${username} recebeu um like`)
+        },
+        remove(id){
+            const list = this.characters
 
-document.getElementById('username').innerHTML = username
+            const result = list.filter(item => {
+                return item.id !== id
+            })
+            this.characters = result
+        },
+        search(){
 
-// var nome ="Mestre Yoda"
-// var idade =100
-// var jedi =true
+            if(this.searchName ==''){
+                return alert('O campo busca é obrigatório')
+            }
 
-//Controle de fluxos //
+            const list = this.characters = LIST
 
+            const result = list.filter(item => {
+                return item.nome == this.searchName
+            })
+
+            if (result.length <=0){
+                alert('Nenhum registro encontrado')
+            }else
+
+            this.characters = result
+        }
+    }
+}
+)
