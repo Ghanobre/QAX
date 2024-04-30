@@ -5,7 +5,7 @@ Library    Browser
 
 *** Keywords ***
 
-Submit signup form
+Enviar formulario
     [Arguments]    ${account}        
 
     Get Text    css=#signup h2    equal    Faça seu cadastro e venha para a Smartbit!

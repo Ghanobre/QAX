@@ -2,6 +2,7 @@
 Documentation    Arquivo principal no projeto
 
 Library    Browser
+Library    Library/totp.py
 
 Resource    actions/signup.resource
 Resource    env.resource
