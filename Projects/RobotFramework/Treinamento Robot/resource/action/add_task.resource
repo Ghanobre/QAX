@@ -3,7 +3,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-
+${page}        https://todomvc.com/examples/typescript-angular/#/
 @{list}    
 ...    Fazer o treinamento de Robot    
 ...    Criar um script    

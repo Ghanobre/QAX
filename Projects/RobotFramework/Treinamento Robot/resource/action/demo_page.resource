@@ -57,62 +57,62 @@ ${div_drop2}               css=div#drop2
 *** Keywords ***
 
 Validar titulo Demo Page
-    Element Text Should Be    ${h1}    ${text_h1}
-    Element Text Should Be    ${h2}    ${text_h2}
-    Element Text Should Be    ${h3}    ${text_h3}
+    Element Text Should Be           ${h1}                    ${text_h1}
+    Element Text Should Be           ${h2}                    ${text_h2}
+    Element Text Should Be           ${h3}                    ${text_h3}
 
-Mover Hover Dropdown
-    Mouse Over    ${id_myDropdown}
-    Click Link    ${link_dropdown_1}    
-    Element Text Should Be    ${h3}    ${list_h3_1}
-    Mouse Over    ${id_myDropdown}
-    Click Link    ${link_dropdown_2}    
-    Element Text Should Be    ${h3}    ${list_h3_2}    
-    Mouse Over    ${id_myDropdown}
-    Click Link        ${link_dropdown_3}
-    Element Text Should Be    ${h3}    ${list_h3_3}
-
-Inserindo Texto na pagina
-    Input Text    ${id_myTextInput}        ${text_myTextInput}    
-    Input Text    ${id_myTextarea}         ${text_myTextarea}    
-    Input Text    ${id_myTextInput2}       ${id_myTextInput2}   
-    Input Text    ${id_placeholderText}    ${text_placeholderText}        
+Mover Hover Dropdown      
+    Mouse Over                       ${id_myDropdown}      
+    Click Link                       ${link_dropdown_1}          
+    Element Text Should Be           ${h3}                    ${list_h3_1}
+    Mouse Over                       ${id_myDropdown}      
+    Click Link                       ${link_dropdown_2}          
+    Element Text Should Be           ${h3}                    ${list_h3_2}    
+    Mouse Over                       ${id_myDropdown}      
+    Click Link                       ${link_dropdown_3}      
+    Element Text Should Be           ${h3}                    ${list_h3_3}
+    
+Inserindo Texto na pagina       
+    Input Text                       ${id_myTextInput}        ${text_myTextInput}    
+    Input Text                       ${id_myTextarea}         ${text_myTextarea}    
+    Input Text                       ${id_myTextInput2}       ${id_myTextInput2}   
+    Input Text                       ${id_placeholderText}    ${text_placeholderText}        
 
 Button: color
-    Click Button     ${id_myButton}    
-    Click Element    ${id_svgRect}    
-    Element Text Should Be    ${id_pText}    ${text_pText}     
+    Click Button                     ${id_myButton}    
+    Click Element                    ${id_svgRect}    
+    Element Text Should Be           ${id_pText}              ${text_pText}     
 
 Input Slider Control:
-    Execute Javascript        ${id_mySlider}    
-    Mouse Over                ${mySlider}
-    Element Text Should Be    ${id_progressLabel}    ${text_progressLabel}        
+    Execute Javascript               ${id_mySlider}    
+    Mouse Over                       ${mySlider}
+    Element Text Should Be           ${id_progressLabel}      ${text_progressLabel}        
 
 Select Dropdown:
-    Select From List By Label        ${id_mySelect}    ${text_mySelect}        
+    Select From List By Label        ${id_mySelect}           ${text_mySelect}        
     Page Should Contain Element      ${id_meter}
 
 Image in iFrame
-    Select Frame                 ${id_myFrame1}    
-    Page Should Contain Image    ${tag_img}    
+    Select Frame                     ${id_myFrame1}    
+    Page Should Contain Image        ${tag_img}    
     Unselect Frame
     
-    Select Frame            ${id_myFrame2}                
-    Element Text Should Be  ${h4}    ${text_h4}    
+    Select Frame                     ${id_myFrame2}                
+    Element Text Should Be           ${h4}                    ${text_h4}    
     Unselect Frame                  
-    Click Element            ${id_radioButton2}    
+    Click Element                    ${id_radioButton2}    
 
-    Select Frame            ${id_myFrame3}    
-    Click Element           ${id_checkBox6}              
+    Select Frame                     ${id_myFrame3}    
+    Click Element                    ${id_checkBox6}              
     Unselect Frame
     
 Check BOX
-    Click Element    ${id_checkBox1}
-    Click Element    ${id_checkBox2}
-    Click Element    ${id_checkBox3}
-    Click Element    ${id_checkBox4}
-    Click Element    ${id_checkBox5}
+    Click Element                    ${id_checkBox1}
+    Click Element                    ${id_checkBox2}
+    Click Element                    ${id_checkBox3}
+    Click Element                    ${id_checkBox4}
+    Click Element                    ${id_checkBox5}
 
     
 Realizando Drag and drop
-    Drag And Drop    ${img_logo}    ${div_drop2}
+    Drag And Drop                    ${img_logo}              ${div_drop2}

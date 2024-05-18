@@ -3,8 +3,8 @@ Documentation    Primeiro script usando Selenium
 
 Resource    ../resource/base.resource
 
-Test Setup    start session    https://the-internet.herokuapp.com/login
-Test Teardown    finish session  
+Test Setup    Start execution     https://the-internet.herokuapp.com/login
+Test Teardown    Finish execution  
 
 
 *** Test Cases ***

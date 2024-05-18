@@ -2,7 +2,6 @@
 Documentation        Arquivo com as ações do teste d elogin
 
 Library    SeleniumLibrary
-Library    ../libs/eviencia.py
 
 *** Variables ***
 ${pagina}             https://the-internet.herokuapp.com/login   
@@ -18,13 +17,13 @@ ${path}               /screenshot/Evidencia_login_{index}.png
 
 *** Keywords ***
 Realizar o login
-    Input Text     ${input_username}    ${nome} 
-    Input Text     ${id_password}       ${password}
-    Capture Page Screenshot   ${OUTPUTDIR}/${path}
-    Click Button   ${button_login}
+    Input Text                 ${input_username}    ${nome} 
+    Input Text                 ${id_password}       ${password}
+    Capture Page Screenshot    ${OUTPUTDIR}/${path}
+    Click Button               ${button_login}
 
 Validar login com sucesso
-    [Arguments]    ${mensagem}    
-    Element Should Contain    ${id_flash}     ${mensagem}
-    Capture Page Screenshot   ${OUTPUTDIR}/${path}
-    Click Link    ${button_logout}
+    [Arguments]                ${mensagem}    
+    Element Should Contain     ${id_flash}     ${mensagem}
+    Capture Page Screenshot    ${OUTPUTDIR}/${path}
+    Click Link                 ${button_logout}
