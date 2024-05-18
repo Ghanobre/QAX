@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-17T18:10:43.505739" rpa="false" schemaversion="5">
+<suite id="s1" name="Desafio Robot Framework" source="C:\Desafio_Robot_Framework">
+<suite id="s1-s1" name="Tests" source="C:\Desafio_Robot_Framework\tests">
+<suite id="s1-s1-s1" name="Ecommerce" source="C:\Desafio_Robot_Framework\tests\ecommerce.robot">
+<test id="s1-s1-s1-t1" name="realizar uma compra com sucesso" line="11">
+<kw name="Start execution" owner="base" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-05-17T18:10:43.830231" level="INFO">${prefs} = {'credentials_enable_service': False}</msg>
+<var>${prefs}</var>
+<arg>credentials_enable_service=${false}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-05-17T18:10:43.830231" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-17T18:10:43.830231" level="INFO">Opening browser 'chrome' to base url 'https://www.advantageonlineshopping.com/#/'.</msg>
+<arg>url=${page}</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--disable-notifications")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-17T18:10:43.830231" elapsed="10.806413"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-17T18:10:54.636644" elapsed="0.044398"/>
+</kw>
+<status status="PASS" start="2024-05-17T18:10:43.830231" elapsed="10.851816"/>
+</kw>
+<kw name="Selecinar um produto" owner="ecommerce">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_layer}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-17T18:10:54.683047" elapsed="0.029357"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T18:10:54.719434" level="INFO">Current page contains element 'css=[id="Layer_1"]'.</msg>
+<arg>${id_layer}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-17T18:10:54.712404" elapsed="0.007030"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${id_speakersImg}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-17T18:10:54.719434" elapsed="4.086050"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-17T18:10:59.807304" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-17T18:10:58.805484" elapsed="1.001820"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-17T18:11:00.014004" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia10.png"&gt;&lt;img src="Screenshot/Evidencia10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${path}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-17T18:10:59.807304" elapsed="0.206700"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T18:11:00.014004" level="INFO">Clicking element 'xpath=//*[@id="speakersImg"]'.</msg>
+<arg>${id_speakersImg}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T18:11:00.014004" elapsed="0.056463"/>
+</kw>
+<status status="PASS" start="2024-05-17T18:10:54.682047" elapsed="5.388420"/>
+</kw>
+<kw name="Escolher produto" owner="ecommerce">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_produto}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-17T18:11:00.071863" elapsed="9.484088"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-05-17T18:11:09.555951" level="INFO">Clicking image 'css=[id="23"]'.</msg>
+<arg>${id_produto}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T18:11:09.555951" elapsed="0.389152"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-17T18:11:12.945755" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-17T18:11:09.945103" elapsed="3.000652"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-17T18:11:13.077143" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia11.png"&gt;&lt;img src="Screenshot/Evidencia11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${path}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-17T18:11:12.945755" elapsed="0.131388"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-05-17T18:11:23.367510" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-17T18:11:23.367510" level="FAIL">Element 'css=.plus' not visible after 10 seconds.</msg>
+<arg>${class_plus}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-17T18:11:13.077143" elapsed="10.330068">Element 'css=.plus' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${class_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-17T18:11:23.407211" elapsed="0.002956"/>
+</kw>
+<var name="${index}">1</var>
+<status status="FAIL" start="2024-05-17T18:11:13.077143" elapsed="10.333024">Element 'css=.plus' not visible after 10 seconds.</status>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>5</value>
+<value>1</value>
+<status status="FAIL" start="2024-05-17T18:11:13.077143" elapsed="10.333024">Element 'css=.plus' not visible after 10 seconds.</status>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T18:11:23.410167" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>${path}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-05-17T18:11:23.410763" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${button_add}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-17T18:11:23.410763" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-17T18:11:00.071467" elapsed="23.339296">Element 'css=.plus' not visible after 10 seconds.</status>
+</kw>
+<kw name="Realizar checkout" owner="ecommerce">
+<status status="NOT RUN" start="2024-05-17T18:11:23.410763" elapsed="0.000000"/>
+</kw>
+<kw name="verificar usuario" owner="ecommerce">
+<status status="NOT RUN" start="2024-05-17T18:11:23.410763" elapsed="0.000000"/>
+</kw>
+<kw name="Pagamento" owner="ecommerce">
+<status status="NOT RUN" start="2024-05-17T18:11:23.410763" elapsed="0.000000"/>
+</kw>
+<kw name="Validar pedido" owner="ecommerce">
+<status status="NOT RUN" start="2024-05-17T18:11:23.410763" elapsed="0.000000"/>
+</kw>
+<kw name="Finish execution" owner="base" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-17T18:11:23.410763" elapsed="2.295691"/>
+</kw>
+<status status="PASS" start="2024-05-17T18:11:23.410763" elapsed="2.295691"/>
+</kw>
+<status status="FAIL" start="2024-05-17T18:10:43.830231" elapsed="41.877222">Element 'css=.plus' not visible after 10 seconds.</status>
+</test>
+<doc>Realizar compra em um site de ecomerce</doc>
+<status status="FAIL" start="2024-05-17T18:10:43.538191" elapsed="42.170760"/>
+</suite>
+<status status="FAIL" start="2024-05-17T18:10:43.534206" elapsed="42.174745"/>
+</suite>
+<status status="FAIL" start="2024-05-17T18:10:43.508678" elapsed="42.200273"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Desafio Robot Framework">Desafio Robot Framework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Desafio Robot Framework.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Ecommerce">Desafio Robot Framework.Tests.Ecommerce</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
