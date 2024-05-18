@@ -1,14 +1,31 @@
 *** Settings ***
-Documentation    Usando estrutura condicional
+Documentation    estrutura de repetição
 
-Resource    ./variavel.robot
+Resource    ../resource/base.resource
+
 
 *** Test Cases ***
-verificando se é igual
-    IF  $list[0]=='valor 1' 
-        Log To Console    o valor é igual
-        ELSE
-        Log To Console    "O valor é diferente"
-    
+Mensasem de inicio
+    Mensagem personalizada    Usando FOR IN RANGE
+
+Imprimir a list
+    FOR  ${element}  IN  @{list}
+        Log To Console    ${element}   
     END
-    
+
+
+verificar a lista
+    IF    $list[2]=='coelho'
+        Log To Console    o valor é igual
+    ELSE
+        Log To Console    o valor é diferente
+        
+    END
+
+Repetição com for IN RANGE
+    [Documentation]     Inicio=0    Fim=Tamanho da lista    Incremento=1
+    FOR    ${index}    IN RANGE    0    ${list.__len__()}    1
+        Exit For Loop If    $index==2
+        ${element}    Set Variable    ${list}[${index}]
+        Log To Console    ${element}
+    END

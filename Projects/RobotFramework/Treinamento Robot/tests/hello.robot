@@ -1,8 +1,8 @@
 *** Settings ***
-Documentation    Meu primeiro teste em robot
+Documentation    Meu primeiro script em Robot
+
+Resource    ../resource/base.resource
 
 *** Test Cases ***
-Deve fazer uma Saudação ao Robot
-
-    Log To Console    Olá Robot!
-
+Deve fazer uma personalizada
+    Mensagem personalizada    Minha key word personalizada
