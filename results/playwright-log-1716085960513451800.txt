@@ -1,0 +1,55 @@
+{"level":30,"time":"2024-05-19T02:32:42.776Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Listening on 49727"}
+(node:17104) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-05-19T02:32:43.302Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:43.303Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:43.307Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:43.307Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:43.312Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-19T02:32:45.941Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-05-19T02:32:45.942Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-19T02:32:45.942Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-19T02:32:45.949Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-19T02:32:45.949Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-19T02:32:45.949Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Trace file: "}
+{"level":30,"time":"2024-05-19T02:32:45.974Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
+{"level":30,"time":"2024-05-19T02:32:45.974Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-19T02:32:45.997Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-19T02:32:45.997Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-19T02:32:48.577Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-19T02:32:48.577Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active page"}
+{"level":30,"time":"2024-05-19T02:32:52.157Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-19T02:32:52.163Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getText"}
+{"level":30,"time":"2024-05-19T02:32:52.164Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Strict mode is enabled, find Locator with //*[@id=\"wp_resultados\"]/div[2]/div/div/div[1]/ul in page."}
+{"level":30,"time":"2024-05-19T02:32:52.228Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Retrieved text for element //*[@id=\"wp_resultados\"]/div[2]/div/div/div[1]/ul containing 010203040507091012131617192325"}
+{"level":30,"time":"2024-05-19T02:32:52.228Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getText"}
+{"level":30,"time":"2024-05-19T02:32:52.237Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-05-19T02:32:52.237Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","Take screenshot with options: ":{"path":"C:\\QAX\\results\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-05-19T02:32:52.492Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-05-19T02:32:52.509Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:52.512Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:52.514Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:52.516Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:52.520Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
+{"level":30,"time":"2024-05-19T02:32:52.520Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changing current active page: page=8e4b9c73-b935-4212-aee6-f6afc40cb76f"}
+{"level":30,"time":"2024-05-19T02:32:52.520Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active page"}
+{"level":30,"time":"2024-05-19T02:32:52.528Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:52.531Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:52.536Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-19T02:32:52.537Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-19T02:32:52.541Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-19T02:32:52.541Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-19T02:32:52.544Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changing current active page: page=8e4b9c73-b935-4212-aee6-f6afc40cb76f"}
+{"level":30,"time":"2024-05-19T02:32:52.545Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active page"}
+{"level":30,"time":"2024-05-19T02:32:52.550Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:52.553Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:52.556Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
+{"level":30,"time":"2024-05-19T02:32:52.556Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changing current active page: page=8e4b9c73-b935-4212-aee6-f6afc40cb76f"}
+{"level":30,"time":"2024-05-19T02:32:52.556Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active page"}
+{"level":30,"time":"2024-05-19T02:32:52.559Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-05-19T02:32:52.572Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Removed page=cc2b6bb3-608e-4462-9262-9499bd376052 from context=2c52b41e-93d9-49bf-ba23-b885d0316ef5 page stack"}
+{"level":30,"time":"2024-05-19T02:32:52.627Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-05-19T02:32:52.646Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:52.647Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-19T02:32:57.794Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-05-19T02:32:58.344Z","pid":17104,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method closeAllBrowsers"}
