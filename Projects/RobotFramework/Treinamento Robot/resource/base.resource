@@ -5,11 +5,8 @@ Library    SeleniumLibrary
 
 Resource    ../resource/action/add_task.resource
 Resource    ../resource/action/demo_page.resource
-Resource    ../resource/action/login_herokuapp.resource
-Resource    ../resource/action/login_page.resource
+Resource    ../resource/action/login.resource
 Resource    ../resource/action/loginmfa.resource
-Resource    ../resource/action/secure_area.resource
-
 
 *** Keywords ***
 Mensagem personalizada
