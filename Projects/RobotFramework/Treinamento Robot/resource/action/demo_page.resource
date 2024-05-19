@@ -52,7 +52,8 @@ ${id_checkBox3}            css=#checkBox3
 ${id_checkBox4}            css=#checkBox4
 ${id_checkBox5}            css=#checkBox5
 ${img_logo}                css=img#logo
-${div_drop2}               css=div#drop2              
+${div_drop2}               css=div#drop2
+${evd_demo_page}           ${OUTPUT_DIR}/Screenshot/demo_page/evidencia{index}.png 
 
 *** Keywords ***
 
@@ -60,6 +61,7 @@ Validar titulo Demo Page
     Element Text Should Be    ${h1}    ${text_h1}
     Element Text Should Be    ${h2}    ${text_h2}
     Element Text Should Be    ${h3}    ${text_h3}
+    Capture Page Screenshot    ${evd_demo_page}
 
 Mover Hover Dropdown
     Mouse Over    ${id_myDropdown}
@@ -71,30 +73,36 @@ Mover Hover Dropdown
     Mouse Over    ${id_myDropdown}
     Click Link        ${link_dropdown_3}
     Element Text Should Be    ${h3}    ${list_h3_3}
+    Capture Page Screenshot    ${evd_demo_page}
 
 Inserindo Texto na pagina
     Input Text    ${id_myTextInput}        ${text_myTextInput}    
     Input Text    ${id_myTextarea}         ${text_myTextarea}    
     Input Text    ${id_myTextInput2}       ${id_myTextInput2}   
-    Input Text    ${id_placeholderText}    ${text_placeholderText}        
+    Input Text    ${id_placeholderText}    ${text_placeholderText}
+    Capture Page Screenshot    ${evd_demo_page}
 
 Button: color
     Click Button     ${id_myButton}    
     Click Element    ${id_svgRect}    
-    Element Text Should Be    ${id_pText}    ${text_pText}     
+    Element Text Should Be    ${id_pText}    ${text_pText}
+    Capture Page Screenshot    ${evd_demo_page}     
 
 Input Slider Control:
     Execute Javascript        ${id_mySlider}    
     Mouse Over                ${mySlider}
-    Element Text Should Be    ${id_progressLabel}    ${text_progressLabel}        
+    Element Text Should Be    ${id_progressLabel}    ${text_progressLabel}
+    Capture Page Screenshot    ${evd_demo_page}       
 
 Select Dropdown:
     Select From List By Label        ${id_mySelect}    ${text_mySelect}        
     Page Should Contain Element      ${id_meter}
+    Capture Page Screenshot    ${evd_demo_page}
 
 Image in iFrame
     Select Frame                 ${id_myFrame1}    
-    Page Should Contain Image    ${tag_img}    
+    Page Should Contain Image    ${tag_img}
+    Capture Page Screenshot    ${evd_demo_page}   
     Unselect Frame
     
     Select Frame            ${id_myFrame2}                
@@ -105,6 +113,7 @@ Image in iFrame
     Select Frame            ${id_myFrame3}    
     Click Element           ${id_checkBox6}              
     Unselect Frame
+    Capture Page Screenshot    ${evd_demo_page}
     
 Check BOX
     Click Element    ${id_checkBox1}
@@ -112,7 +121,9 @@ Check BOX
     Click Element    ${id_checkBox3}
     Click Element    ${id_checkBox4}
     Click Element    ${id_checkBox5}
+    Capture Page Screenshot    ${evd_demo_page}
 
     
 Realizando Drag and drop
     Drag And Drop    ${img_logo}    ${div_drop2}
+    Capture Page Screenshot    ${evd_demo_page}

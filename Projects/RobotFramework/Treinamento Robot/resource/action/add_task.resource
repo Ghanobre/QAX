@@ -3,22 +3,23 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${page}        https://todomvc.com/examples/typescript-angular/#/
+${page}              https://todomvc.com/examples/typescript-angular/#/
+${evidencia_task}    ${OUTPUT_DIR}/Screenshot/add_task/evidencia{index}.png 
 @{list}    
-...    Fazer o treinamento de Robot    
-...    Criar um script    
-...    Tomar notas    
-...    Fazer os exercícios    
-...    Estudar o conteudo
+...                  Fazer o treinamento de Robot    
+...                  Criar um script    
+...                  Tomar notas    
+...                  Fazer os exercícios    
+...                  Estudar o conteudo
+${class_new-todo}    class:new-todo
 
 *** Keywords ***
 Criar task
     FOR  ${element}  IN  @{list}
-        Input Text    class:new-todo    ${element}
-        Press Keys    class:new-todo    RETURN
+        Input Text    ${class_new-todo}    ${element}
+        Press Keys    ${class_new-todo}    RETURN
     END
-    Set Screenshot Directory    ./logs/screenshot
-    Capture Page Screenshot
+    Capture Page Screenshot    ${evidencia_task}
 
 Concluir task
      Element Text Should Be    class:todo-count    5 items left
@@ -32,5 +33,4 @@ Concluir task
     Element Text Should Be    class:todo-count    1 item left
     Click Element    //*[contains(text(),"${list}[4]")]/../input
     Element Text Should Be    class:todo-count    0 items left
-    Set Screenshot Directory    ./logs/screenshot
-    Capture Page Screenshot
+    Capture Page Screenshot    ${evidencia_task}

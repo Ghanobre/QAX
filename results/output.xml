@@ -1,218 +1,316 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-18T20:52:26.136846" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-18T22:27:45.199294" rpa="false" schemaversion="5">
 <suite id="s1" name="QAX" source="C:\QAX">
 <suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
 <suite id="s1-s1-s1" name="RobotFramework" source="C:\QAX\Projects\RobotFramework">
 <suite id="s1-s1-s1-s1" name="Treinamento Robot" source="C:\QAX\Projects\RobotFramework\Treinamento Robot">
 <suite id="s1-s1-s1-s1-s1" name="Tests" source="C:\QAX\Projects\RobotFramework\Treinamento Robot\tests">
-<suite id="s1-s1-s1-s1-s1-s1" name="Login Herokuapp" source="C:\QAX\Projects\RobotFramework\Treinamento Robot\tests\login_herokuapp.robot">
-<test id="s1-s1-s1-s1-s1-s1-t1" name="Login com sucesso" line="11">
-<kw name="Start execution" owner="base" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:26.450807" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
-<arg>url=${pagina}</arg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-18T20:52:26.450807" elapsed="9.354418"/>
+<suite id="s1-s1-s1-s1-s1-s1" name="Teste api" source="C:\QAX\Projects\RobotFramework\Treinamento Robot\tests\Teste_api.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Cadastro de usuario" line="23">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:45.435264" level="INFO">Creating Session using : alias=Teste1, url=https://serverest.dev/, headers={'accept': 'application/json', 'Content-Type': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=Teste1</arg>
+<arg>url=https://serverest.dev/</arg>
+<arg>headers=${headers}</arg>
+<arg>disable_warnings=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-05-18T22:27:45.435264" elapsed="0.000000"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-18T20:52:35.805225" elapsed="0.022469"/>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:49.487159" level="INFO">POST Request : url=https://serverest.dev/usuarios 
+ path_url=/usuarios 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '105'} 
+ body=b'{"nome": "Fulano da Silva", "email": "gbhhyttnb@qa.com.br", "password": "teste", "administrador": "true"}' 
+ </msg>
+<msg time="2024-05-18T22:27:49.487159" level="INFO">POST Response : url=https://serverest.dev/usuarios 
+ status=201, reason=Created 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': 'a0b9e71770e9e39ac12b6b79c86ba077;o=1', 'Date': 'Sun, 19 May 2024 01:27:49 GMT', 'Server': 'Google Frontend', 'Content-Length': '82'} 
+ body={
+    "message": "Cadastro realizado com sucesso",
+    "_id": "HD7fD1kmkTMIr2yw"
+} 
+ </msg>
+<msg time="2024-05-18T22:27:49.487159" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>alias=Teste1</arg>
+<arg>url=usuarios</arg>
+<arg>expected_status=any</arg>
+<arg>json=${body}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-05-18T22:27:45.435264" elapsed="4.051895"/>
 </kw>
-<arg>https://the-internet.herokuapp.com/login</arg>
-<status status="PASS" start="2024-05-18T20:52:26.450807" elapsed="9.376887"/>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-05-18T22:27:49.487159" level="INFO">${_id} = HD7fD1kmkTMIr2yw</msg>
+<var>${_id}</var>
+<arg>${response.json()}</arg>
+<arg>_id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-05-18T22:27:49.487159" elapsed="0.000000"/>
 </kw>
-<kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-18T20:52:35.827694" level="INFO">${input} = {'name': 'tomsmith', 'pass': 'SuperSecretPassword!'}</msg>
-<var>${input}</var>
-<arg>name=tomsmith</arg>
-<arg>pass=SuperSecretPassword!</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-18T20:52:35.827694" elapsed="0.000000"/>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-05-18T22:27:49.487159" level="INFO">${_id_suite} = HD7fD1kmkTMIr2yw</msg>
+<arg>${_id_suite}</arg>
+<arg>${_id}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-05-18T22:27:49.487159" elapsed="0.000000"/>
 </kw>
-<kw name="Realizar o login com sucesso" owner="login_page">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:35.834310" level="INFO">Typing text 'tomsmith' into text field 'username'.</msg>
-<arg>username</arg>
-<arg>${input}[name]</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-18T20:52:35.833305" elapsed="0.101676"/>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-05-18T22:27:49.498666" elapsed="0.000376"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:35.936533" level="INFO">Typing text 'SuperSecretPassword!' into text field 'password'.</msg>
-<arg>password</arg>
-<arg>${input}[pass]</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-18T20:52:35.935495" elapsed="0.079551"/>
+<kw name="Dictionary Should Contain Item" owner="Collections">
+<msg time="2024-05-18T22:27:49.500054" level="INFO">False
+False</msg>
+<arg>${response.json()}</arg>
+<arg>message</arg>
+<arg>Cadastro realizado com sucesso</arg>
+<doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
+<status status="PASS" start="2024-05-18T22:27:49.499042" elapsed="0.001012"/>
 </kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:36.187721" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="id_image_id-1.png"&gt;&lt;img src="id_image_id-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>${OUTPUTDIR}/id_image_id-1.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-05-18T20:52:36.016055" elapsed="0.171666"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:36.187721" level="INFO">Clicking button 'css=.radius'.</msg>
-<arg>css=.radius</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-18T20:52:36.187721" elapsed="0.501453"/>
-</kw>
-<arg>${input}</arg>
-<status status="PASS" start="2024-05-18T20:52:35.827694" elapsed="0.861480"/>
-</kw>
-<kw name="validar mensagem" owner="secure_area">
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:36.715516" level="INFO">Element 'css=#flash' contains text 'You logged into a secure area!'.</msg>
-<arg>css=#flash</arg>
-<arg>${expected_mensagem}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2024-05-18T20:52:36.689174" elapsed="0.027564"/>
-</kw>
-<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
-<arg>./logs/screenshot</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2024-05-18T20:52:36.716738" elapsed="0.001378"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:36.854390" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../logs/screenshot/selenium-screenshot-3.png"&gt;&lt;img src="../logs/screenshot/selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-05-18T20:52:36.718116" elapsed="0.149909"/>
-</kw>
-<arg>You logged into a secure area!</arg>
-<status status="PASS" start="2024-05-18T20:52:36.689174" elapsed="0.178851"/>
-</kw>
-<kw name="Validar login com secesso" owner="secure_area">
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:36.869579" level="INFO">Clicking link 'xpath=//*[@id="content"]/div/a'.</msg>
-<arg>xpath=//*[@id="content"]/div/a</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-18T20:52:36.869579" elapsed="0.353378"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-18T20:52:37.222957" elapsed="2.241904"/>
-</kw>
-<status status="PASS" start="2024-05-18T20:52:36.869579" elapsed="2.595282"/>
-</kw>
-<kw name="Finish execution" owner="base" type="TEARDOWN">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-18T20:52:39.464861" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-05-18T20:52:39.464861" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-05-18T20:52:26.450807" elapsed="13.014054"/>
+<status status="PASS" start="2024-05-18T22:27:45.435264" elapsed="4.065787"/>
 </test>
-<test id="s1-s1-s1-s1-s1-s1-t2" name="Login com falha" line="17">
-<kw name="Start execution" owner="base" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:39.464861" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
-<arg>url=${pagina}</arg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-18T20:52:39.464861" elapsed="7.568584"/>
+<test id="s1-s1-s1-s1-s1-s1-t2" name="Consulta de usuário" line="31">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:49.502687" level="INFO">Creating Session using : alias=Teste1, url=https://serverest.dev/, headers={'accept': 'application/json', 'Content-Type': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=Teste1</arg>
+<arg>url=https://serverest.dev/</arg>
+<arg>headers=&amp;{headers}</arg>
+<arg>disable_warnings=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-05-18T22:27:49.502687" elapsed="0.000000"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-18T20:52:47.033445" elapsed="0.038064"/>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:50.300356" level="INFO">GET Request : url=https://serverest.dev/usuarios/HD7fD1kmkTMIr2yw 
+ path_url=/usuarios/HD7fD1kmkTMIr2yw 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json'} 
+ body=None 
+ </msg>
+<msg time="2024-05-18T22:27:50.300356" level="INFO">GET Response : url=https://serverest.dev/usuarios/HD7fD1kmkTMIr2yw 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': 'ed02a38109384cd10dbe0a429f93ba55', 'Date': 'Sun, 19 May 2024 01:27:50 GMT', 'Server': 'Google Frontend', 'Content-Length': '154'} 
+ body={
+    "nome": "Fulano da Silva",
+    "email": "gbhhyttnb@qa.com.br",
+    "password": "teste",
+    "administrador": "true",
+    "_id": "HD7fD1kmkTMIr2yw"
+} 
+ </msg>
+<msg time="2024-05-18T22:27:50.300356" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=Teste1</arg>
+<arg>url=usuarios/${_id_suite}</arg>
+<arg>expected_status=any</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-05-18T22:27:49.502687" elapsed="0.797669"/>
 </kw>
-<arg>https://the-internet.herokuapp.com/login</arg>
-<status status="PASS" start="2024-05-18T20:52:39.464861" elapsed="7.606648"/>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-05-18T22:27:50.300356" elapsed="0.000000"/>
 </kw>
-<kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-18T20:52:47.074600" level="INFO">${input} = {'name': 'tomsmith', 'pass': ''}</msg>
-<var>${input}</var>
-<arg>name=tomsmith</arg>
-<arg>pass=${EMPTY}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-18T20:52:47.072510" elapsed="0.002090"/>
+<kw name="Dictionary Should Contain Item" owner="Collections">
+<msg time="2024-05-18T22:27:50.305891" level="INFO">False
+False</msg>
+<arg>${response.json()}</arg>
+<arg>nome</arg>
+<arg>Fulano da Silva</arg>
+<doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
+<status status="PASS" start="2024-05-18T22:27:50.305891" elapsed="0.000000"/>
 </kw>
-<kw name="Realizar o login com sucesso" owner="login_page">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:47.076603" level="INFO">Typing text 'tomsmith' into text field 'username'.</msg>
-<arg>username</arg>
-<arg>${input}[name]</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-18T20:52:47.075552" elapsed="0.091690"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:47.169086" level="INFO">Typing text '' into text field 'password'.</msg>
-<arg>password</arg>
-<arg>${input}[pass]</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-18T20:52:47.167782" elapsed="0.074440"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:47.422486" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="id_image_id-1.png"&gt;&lt;img src="id_image_id-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>${OUTPUTDIR}/id_image_id-1.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-05-18T20:52:47.243222" elapsed="0.179264"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:47.422486" level="INFO">Clicking button 'css=.radius'.</msg>
-<arg>css=.radius</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-18T20:52:47.422486" elapsed="0.500310"/>
-</kw>
-<arg>${input}</arg>
-<status status="PASS" start="2024-05-18T20:52:47.075552" elapsed="0.847244"/>
-</kw>
-<kw name="validar mensagem" owner="secure_area">
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:47.951707" level="INFO">Element 'css=#flash' contains text 'Your password is invalid!'.</msg>
-<arg>css=#flash</arg>
-<arg>${expected_mensagem}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2024-05-18T20:52:47.923810" elapsed="0.027897"/>
-</kw>
-<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
-<arg>./logs/screenshot</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2024-05-18T20:52:47.951707" elapsed="0.001001"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-05-18T20:52:48.095784" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../logs/screenshot/selenium-screenshot-4.png"&gt;&lt;img src="../logs/screenshot/selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-05-18T20:52:47.952708" elapsed="0.143076"/>
-</kw>
-<arg>Your password is invalid!</arg>
-<status status="PASS" start="2024-05-18T20:52:47.923810" elapsed="0.171974"/>
-</kw>
-<kw name="Finish execution" owner="base" type="TEARDOWN">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-18T20:52:48.095784" elapsed="2.251786"/>
-</kw>
-<status status="PASS" start="2024-05-18T20:52:48.095784" elapsed="2.251786"/>
-</kw>
-<status status="PASS" start="2024-05-18T20:52:39.464861" elapsed="10.882709"/>
+<status status="PASS" start="2024-05-18T22:27:49.502687" elapsed="0.803204"/>
 </test>
-<doc>Primeiro script usando Selenium</doc>
-<status status="PASS" start="2024-05-18T20:52:26.204998" elapsed="24.142572"/>
+<test id="s1-s1-s1-s1-s1-s1-t3" name="Alterar de usuario" line="37">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:50.305891" level="INFO">Creating Session using : alias=Teste1, url=https://serverest.dev/, headers={'accept': 'application/json', 'Content-Type': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=Teste1</arg>
+<arg>url=https://serverest.dev/</arg>
+<arg>headers=${headers}</arg>
+<arg>disable_warnings=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-05-18T22:27:50.305891" elapsed="0.000000"/>
+</kw>
+<kw name="PUT On Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:51.094085" level="INFO">PUT Request : url=https://serverest.dev/usuarios/HD7fD1kmkTMIr2yw 
+ path_url=/usuarios/HD7fD1kmkTMIr2yw 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '108'} 
+ body=b'{"nome": "da silva fulano", "email": "novoemail222@qa.com.br", "password": "teste", "administrador": "true"}' 
+ </msg>
+<msg time="2024-05-18T22:27:51.094085" level="INFO">PUT Response : url=https://serverest.dev/usuarios/HD7fD1kmkTMIr2yw 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': 'd892ff3f314db3bd2a5dc3cf11d797f3', 'Date': 'Sun, 19 May 2024 01:27:50 GMT', 'Server': 'Google Frontend', 'Content-Length': '50'} 
+ body={
+    "message": "Registro alterado com sucesso"
+} 
+ </msg>
+<msg time="2024-05-18T22:27:51.094085" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=Teste1</arg>
+<arg>url=usuarios/${_id_suite}</arg>
+<arg>expected_status=any</arg>
+<arg>json=${new_body}</arg>
+<doc>Sends a PUT request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-05-18T22:27:50.305891" elapsed="0.788194"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-05-18T22:27:51.094085" elapsed="0.000000"/>
+</kw>
+<kw name="Dictionary Should Contain Item" owner="Collections">
+<msg time="2024-05-18T22:27:51.094085" level="INFO">False
+False</msg>
+<arg>${response.json()}</arg>
+<arg>message</arg>
+<arg>Registro alterado com sucesso</arg>
+<doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
+<status status="PASS" start="2024-05-18T22:27:51.094085" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:27:50.305891" elapsed="0.788194"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t4" name="Exclusao de usuário" line="43">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:51.110244" level="INFO">Creating Session using : alias=Teste1, url=https://serverest.dev/, headers={'accept': 'application/json', 'Content-Type': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=Teste1</arg>
+<arg>url=https://serverest.dev/</arg>
+<arg>headers=&amp;{headers}</arg>
+<arg>disable_warnings=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-05-18T22:27:51.110244" elapsed="0.000000"/>
+</kw>
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:51.906784" level="INFO">DELETE Request : url=https://serverest.dev/usuarios/HD7fD1kmkTMIr2yw 
+ path_url=/usuarios/HD7fD1kmkTMIr2yw 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2024-05-18T22:27:51.921793" level="INFO">DELETE Response : url=https://serverest.dev/usuarios/HD7fD1kmkTMIr2yw 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '2b602327485b782ca4e9931612b65121', 'Date': 'Sun, 19 May 2024 01:27:51 GMT', 'Server': 'Google Frontend', 'Content-Length': '51'} 
+ body={
+    "message": "Registro excluído com sucesso"
+} 
+ </msg>
+<msg time="2024-05-18T22:27:51.921793" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=Teste1</arg>
+<arg>url=usuarios/${_id_suite}</arg>
+<arg>expected_status=any</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-05-18T22:27:51.110244" elapsed="0.811549"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-05-18T22:27:51.921793" elapsed="0.000000"/>
+</kw>
+<kw name="Dictionary Should Contain Item" owner="Collections">
+<msg time="2024-05-18T22:27:51.921793" level="INFO">False
+False</msg>
+<arg>${response.json()}</arg>
+<arg>message</arg>
+<arg>Registro excluído com sucesso</arg>
+<doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
+<status status="PASS" start="2024-05-18T22:27:51.921793" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:27:51.109595" elapsed="0.812198"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t5" name="Consulta cep" line="49">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-05-18T22:27:51.921793" level="INFO">${headers} = {'accept': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-05-18T22:27:51.921793" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-05-18T22:27:51.921793" level="INFO">${cep} = 50030150</msg>
+<var>${cep}</var>
+<arg>50030150</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-05-18T22:27:51.921793" elapsed="0.000000"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:51.921793" level="INFO">Creating Session using : alias=Teste1, url=https://brasilapi.com.br/api/, headers={'accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=Teste1</arg>
+<arg>url=https://brasilapi.com.br/api/</arg>
+<arg>headers=&amp;{headers}</arg>
+<arg>disable_warnings=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-05-18T22:27:51.921793" elapsed="0.000000"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-05-18T22:27:53.008050" level="INFO">GET Request : url=https://brasilapi.com.br/api/cep/v1/50030150 
+ path_url=/api/cep/v1/50030150 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-05-18T22:27:53.008050" level="INFO">GET Response : url=https://brasilapi.com.br/api/cep/v1/50030150 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 19 May 2024 01:27:52 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-origin': '*', 'Age': '0', 'Cache-Control': 'max-age=0, public', 'etag': 'W/"7e-aWavpfCFIMNTB1iH6TpI3Z4tYG4"', 'strict-transport-security': 'max-age=63072000', 'x-matched-path': '/api/cep/v1/[cep]', 'x-vercel-cache': 'MISS', 'x-vercel-id': 'gru1::sfo1::z4rdk-1716082072637-f41705d64a63', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=hAQ3o1ApBOEoYQW0CpYkuKrCHefDQhem9gyFPOZI01mD9aLzNrfL1%2FBtqKUmU96YfnMfWBbBGt4vDiVt9KDL6sb%2BeLY6kH6Xe5OKlGdZ7AWy4CZZA7oOzUN8lEbYmdRCkU57"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '88604e99e86764f6-GIG', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"cep":"50030150","state":"PE","city":"Recife","neighborhood":"Recife","street":"Avenida Alfredo Lisboa","service":"open-cep"} 
+ </msg>
+<msg time="2024-05-18T22:27:53.008050" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=Teste1</arg>
+<arg>url=cep/v1/${cep}</arg>
+<arg>expected_status=any</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-05-18T22:27:51.921793" elapsed="1.086257"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-18T22:27:53.024352" level="INFO">{"cep":"50030150","state":"PE","city":"Recife","neighborhood":"Recife","street":"Avenida Alfredo Lisboa","service":"open-cep"}</msg>
+<arg>${response.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-18T22:27:53.008050" elapsed="0.016302"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-05-18T22:27:53.024352" level="INFO">${city} = Recife</msg>
+<var>${city}</var>
+<arg>${response.json()}</arg>
+<arg>city</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-05-18T22:27:53.024352" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-18T22:27:53.024352" level="INFO">Recife</msg>
+<arg>${city}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-18T22:27:53.024352" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:27:51.921793" elapsed="1.102559"/>
+</test>
+<doc>Realizar os testes de api do treinamento</doc>
+<status status="PASS" start="2024-05-18T22:27:45.272573" elapsed="7.751779"/>
 </suite>
-<status status="PASS" start="2024-05-18T20:52:26.197802" elapsed="24.149768"/>
+<status status="PASS" start="2024-05-18T22:27:45.266211" elapsed="7.758141"/>
 </suite>
-<status status="PASS" start="2024-05-18T20:52:26.195250" elapsed="24.152320"/>
+<status status="PASS" start="2024-05-18T22:27:45.263828" elapsed="7.760524"/>
 </suite>
-<status status="PASS" start="2024-05-18T20:52:26.184308" elapsed="24.172210"/>
+<status status="PASS" start="2024-05-18T22:27:45.256200" elapsed="7.768152"/>
 </suite>
-<status status="PASS" start="2024-05-18T20:52:26.184308" elapsed="24.173884"/>
+<status status="PASS" start="2024-05-18T22:27:45.256200" elapsed="7.768152"/>
 </suite>
-<status status="PASS" start="2024-05-18T20:52:26.168381" elapsed="24.190759"/>
+<status status="PASS" start="2024-05-18T22:27:45.230970" elapsed="7.793382"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="QAX">QAX</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="RobotFramework">QAX.Projects.RobotFramework</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1" name="Treinamento Robot">QAX.Projects.RobotFramework.Treinamento Robot</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Tests">QAX.Projects.RobotFramework.Treinamento Robot.Tests</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1" name="Login Herokuapp">QAX.Projects.RobotFramework.Treinamento Robot.Tests.Login Herokuapp</stat>
+<stat pass="5" fail="0" skip="0" id="s1" name="QAX">QAX</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1-s1" name="RobotFramework">QAX.Projects.RobotFramework</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1-s1-s1" name="Treinamento Robot">QAX.Projects.RobotFramework.Treinamento Robot</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Tests">QAX.Projects.RobotFramework.Treinamento Robot.Tests</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1" name="Teste api">QAX.Projects.RobotFramework.Treinamento Robot.Tests.Teste api</stat>
 </suite>
 </statistics>
 <errors>

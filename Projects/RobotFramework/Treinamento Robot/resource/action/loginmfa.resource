@@ -16,6 +16,7 @@ ${btn_login}      id:log-in
 ${title_h1}       //h1
 ${expected_text}    Welcome!
 ${link_demo_page}    xpath=//*[contains(text(),"Demo Page")]
+${evd_mfa}          ${OUTPUT_DIR}/Screenshot/login_mfa/evidencia{index}.png         
 
 
 *** Keywords ***
@@ -24,10 +25,12 @@ Realizar login MFA
     Input Text    ${id_password}    ${valor_pass}    
     ${totp}       get_totp          GAXG2MTEOR3DMMDG     
     Input Text    ${id_totp}          ${totp}
+    Capture Page Screenshot    ${evd_mfa}
     Click Link    id:log-in
 
 Validar login
     Element Text Should Be    ${title_h1}    ${expected_text}
+    Capture Page Screenshot    ${evd_mfa}
 
 Abrir demo Page
     Click Link    ${link_demo_page}    

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-18T22:24:07.626413" rpa="false" schemaversion="5">
+<suite id="s1" name="Mfa Login" source="C:\QAX\Projects\RobotFramework\Treinamento Robot\tests\mfa_login.robot">
+<test id="s1-t1" name="Testar login MFA" line="10">
+<kw name="Start execution" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:07.926781" level="INFO">Opening browser 'chrome' to base url 'https://seleniumbase.io/realworld/login'.</msg>
+<arg>url=${pagina}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-18T22:24:07.926781" elapsed="9.889944"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-18T22:24:17.817712" elapsed="0.031530"/>
+</kw>
+<arg>${mfa_login}</arg>
+<status status="PASS" start="2024-05-18T22:24:07.926781" elapsed="9.922461"/>
+</kw>
+<kw name="Realizar login MFA" owner="loginmfa">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:17.852581" level="INFO">Typing text 'demo_user' into text field 'username'.</msg>
+<arg>${id_username}</arg>
+<arg>${valor_user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:17.850351" elapsed="0.116676"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:17.967913" level="INFO">Typing text 'secret_pass' into text field 'password'.</msg>
+<arg>${id_password}</arg>
+<arg>${valor_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:17.967241" elapsed="0.080742"/>
+</kw>
+<kw name="Get Totp" owner="totp">
+<msg time="2024-05-18T22:24:18.060943" level="INFO">${totp} = 877857</msg>
+<var>${totp}</var>
+<arg>GAXG2MTEOR3DMMDG</arg>
+<status status="PASS" start="2024-05-18T22:24:18.047983" elapsed="0.012960"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:18.062263" level="INFO">Typing text '877857' into text field 'totpcode'.</msg>
+<arg>${id_totp}</arg>
+<arg>${totp}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:18.062263" elapsed="0.082690"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:18.497394" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/login_mfa/evidencia1.png"&gt;&lt;img src="Screenshot/login_mfa/evidencia1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_mfa}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:18.144953" elapsed="0.352441"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:18.497394" level="INFO">Clicking link 'id:log-in'.</msg>
+<arg>id:log-in</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:18.497394" elapsed="0.788699"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:17.850351" elapsed="1.435742"/>
+</kw>
+<kw name="Validar login" owner="loginmfa">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:19.287100" level="INFO">Verifying element '//h1' contains exact text 'Welcome!'.</msg>
+<arg>${title_h1}</arg>
+<arg>${expected_text}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:19.286093" elapsed="0.024386"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:19.714718" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/login_mfa/evidencia2.png"&gt;&lt;img src="Screenshot/login_mfa/evidencia2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_mfa}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:19.311778" elapsed="0.402940"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:19.286093" elapsed="0.428625"/>
+</kw>
+<kw name="Finish execution" owner="base" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-18T22:24:19.715715" elapsed="2.351222"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:19.715715" elapsed="2.351222"/>
+</kw>
+<tag>mfa</tag>
+<status status="PASS" start="2024-05-18T22:24:07.926781" elapsed="14.140156"/>
+</test>
+<test id="s1-t2" name="Execução completa" line="15">
+<kw name="Start execution" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:22.066937" level="INFO">Opening browser 'chrome' to base url 'https://seleniumbase.io/realworld/login'.</msg>
+<arg>url=${pagina}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-18T22:24:22.066937" elapsed="8.045000"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-18T22:24:30.111937" elapsed="0.033030"/>
+</kw>
+<arg>${mfa_login}</arg>
+<status status="PASS" start="2024-05-18T22:24:22.066937" elapsed="8.078030"/>
+</kw>
+<kw name="Realizar login MFA" owner="loginmfa">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:30.146964" level="INFO">Typing text 'demo_user' into text field 'username'.</msg>
+<arg>${id_username}</arg>
+<arg>${valor_user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:30.146964" elapsed="0.121363"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:30.268327" level="INFO">Typing text 'secret_pass' into text field 'password'.</msg>
+<arg>${id_password}</arg>
+<arg>${valor_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:30.268327" elapsed="0.097345"/>
+</kw>
+<kw name="Get Totp" owner="totp">
+<msg time="2024-05-18T22:24:30.365672" level="INFO">${totp} = 059240</msg>
+<var>${totp}</var>
+<arg>GAXG2MTEOR3DMMDG</arg>
+<status status="PASS" start="2024-05-18T22:24:30.365672" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:30.365672" level="INFO">Typing text '059240' into text field 'totpcode'.</msg>
+<arg>${id_totp}</arg>
+<arg>${totp}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:30.365672" elapsed="0.090330"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:30.800444" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/login_mfa/evidencia3.png"&gt;&lt;img src="Screenshot/login_mfa/evidencia3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_mfa}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:30.456002" elapsed="0.344442"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:30.800444" level="INFO">Clicking link 'id:log-in'.</msg>
+<arg>id:log-in</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:30.800444" elapsed="0.537097"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:30.145962" elapsed="1.191579"/>
+</kw>
+<kw name="Validar login" owner="loginmfa">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:31.337541" level="INFO">Verifying element '//h1' contains exact text 'Welcome!'.</msg>
+<arg>${title_h1}</arg>
+<arg>${expected_text}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:31.337541" elapsed="0.018168"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:31.737854" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/login_mfa/evidencia4.png"&gt;&lt;img src="Screenshot/login_mfa/evidencia4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_mfa}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:31.355709" elapsed="0.382145"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:31.337541" elapsed="0.400313"/>
+</kw>
+<kw name="Abrir demo Page" owner="loginmfa">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:31.737854" level="INFO">Clicking link 'xpath=//*[contains(text(),"Demo Page")]'.</msg>
+<arg>${link_demo_page}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:31.737854" elapsed="0.083206"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2024-05-18T22:24:31.822096" elapsed="0.069939"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:31.892035" elapsed="0.019316"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:31.737854" elapsed="0.174503"/>
+</kw>
+<kw name="Validar titulo Demo Page" owner="demo_page">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:31.913356" level="INFO">Verifying element '//h1' contains exact text 'Demo Page'.</msg>
+<arg>${h1}</arg>
+<arg>${text_h1}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:31.912357" elapsed="0.154533"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:32.066890" level="INFO">Verifying element '//h2' contains exact text 'SeleniumBase'.</msg>
+<arg>${h2}</arg>
+<arg>${text_h2}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:32.066890" elapsed="0.041086"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:32.109017" level="INFO">Verifying element '//h3' contains exact text 'Automation Practice'.</msg>
+<arg>${h3}</arg>
+<arg>${text_h3}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:32.108487" elapsed="0.022371"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:32.331436" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia12.png"&gt;&lt;img src="Screenshot/demo_page/evidencia12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:32.131396" elapsed="0.200040"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:31.912357" elapsed="0.419079"/>
+</kw>
+<kw name="Mover Hover Dropdown" owner="demo_page">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:32.338581" level="INFO">Simulating Mouse Over on element 'myDropdown'.</msg>
+<arg>${id_myDropdown}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:32.337550" elapsed="0.301474"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:32.639024" level="INFO">Clicking link 'xpath=//*[@id="dropOption1"]'.</msg>
+<arg>${link_dropdown_1}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:32.639024" elapsed="0.047434"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:32.686458" level="INFO">Verifying element '//h3' contains exact text 'Link One Selected'.</msg>
+<arg>${h3}</arg>
+<arg>${list_h3_1}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:32.686458" elapsed="0.018296"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:32.704754" level="INFO">Simulating Mouse Over on element 'myDropdown'.</msg>
+<arg>${id_myDropdown}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:32.704754" elapsed="0.300031"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.004785" level="INFO">Clicking link 'xpath=//*[@id="dropOption2"]'.</msg>
+<arg>${link_dropdown_2}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.004785" elapsed="0.033173"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.037958" level="INFO">Verifying element '//h3' contains exact text 'Link Two Selected'.</msg>
+<arg>${h3}</arg>
+<arg>${list_h3_2}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.037958" elapsed="0.017112"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.055070" level="INFO">Simulating Mouse Over on element 'myDropdown'.</msg>
+<arg>${id_myDropdown}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.055070" elapsed="0.288722"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.343792" level="INFO">Clicking link 'xpath=//*[@id="dropOption3"]'.</msg>
+<arg>${link_dropdown_3}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.343792" elapsed="0.043463"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.387255" level="INFO">Verifying element '//h3' contains exact text 'Link Three Selected'.</msg>
+<arg>${h3}</arg>
+<arg>${list_h3_3}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.387255" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.519616" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia13.png"&gt;&lt;img src="Screenshot/demo_page/evidencia13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.387255" elapsed="0.132361"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:32.331436" elapsed="1.188180"/>
+</kw>
+<kw name="Inserindo Texto na pagina" owner="demo_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.519616" level="INFO">Typing text 'Usando o locator' into text field 'myTextInput'.</msg>
+<arg>${id_myTextInput}</arg>
+<arg>${text_myTextInput}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.519616" elapsed="0.144938"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.665300" level="INFO">Typing text 'Selector CSS' into text field 'css=#myTextarea'.</msg>
+<arg>${id_myTextarea}</arg>
+<arg>${text_myTextarea}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.665300" elapsed="0.104934"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.771320" level="INFO">Typing text 'myTextInput2' into text field 'myTextInput2'.</msg>
+<arg>${id_myTextInput2}</arg>
+<arg>${id_myTextInput2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.770787" elapsed="0.182818"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:33.954053" level="INFO">Typing text 'Usando o fullpath' into text field 'xpath=//input[@id='placeholderText']'.</msg>
+<arg>${id_placeholderText}</arg>
+<arg>${text_placeholderText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:33.954053" elapsed="0.172888"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:34.293221" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia14.png"&gt;&lt;img src="Screenshot/demo_page/evidencia14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:34.126941" elapsed="0.168226"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:33.519616" elapsed="0.775551"/>
+</kw>
+<kw name="Button: color" owner="demo_page">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:34.298463" level="INFO">Clicking button 'xpath=//*[@id="myButton"]'.</msg>
+<arg>${id_myButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:34.298463" elapsed="0.081657"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:34.380120" level="INFO">Clicking element 'svgRect'.</msg>
+<arg>${id_svgRect}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:34.380120" elapsed="0.063361"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:34.443481" level="INFO">Verifying element 'css=[id="pText"]' contains exact text 'This Text is Purple'.</msg>
+<arg>${id_pText}</arg>
+<arg>${text_pText}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:34.443481" elapsed="0.029399"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:34.639668" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia15.png"&gt;&lt;img src="Screenshot/demo_page/evidencia15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:34.473698" elapsed="0.165970"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:34.295167" elapsed="0.344501"/>
+</kw>
+<kw name="Input Slider Control:" owner="demo_page">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:34.639668" level="INFO">Executing JavaScript:
+document.getElementById("mySlider").value= "100"
+Without any arguments.</msg>
+<arg>${id_mySlider}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-05-18T22:24:34.639668" elapsed="0.015967"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:34.655635" level="INFO">Simulating Mouse Over on element 'mySlider'.</msg>
+<arg>${mySlider}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:34.655635" elapsed="0.282748"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:34.938383" level="INFO">Verifying element 'xpath=//*[@id="progressLabel"]' contains exact text 'Progress Bar: (100%)'.</msg>
+<arg>${id_progressLabel}</arg>
+<arg>${text_progressLabel}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:34.938383" elapsed="0.034899"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.104631" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia16.png"&gt;&lt;img src="Screenshot/demo_page/evidencia16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:34.973282" elapsed="0.131349"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:34.639668" elapsed="0.464963"/>
+</kw>
+<kw name="Select Dropdown:" owner="demo_page">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.113645" level="INFO">Selecting options from selection list 'mySelect' by label Set to 75%.</msg>
+<arg>${id_mySelect}</arg>
+<arg>${text_mySelect}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.113645" elapsed="0.075804"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.205921" level="INFO">Current page contains element 'css=meter[value="0.75"]'.</msg>
+<arg>${id_meter}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.189449" elapsed="0.016472"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.339220" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia17.png"&gt;&lt;img src="Screenshot/demo_page/evidencia17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.205921" elapsed="0.133299"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:35.113645" elapsed="0.225575"/>
+</kw>
+<kw name="Image in iFrame" owner="demo_page">
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.339220" level="INFO">Selecting frame 'xpath=//*[@id="myFrame1"]'.</msg>
+<arg>${id_myFrame1}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.339220" elapsed="0.049972"/>
+</kw>
+<kw name="Page Should Contain Image" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.405881" level="INFO">Current page contains image '//img'.</msg>
+<arg>${tag_img}</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.389699" elapsed="0.016182"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.542726" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia18.png"&gt;&lt;img src="Screenshot/demo_page/evidencia18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.405881" elapsed="0.136845"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.542726" elapsed="0.003126"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.545852" level="INFO">Selecting frame '//iframe[@id="myFrame2"]'.</msg>
+<arg>${id_myFrame2}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.545852" elapsed="0.021754"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.567606" level="INFO">Verifying element '//h4' contains exact text 'iFrame Text'.</msg>
+<arg>${h4}</arg>
+<arg>${text_h4}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.567606" elapsed="0.016125"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.583731" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.583731" level="INFO">Clicking element 'css=[id="radioButton2"]'.</msg>
+<arg>${id_radioButton2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.583731" elapsed="0.061714"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.645445" level="INFO">Selecting frame '//iframe[@id="myFrame3"]'.</msg>
+<arg>${id_myFrame3}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.645445" elapsed="0.027477"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.672922" level="INFO">Clicking element 'css=#checkBox6'.</msg>
+<arg>${id_checkBox6}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.672922" elapsed="0.089510"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.762432" elapsed="0.006510"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.905512" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia19.png"&gt;&lt;img src="Screenshot/demo_page/evidencia19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.768942" elapsed="0.136570"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:35.339220" elapsed="0.566292"/>
+</kw>
+<kw name="Check BOX" owner="demo_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.905512" level="INFO">Clicking element 'css=#checkBox1'.</msg>
+<arg>${id_checkBox1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.905512" elapsed="0.059598"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:35.965110" level="INFO">Clicking element 'css=#checkBox2'.</msg>
+<arg>${id_checkBox2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:35.965110" elapsed="0.055323"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:36.020433" level="INFO">Clicking element 'css=#checkBox3'.</msg>
+<arg>${id_checkBox3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:36.020433" elapsed="0.052890"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:36.073323" level="INFO">Clicking element 'css=#checkBox4'.</msg>
+<arg>${id_checkBox4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:36.073323" elapsed="0.044902"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:36.119224" level="INFO">Clicking element 'css=#checkBox5'.</msg>
+<arg>${id_checkBox5}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:24:36.118225" elapsed="0.046243"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:36.304477" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia20.png"&gt;&lt;img src="Screenshot/demo_page/evidencia20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:36.164468" elapsed="0.140009"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:35.905512" elapsed="0.398965"/>
+</kw>
+<kw name="Realizando Drag and drop" owner="demo_page">
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>${img_logo}</arg>
+<arg>${div_drop2}</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-05-18T22:24:36.304477" elapsed="0.576551"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:24:37.003295" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/demo_page/evidencia21.png"&gt;&lt;img src="Screenshot/demo_page/evidencia21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evd_demo_page}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-18T22:24:36.881839" elapsed="0.121456"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:36.304477" elapsed="0.698818"/>
+</kw>
+<kw name="Finish execution" owner="base" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-18T22:24:37.003295" elapsed="2.281591"/>
+</kw>
+<status status="PASS" start="2024-05-18T22:24:37.003295" elapsed="2.281591"/>
+</kw>
+<tag>execfull</tag>
+<status status="PASS" start="2024-05-18T22:24:22.066937" elapsed="17.218484"/>
+</test>
+<doc>Teste de MFA e selectors</doc>
+<status status="PASS" start="2024-05-18T22:24:07.626413" elapsed="31.659008"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">execfull</stat>
+<stat pass="1" fail="0" skip="0">mfa</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Mfa Login">Mfa Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

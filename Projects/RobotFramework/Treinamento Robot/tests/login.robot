@@ -9,5 +9,14 @@ Test Teardown     Finish execution
 *** Test Cases ***
 Login com sucesso
     Realizar o login
-    Validar login com sucesso    ${mensagem}    
+    Validar login com sucesso
+
+login com erro user    
+    login com erro no usuario
+    Mensagem impeditiva    ${inv_user}
+
+login com erro password
+    login com erro na senha
+    Mensagem impeditiva    ${inv_pass}
+    
 

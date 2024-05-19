@@ -10,12 +10,12 @@ Resource    ../resource/action/loginmfa.resource
 
 *** Keywords ***
 Mensagem personalizada
-    [Arguments]    ${mensagem}    
+    [Arguments]           ${mensagem}    
     Log To Console        ${mensagem}
 
 Start execution
-    [Arguments]    ${pagina}
-    Open Browser    url=${pagina}    browser=chrome
+    [Arguments]           ${pagina}
+    Open Browser          url=${pagina}    browser=chrome
     Maximize Browser Window
 
 Finish execution
