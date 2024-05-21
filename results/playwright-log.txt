@@ -1,22 +1,40 @@
-{"level":30,"time":"2024-05-19T02:07:13.700Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Listening on 53749"}
-(node:17792) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-05-21T02:55:40.587Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Listening on 53130"}
+(node:4440) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-05-19T02:07:13.835Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-19T02:07:13.836Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-19T02:07:13.841Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-19T02:07:13.841Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-19T02:07:13.847Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2024-05-19T02:07:16.217Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
-{"level":30,"time":"2024-05-19T02:07:16.218Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newBrowser"}
-{"level":30,"time":"2024-05-19T02:07:16.218Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2024-05-19T02:07:16.246Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newPage"}
-{"level":30,"time":"2024-05-19T02:07:16.246Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-05-19T02:07:16.275Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
-{"level":30,"time":"2024-05-19T02:07:17.184Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Video path: undefined"}
-{"level":30,"time":"2024-05-19T02:07:17.185Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active page"}
-{"level":30,"time":"2024-05-19T02:07:22.055Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newPage"}
-{"level":30,"time":"2024-05-19T02:07:22.062Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getText"}
-{"level":30,"time":"2024-05-19T02:07:22.063Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Strict mode is enabled, find Locator with //*[@id=\"wp_resultados\"]/div[2]/div/div/div[1]/ul in page."}
-{"level":30,"time":"2024-05-19T02:07:22.117Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Retrieved text for element //*[@id=\"wp_resultados\"]/div[2]/div/div/div[1]/ul containing 010203040507091012131617192325"}
-{"level":30,"time":"2024-05-19T02:07:22.117Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getText"}
-{"level":30,"time":"2024-05-19T02:09:56.936Z","pid":17792,"hostname":"CPX-IEBDTQKYZXG","msg":"Removed page=bbbea293-1fbe-4103-93bf-6dcc69f347db from context=3eb24005-287e-407b-8cd2-ae5025919155 page stack"}
+{"level":30,"time":"2024-05-21T02:55:40.722Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-21T02:55:40.722Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-21T02:55:40.725Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-21T02:55:40.725Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-21T02:55:40.728Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-21T02:55:41.208Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-05-21T02:55:41.208Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-21T02:55:41.208Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-21T02:55:41.214Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-21T02:55:41.214Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-21T02:55:41.214Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Trace file: "}
+{"level":30,"time":"2024-05-21T02:55:41.225Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active context"}
+{"level":30,"time":"2024-05-21T02:55:41.225Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-21T02:55:41.230Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-21T02:55:41.230Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-21T02:55:41.405Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-21T02:55:41.406Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Changed active page"}
+{"level":30,"time":"2024-05-21T02:55:43.638Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-21T02:56:01.203Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method getText"}
+{"level":30,"time":"2024-05-21T02:56:01.204Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"wp_resultados\"]/div[1]/div/h2/text() in page."}
+{"level":50,"time":"2024-05-21T02:56:11.215Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","err":{"type":"TimeoutError","message":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//*[@id=\"wp_resultados\"]/div[1]/div/h2/text()')\u001b[22m\n","stack":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//*[@id=\"wp_resultados\"]/div[1]/div/h2/text()')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"TimeoutError"},"msg":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//*[@id=\"wp_resultados\"]/div[1]/div/h2/text()')\u001b[22m\n"}
+{"level":30,"time":"2024-05-21T02:56:11.216Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+  [2m- waiting for locator('//*[@id="wp_resultados"]/div[1]/div/h2/text()')[22m
+
+    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
+    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
+    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2024-05-21T02:56:11.238Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-05-21T02:56:11.239Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","Take screenshot with options: ":{"path":"C:\\QAX\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-05-21T02:56:11.422Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-05-21T03:02:10.792Z","pid":4440,"hostname":"DESKTOP-4B1IRSL","msg":"Removed page=09c5158c-6807-41e8-b678-26b2800f4c4e from context=98c6d60c-0008-4511-b6cd-6bbdc6eea1e7 page stack"}

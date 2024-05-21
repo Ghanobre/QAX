@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-18T23:32:40.306183" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-21T00:01:29.564608" rpa="false" schemaversion="5">
 <suite id="s1" name="QAX" source="C:\QAX">
 <suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
 <suite id="s1-s1-s1" name="Python" source="C:\QAX\Projects\Python">
 <suite id="s1-s1-s1-s1" name="Teste" source="C:\QAX\Projects\Python\teste.robot">
-<test id="s1-s1-s1-s1-t1" name="teste" line="9">
+<test id="s1-s1-s1-s1-t1" name="teste" line="8">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-05-18T23:32:43.312511" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\c8a5985a-7290-43c6-b6ad-b2ccce2e685f"}</msg>
-<msg time="2024-05-18T23:32:45.949666" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\c8a5985a-7290-43c6-b6ad-b2ccce2e685f"}</msg>
+<msg time="2024-05-21T00:01:30.907999" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\60d930d4-0e95-43b4-8612-4b916473f9be"}</msg>
+<msg time="2024-05-21T00:01:31.350324" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\60d930d4-0e95-43b4-8612-4b916473f9be"}</msg>
 <arg>chromium</arg>
-<arg>headless=False</arg>
+<arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-05-18T23:32:43.312511" elapsed="2.637155"/>
+<status status="PASS" start="2024-05-21T00:01:30.907001" elapsed="0.444320"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2024-05-18T23:32:45.952481" level="INFO">{
+<msg time="2024-05-21T00:01:31.352322" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -30,79 +30,107 @@
     "height": 1080
   }
 }</msg>
-<msg time="2024-05-18T23:32:45.979430" level="INFO">Successfully created context. </msg>
-<msg time="2024-05-18T23:32:45.979430" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<msg time="2024-05-21T00:01:31.366381" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-21T00:01:31.366381" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-05-18T23:32:45.949666" elapsed="0.029764"/>
+<status status="PASS" start="2024-05-21T00:01:31.352322" elapsed="0.014059"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-05-18T23:32:52.166713" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
+<msg time="2024-05-21T00:01:33.917158" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
 <arg>url=https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-05-18T23:32:46.000800" elapsed="6.166425"/>
+<status status="PASS" start="2024-05-21T00:01:31.367380" elapsed="2.550777"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-05-18T23:32:52.228091" level="INFO">Text: '010203040507091012131617192325'</msg>
-<msg time="2024-05-18T23:32:52.228091" level="INFO">${log} = 010203040507091012131617192325</msg>
+<msg time="2024-05-21T00:01:33.983350" level="INFO">Text: '020304060711121314151820222325'</msg>
+<msg time="2024-05-21T00:01:33.983350" level="INFO">${log} = 020304060711121314151820222325</msg>
 <var>${log}</var>
-<arg>//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul</arg>
+<arg>xpath=//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-05-18T23:32:52.167225" elapsed="0.060866"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
-<msg time="2024-05-18T23:32:52.501819" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-05-18T23:32:52.228091" elapsed="0.274236"/>
+<status status="PASS" start="2024-05-21T00:01:33.918157" elapsed="0.065193"/>
 </kw>
 <kw name="Transformar Valor" owner="converter">
-<msg time="2024-05-18T23:32:52.502327" level="INFO">${novo} = (1, 2, 3, 4, 5, 7, 9, 10, 12, 13, 16, 17, 19, 23, 25)</msg>
+<msg time="2024-05-21T00:01:33.984348" level="INFO">${novo} = [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25]</msg>
 <var>${novo}</var>
 <arg>${log}</arg>
-<status status="PASS" start="2024-05-18T23:32:52.502327" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-21T00:01:33.984348" elapsed="0.000000"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-05-18T23:32:52.502327" level="INFO">010203040507091012131617192325</msg>
-<arg>${log}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-05-18T23:32:52.502327" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-05-18T23:32:52.502327" level="INFO">(1, 2, 3, 4, 5, 7, 9, 10, 12, 13, 16, 17, 19, 23, 25)</msg>
+<kw name="Resultado 1" owner="converter">
+<msg time="2024-05-21T00:01:33.985351" level="INFO">${jogo1_gus} = ('Jogo1 Gus', [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25], 11)</msg>
+<var>${jogo1_gus}</var>
 <arg>${novo}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-05-18T23:32:52.502327" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-21T00:01:33.985351" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-18T23:32:43.311451" elapsed="9.196151"/>
+<kw name="Resultado 2" owner="converter">
+<msg time="2024-05-21T00:01:33.987352" level="INFO">${jogo2_gus} = ('Jogo2 Gus', [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25], 8)</msg>
+<var>${jogo2_gus}</var>
+<arg>${novo}</arg>
+<status status="PASS" start="2024-05-21T00:01:33.986352" elapsed="0.001000"/>
+</kw>
+<kw name="Resultado 3" owner="converter">
+<msg time="2024-05-21T00:01:33.988349" level="INFO">${jogo1_ana} = ('Jogo1 Ana', [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25], 7)</msg>
+<var>${jogo1_ana}</var>
+<arg>${novo}</arg>
+<status status="PASS" start="2024-05-21T00:01:33.987352" elapsed="0.000997"/>
+</kw>
+<kw name="Resultado 4" owner="converter">
+<msg time="2024-05-21T00:01:33.989349" level="INFO">${jogo2_ana} = ('Jogo2 Ana', [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25], 11)</msg>
+<var>${jogo2_ana}</var>
+<arg>${novo}</arg>
+<status status="PASS" start="2024-05-21T00:01:33.988349" elapsed="0.001000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2024-05-21T00:01:33.989856" level="FAIL">TypeError: unsupported format string passed to tuple.__format__</msg>
+<arg>${jogo1_gus}</arg>
+<arg>format=&gt;30</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="FAIL" start="2024-05-21T00:01:33.989856" elapsed="0.001010">TypeError: unsupported format string passed to tuple.__format__</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${jogo2_gus}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-05-21T00:01:33.990866" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${jogo1_ana}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-05-21T00:01:33.991874" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${jogo2_ana}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-05-21T00:01:33.991874" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-21T00:01:30.904000" elapsed="3.088875">TypeError: unsupported format string passed to tuple.__format__</status>
 </test>
 <doc>Automação lotofacil</doc>
-<status status="PASS" start="2024-05-18T23:32:40.358555" elapsed="12.287465"/>
+<status status="FAIL" start="2024-05-21T00:01:29.613692" elapsed="4.468428"/>
 </suite>
-<status status="PASS" start="2024-05-18T23:32:40.353991" elapsed="12.303984"/>
+<status status="FAIL" start="2024-05-21T00:01:29.611690" elapsed="4.477936"/>
 </suite>
-<status status="PASS" start="2024-05-18T23:32:40.338185" elapsed="12.323223"/>
+<status status="FAIL" start="2024-05-21T00:01:29.609692" elapsed="4.480944"/>
 </suite>
-<status status="PASS" start="2024-05-18T23:32:40.322021" elapsed="12.341607"/>
+<status status="FAIL" start="2024-05-21T00:01:29.593664" elapsed="4.498971"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="QAX">QAX</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Python">QAX.Projects.Python</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Teste">QAX.Projects.Python.Teste</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="QAX">QAX</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Python">QAX.Projects.Python</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Teste">QAX.Projects.Python.Teste</stat>
 </suite>
 </statistics>
 <errors>
