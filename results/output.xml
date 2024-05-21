@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-21T00:01:29.564608" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-21T00:06:46.406088" rpa="false" schemaversion="5">
 <suite id="s1" name="QAX" source="C:\QAX">
 <suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
 <suite id="s1-s1-s1" name="Python" source="C:\QAX\Projects\Python">
 <suite id="s1-s1-s1-s1" name="Teste" source="C:\QAX\Projects\Python\teste.robot">
 <test id="s1-s1-s1-s1-t1" name="teste" line="8">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-05-21T00:01:30.907999" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\60d930d4-0e95-43b4-8612-4b916473f9be"}</msg>
-<msg time="2024-05-21T00:01:31.350324" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\60d930d4-0e95-43b4-8612-4b916473f9be"}</msg>
+<msg time="2024-05-21T00:06:47.269419" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\0e60dd86-967c-4918-9b8c-4de85b4262ef"}</msg>
+<msg time="2024-05-21T00:06:47.639451" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\0e60dd86-967c-4918-9b8c-4de85b4262ef"}</msg>
 <arg>chromium</arg>
-<arg>headless=false</arg>
+<arg>headless=true</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-05-21T00:01:30.907001" elapsed="0.444320"/>
+<status status="PASS" start="2024-05-21T00:06:47.268420" elapsed="0.371149"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2024-05-21T00:01:31.352322" level="INFO">{
+<msg time="2024-05-21T00:06:47.641541" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -30,95 +30,102 @@
     "height": 1080
   }
 }</msg>
-<msg time="2024-05-21T00:01:31.366381" level="INFO">Successfully created context. </msg>
-<msg time="2024-05-21T00:01:31.366381" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<msg time="2024-05-21T00:06:47.653050" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-21T00:06:47.653050" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-05-21T00:01:31.352322" elapsed="0.014059"/>
+<status status="PASS" start="2024-05-21T00:06:47.640447" elapsed="0.012603"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-05-21T00:01:33.917158" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
+<msg time="2024-05-21T00:06:50.073825" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
 <arg>url=https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-05-21T00:01:31.367380" elapsed="2.550777"/>
+<status status="PASS" start="2024-05-21T00:06:47.654052" elapsed="2.419773"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-05-21T00:01:33.983350" level="INFO">Text: '020304060711121314151820222325'</msg>
-<msg time="2024-05-21T00:01:33.983350" level="INFO">${log} = 020304060711121314151820222325</msg>
+<msg time="2024-05-21T00:07:00.235273" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-21T00:07:00.235273" level="INFO">See also file:///C:/QAX/results/playwright-log-1716260806535932900.txt for additional details.</msg>
+<msg time="2024-05-21T00:07:00.235273" level="FAIL">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+  [2m- waiting for locator('//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul')[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
 <var>${log}</var>
 <arg>xpath=//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-05-21T00:01:33.918157" elapsed="0.065193"/>
+<status status="FAIL" start="2024-05-21T00:06:50.073825" elapsed="10.165444">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+  [2m- waiting for locator('//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul')[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
 </kw>
 <kw name="Transformar Valor" owner="converter">
-<msg time="2024-05-21T00:01:33.984348" level="INFO">${novo} = [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25]</msg>
 <var>${novo}</var>
 <arg>${log}</arg>
-<status status="PASS" start="2024-05-21T00:01:33.984348" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-21T00:07:00.239776" elapsed="0.000000"/>
 </kw>
 <kw name="Resultado 1" owner="converter">
-<msg time="2024-05-21T00:01:33.985351" level="INFO">${jogo1_gus} = ('Jogo1 Gus', [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25], 11)</msg>
 <var>${jogo1_gus}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-05-21T00:01:33.985351" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-21T00:07:00.239776" elapsed="0.000000"/>
 </kw>
 <kw name="Resultado 2" owner="converter">
-<msg time="2024-05-21T00:01:33.987352" level="INFO">${jogo2_gus} = ('Jogo2 Gus', [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25], 8)</msg>
 <var>${jogo2_gus}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-05-21T00:01:33.986352" elapsed="0.001000"/>
+<status status="NOT RUN" start="2024-05-21T00:07:00.240782" elapsed="0.000000"/>
 </kw>
 <kw name="Resultado 3" owner="converter">
-<msg time="2024-05-21T00:01:33.988349" level="INFO">${jogo1_ana} = ('Jogo1 Ana', [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25], 7)</msg>
 <var>${jogo1_ana}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-05-21T00:01:33.987352" elapsed="0.000997"/>
+<status status="NOT RUN" start="2024-05-21T00:07:00.240782" elapsed="0.000000"/>
 </kw>
 <kw name="Resultado 4" owner="converter">
-<msg time="2024-05-21T00:01:33.989349" level="INFO">${jogo2_ana} = ('Jogo2 Ana', [2, 3, 4, 6, 7, 11, 12, 13, 14, 15, 18, 20, 22, 23, 25], 11)</msg>
 <var>${jogo2_ana}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-05-21T00:01:33.988349" elapsed="0.001000"/>
+<status status="NOT RUN" start="2024-05-21T00:07:00.240782" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<msg time="2024-05-21T00:01:33.989856" level="FAIL">TypeError: unsupported format string passed to tuple.__format__</msg>
 <arg>${jogo1_gus}</arg>
-<arg>format=&gt;30</arg>
+<arg>no_newline=false</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="FAIL" start="2024-05-21T00:01:33.989856" elapsed="0.001010">TypeError: unsupported format string passed to tuple.__format__</status>
+<status status="NOT RUN" start="2024-05-21T00:07:00.241780" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo2_gus}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-05-21T00:01:33.990866" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-21T00:07:00.241780" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo1_ana}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-05-21T00:01:33.991874" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-21T00:07:00.242781" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo2_ana}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-05-21T00:01:33.991874" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-21T00:07:00.242781" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-05-21T00:01:30.904000" elapsed="3.088875">TypeError: unsupported format string passed to tuple.__format__</status>
+<status status="FAIL" start="2024-05-21T00:06:47.264418" elapsed="12.978363">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+  [2m- waiting for locator('//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul')[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
 </test>
 <doc>Automação lotofacil</doc>
-<status status="FAIL" start="2024-05-21T00:01:29.613692" elapsed="4.468428"/>
+<status status="FAIL" start="2024-05-21T00:06:46.454193" elapsed="13.830398"/>
 </suite>
-<status status="FAIL" start="2024-05-21T00:01:29.611690" elapsed="4.477936"/>
+<status status="FAIL" start="2024-05-21T00:06:46.452186" elapsed="13.836912"/>
 </suite>
-<status status="FAIL" start="2024-05-21T00:01:29.609692" elapsed="4.480944"/>
+<status status="FAIL" start="2024-05-21T00:06:46.450187" elapsed="13.839917"/>
 </suite>
-<status status="FAIL" start="2024-05-21T00:01:29.593664" elapsed="4.498971"/>
+<status status="FAIL" start="2024-05-21T00:06:46.434146" elapsed="13.857467"/>
 </suite>
 <statistics>
 <total>

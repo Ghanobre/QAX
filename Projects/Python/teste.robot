@@ -18,7 +18,7 @@ teste
     ${jogo1_ana}      Resultado3    ${novo}
     ${jogo2_ana}      Resultado4    ${novo}
     #Log To Console    ${result}${concurso}
-    Log To Console    ${jogo1_gus}    
+    Log To Console    ${jogo1_gus}    no_newline=false
     Log To Console    ${jogo2_gus}
     Log To Console    ${jogo1_ana}
     Log To Console    ${jogo2_ana} 
