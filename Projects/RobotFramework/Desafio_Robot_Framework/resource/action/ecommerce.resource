@@ -8,7 +8,7 @@ Library    Collections
 *** Variables ***
 
 #VARIÁVEIS com parametros globais
-${path}                                   ${OUTPUT_DIR}/Screenshot/Evidencia{index}.png
+${evidencia_eccomerce}                    ${OUTPUT_DIR}/Screenshot/Evidencia{index:010}.png
 ${delay}                                  10
 ${qtd_itens}                              5 ITEMS
 
@@ -21,7 +21,7 @@ ${api_correios}                           https://brasilapi.com.br/api/
 &{headers}                                accept=application/json
 
 #DICIONÁRIOS DE MASSAS DE DAODS
-&{new_user}                               name=Usuarioteste38    #Alterar a massa para não dar erro    
+&{new_user}                               name=Usuarioteste41    #Alterar a massa para não dar erro    
 ...                                       password=12Qazxsw    
 ...                                       first_name=Usuario    
 ...                                       last_name=teste    
@@ -103,33 +103,33 @@ Selecinar um produto
     Page Should Contain Element           ${id_layer}
     Wait Until Element Is Enabled         ${id_speakersImg}    ${delay}
     Sleep    1
-    Capture Page Screenshot               ${path}    
+    Capture Page Screenshot               ${evidencia_eccomerce}
     Click Element                         ${id_speakersImg}
 
 Escolher produto
     Wait Until Element Is Visible         ${id_produto}        ${delay}
     Click Image                           ${id_produto}
     Sleep    3
-    Capture Page Screenshot               ${path}
+    Capture Page Screenshot               ${evidencia_eccomerce}
     FOR  ${index}  IN RANGE    1    5    1
         Wait Until Element Is Visible     ${class_plus}        ${delay}
         Click Element                     ${class_plus}    
     END
     Sleep    1
-    Capture Page Screenshot               ${path}
+    Capture Page Screenshot               ${evidencia_eccomerce}
     Click Button                          ${button_add}
 
 Realizar checkout
     Mouse Over                            ${id_menuCart}
     Sleep    1
-    Capture Page Screenshot               ${path}
+    Capture Page Screenshot               ${evidencia_eccomerce}
     Wait Until Element Is Visible         ${id_checkOutPopUp}    ${delay}
     Click Button                          ${id_checkOutPopUp}
     Wait Until Element Is Visible         ${id_qtd_item}         ${delay}
     Element Text Should Be                ${id_qtd_item}         ${qtd_itens}
     Wait Until Element Is Not Visible     ${id_checkOutPopUp}    ${delay}
     Sleep    1
-    Capture Page Screenshot               ${path}
+    Capture Page Screenshot               ${evidencia_eccomerce}
 
 verificar usuario
     IF  $new_account == "SIM"
@@ -155,7 +155,7 @@ Personal details
     Input Text                            ${nameRegisterPage}                ${new_user}[last_name]
     Input Text                            ${numberRegisterPage}              ${new_user}[phone]
     Sleep    1     
-    Capture Page Screenshot               ${path}
+    Capture Page Screenshot               ${evidencia_eccomerce}
 
 Endereço   
     Select From List By Label             ${select_country}                  ${address}[country]
@@ -164,18 +164,18 @@ Endereço
     Input Text                            ${id_state}                        ${state_api}    # robotcode: ignore
     Input Text                            ${name_postal_codeRegisterPage}    ${address}[zip_code]
     Sleep    1    
-    Capture Page Screenshot               ${path}
+    Capture Page Screenshot               ${evidencia_eccomerce}
 
 Confirmar cadastro   
     Click Element                         ${class_checkboxText}
     Sleep    1    
-    Capture Page Screenshot               ${path}              
+    Capture Page Screenshot               ${evidencia_eccomerce}              
     Click Button                          ${button_register}                
     Wait Until Element Is Visible         ${id_userCart}                      ${delay}
     Element Text Should Be                ${id_userCart}                      ${qtd_itens}
     Wait Until Element Is Visible         ${btn_next}                         ${delay}
     Sleep    1   
-    Capture Page Screenshot               ${path}
+    Capture Page Screenshot               ${evidencia_eccomerce}
     Click Button                          ${btn_next}
 
 #Validar mensagem impeditiva  
@@ -184,14 +184,14 @@ logar usuario
     Input Text                            ${name_usernameInOrderPayment}      ${usuario_cadastrado}
     Input Text                            ${name_passwordInOrderPayment}      ${new_user}[password]
     Sleep    1  
-    Capture Page Screenshot               ${path}
+    Capture Page Screenshot               ${evidencia_eccomerce}
     Click Button                          ${id_login_btn}
     Wait Until Element Is Visible         ${class_hi-use}                     ${delay}
     Element Text Should Be                ${class_hi-use}                     ${usuario_cadastrado}
     Element Text Should Be                ${id_userCart}                      ${qtd_itens}
     Wait Until Element Is Visible         ${btn_next}                         ${delay}
     Sleep    1   
-    Capture Page Screenshot               ${path}   
+    Capture Page Screenshot               ${evidencia_eccomerce}   
     Click Button                          ${btn_next}
 
 
@@ -201,7 +201,7 @@ Pagamento
         Input Text                         ${safepay_username}                ${new_user}[name]     
         Input Text                         ${safepay_password}                ${new_user}[password]     
         Sleep    1       
-        Capture Page Screenshot            ${path}       
+        Capture Page Screenshot            ${evidencia_eccomerce}       
         Click Button                       ${button_pay_now}       
         ELSE       
         Click Element                      ${btn_masterCredit}                   
@@ -211,10 +211,8 @@ Pagamento
         Select From List By Label          ${name_mmListbox}                  ${credit_card}[month]
         Select From List By Label          ${name_yyyyListbox}                ${credit_card}[year]
         Input Text                         ${name_cardholder_name}            ${usuario_cadastrado}
-        Click Element                      ${name_save_master_credit}
         Sleep    1
-        Capture Page Screenshot            ${path}
-        Sleep    1
+        Capture Page Screenshot            ${evidencia_eccomerce}
         Click Button                       ${id_pay_now_btn_ManualPayment}    
     END
     
@@ -222,7 +220,7 @@ Pagamento
 Validar pedido
     Wait Until Element Is Visible          ${message_finish}                   ${delay}
     Sleep    1       
-    Capture Page Screenshot                ${path}       
+    Capture Page Screenshot                ${evidencia_eccomerce}       
     Element Text Should Be                 ${message_finish}                   ${expected_message}
     ${tracking_number}    Get Text         ${id_trackingNumberLabel}           
     ${order_number}    Get Text            ${id_orderNumberLabel}           
