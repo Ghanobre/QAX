@@ -1,0 +1,30 @@
+{"level":30,"time":"2024-05-22T00:14:44.303Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Listening on 52894"}
+(node:9816) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-05-22T00:14:44.882Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-22T00:14:44.883Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-22T00:14:44.887Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-22T00:14:44.887Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-22T00:14:44.892Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-22T00:14:47.351Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-05-22T00:14:47.352Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-22T00:14:47.352Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-22T00:14:47.365Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-22T00:14:47.365Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-22T00:14:47.365Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Trace file: "}
+{"level":30,"time":"2024-05-22T00:14:47.390Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
+{"level":30,"time":"2024-05-22T00:14:47.390Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-22T00:14:47.405Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-22T00:14:47.406Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-22T00:14:49.697Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-22T00:14:49.722Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active page"}
+{"level":30,"time":"2024-05-22T00:14:53.837Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-22T00:15:03.285Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getText"}
+{"level":30,"time":"2024-05-22T00:15:03.286Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"wp_resultados\"]/div[1]/div in page."}
+{"level":30,"time":"2024-05-22T00:15:03.355Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Retrieved text for element xpath=//*[@id=\"wp_resultados\"]/div[1]/div containing Resultados\nResultado Concurso 3109 (21/05/2024)\nBuscar por concurso \n< Anterior\nPróximo >"}
+{"level":30,"time":"2024-05-22T00:15:03.355Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getText"}
+{"level":30,"time":"2024-05-22T00:15:36.448Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getText"}
+{"level":30,"time":"2024-05-22T00:15:36.448Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"wp_resultados\"]/div[1]/div/h2/span in page."}
+{"level":30,"time":"2024-05-22T00:15:36.474Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Retrieved text for element xpath=//*[@id=\"wp_resultados\"]/div[1]/div/h2/span containing Concurso 3109 (21/05/2024)"}
+{"level":30,"time":"2024-05-22T00:15:36.474Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getText"}
+{"level":30,"time":"2024-05-22T00:39:10.835Z","pid":9816,"hostname":"CPX-IEBDTQKYZXG","msg":"Removed page=bbb3d487-d47d-425d-a76b-821850d06d63 from context=f1365327-0e47-43a1-8e88-bf321fed781f page stack"}
