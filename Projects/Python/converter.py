@@ -25,7 +25,7 @@ def resultado3(array0):
         for elemento in array1:
                 if elemento in array0:
                         posicoes_encontradas +=1
-        return('Jogo1 Ana',array0,posicoes_encontradas,array1)
+        return('Jogo1 Ana',array0,posicoes_encontradas)
 
 def resultado4(array0):
         array1 = (2,4,5,6,8,9,11,12,15,16,18,20,22,23,25)

@@ -1,40 +1,798 @@
-{"level":30,"time":"2024-05-21T23:54:52.411Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Listening on 49912"}
-(node:21872) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-05-25T00:29:27.067Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Listening on 54447"}
+(node:19412) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-05-21T23:54:52.781Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-21T23:54:52.781Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-21T23:54:52.786Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-21T23:54:52.786Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-21T23:54:52.791Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2024-05-21T23:54:56.953Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
-{"level":30,"time":"2024-05-21T23:54:56.954Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newBrowser"}
-{"level":30,"time":"2024-05-21T23:54:56.953Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2024-05-21T23:54:56.977Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newContext"}
-{"level":30,"time":"2024-05-21T23:54:56.977Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-05-21T23:54:56.977Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Trace file: "}
-{"level":30,"time":"2024-05-21T23:54:56.992Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
-{"level":30,"time":"2024-05-21T23:54:56.992Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newContext"}
-{"level":30,"time":"2024-05-21T23:54:57.000Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newPage"}
-{"level":30,"time":"2024-05-21T23:54:57.000Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-05-21T23:54:57.743Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Video path: undefined"}
-{"level":30,"time":"2024-05-21T23:54:57.744Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active page"}
-{"level":30,"time":"2024-05-21T23:55:01.337Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newPage"}
-{"level":30,"time":"2024-05-21T23:55:37.867Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getText"}
-{"level":30,"time":"2024-05-21T23:55:37.867Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"wp_resultados\"]/div[1]/div in page."}
-{"level":50,"time":"2024-05-21T23:55:47.871Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","err":{"type":"TimeoutError","message":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//*[@id=\"wp_resultados\"]/div[1]/div')\u001b[22m\n","stack":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//*[@id=\"wp_resultados\"]/div[1]/div')\u001b[22m\n\n    at getTextContent (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9466:33)\n    at getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:9480:21)\n    at async PlaywrightServer.getText (C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js:10708:28)","name":"TimeoutError"},"msg":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//*[@id=\"wp_resultados\"]/div[1]/div')\u001b[22m\n"}
-{"level":30,"time":"2024-05-21T23:55:47.871Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  getText"}
+{"level":30,"time":"2024-05-25T00:29:27.322Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-25T00:29:27.323Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-25T00:29:27.327Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-25T00:29:27.327Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-25T00:29:27.334Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-25T00:29:32.219Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-05-25T00:29:32.220Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-25T00:29:32.220Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-25T00:29:32.237Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-25T00:29:32.237Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-25T00:29:32.237Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Trace file: "}
+{"level":30,"time":"2024-05-25T00:29:32.289Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
+{"level":30,"time":"2024-05-25T00:29:32.290Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-25T00:29:32.311Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-25T00:29:32.311Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-25T00:29:37.006Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-25T00:29:37.006Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active page"}
+{"level":30,"time":"2024-05-25T00:29:39.866Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-25T00:29:39.872Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-05-25T00:29:39.873Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"wp_resultados\"]/div[1]/div/h2/span in page."}
+{"level":30,"time":"2024-05-25T00:30:13.106Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Removed page=48892929-72ab-4079-a9da-c8f6afd61edb from context=0148165a-198f-44bb-b570-11d520d90ee7 page stack"}
+{"level":30,"time":"2024-05-25T00:30:13.107Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
 ================= Original suppressed error =================
-locator.elementHandle: Timeout 10000ms exceeded.
+locator.waitFor: Target page, context or browser has been closed
 Call log:
-  [2m- waiting for locator('//*[@id="wp_resultados"]/div[1]/div')[22m
+  [2m- waiting for locator('//*[@id="wp_resultados"]/div[1]/div/h2/span') to be visible[22m
 
-    at getTextContent (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9466:33)
-    at getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9480:21)
-    at async PlaywrightServer.getText (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28) {
-  name: 'TimeoutError'
-}
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9194:19)
+    at async PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28)
 =============================================================
-{"level":30,"time":"2024-05-21T23:55:47.899Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2024-05-21T23:55:47.899Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","Take screenshot with options: ":{"path":"C:\\QAX\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2024-05-21T23:55:48.018Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2024-05-22T02:09:54.612Z","pid":21872,"hostname":"CPX-IEBDTQKYZXG","msg":"Removed page=4e76bee4-82de-463e-a42b-cb8168fb4272 from context=d6aa4951-23e9-49ae-a6d2-36d1c0b9757e page stack"}
+{"level":30,"time":"2024-05-25T00:30:13.283Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.283Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.349Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.349Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.418Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.418Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.475Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.475Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.534Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.534Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.588Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.588Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.642Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.642Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.700Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.701Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.764Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.764Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.848Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.848Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.904Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.904Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:13.953Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:13.954Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.004Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.004Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.060Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.060Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.112Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.112Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.161Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.162Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.214Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.214Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.292Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.292Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.357Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.357Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.416Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.416Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+{"level":30,"time":"2024-05-25T00:30:14.481Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.482Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.556Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.556Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.621Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.622Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.676Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.676Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.769Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.769Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.835Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.835Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.919Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.919Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:14.998Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:14.998Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.055Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.056Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.128Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.128Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.201Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.202Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.275Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.275Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.343Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.343Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.418Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.418Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.506Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.506Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.587Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.587Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.639Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.639Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.691Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.692Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.758Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.758Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.819Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.820Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.871Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.871Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.932Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.933Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:15.992Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:15.993Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:16.055Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:16.055Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:16.121Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:16.121Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:16.199Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:16.199Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:16.278Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:16.278Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:16.333Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:16.334Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:16.389Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:16.389Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:16.447Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:16.447Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2024-05-25T00:30:16.507Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method waitForElementState"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at findLocator (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8671:3)
+    at waitForElementState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:9192:25)
+    at PlaywrightServer.waitForElementsState (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+=============================================================
+{"level":30,"time":"2024-05-25T00:30:16.507Z","pid":19412,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  waitForElementState"}

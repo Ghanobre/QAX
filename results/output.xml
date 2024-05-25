@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-21T21:31:50.481097" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-24T21:30:29.649120" rpa="false" schemaversion="5">
 <suite id="s1" name="QAX" source="C:\QAX">
 <suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
 <suite id="s1-s1-s1" name="Python" source="C:\QAX\Projects\Python">
 <suite id="s1-s1-s1-s1" name="Teste" source="C:\QAX\Projects\Python\teste.robot">
 <test id="s1-s1-s1-s1-t1" name="teste" line="9">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-05-21T21:31:53.601663" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\bf868d1a-cce0-46c4-b2ff-9819d4fdaccc"}</msg>
-<msg time="2024-05-21T21:31:56.394039" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\bf868d1a-cce0-46c4-b2ff-9819d4fdaccc"}</msg>
+<msg time="2024-05-24T21:30:33.955683" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\4929f7b5-e2e8-478d-886e-4dfb9aa848f9"}</msg>
+<msg time="2024-05-24T21:30:38.781992" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\4929f7b5-e2e8-478d-886e-4dfb9aa848f9"}</msg>
 <arg>chromium</arg>
-<arg>headless=true</arg>
+<arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-05-21T21:31:53.601663" elapsed="2.792376"/>
+<status status="PASS" start="2024-05-24T21:30:33.955683" elapsed="4.831830"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2024-05-21T21:31:56.400255" level="INFO">{
+<msg time="2024-05-24T21:30:38.815018" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -26,127 +26,142 @@
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
   "viewport": {
-    "height": 1080,
-    "width": 1920
+    "width": 1920,
+    "height": 1080
   }
 }</msg>
-<msg time="2024-05-21T21:31:56.417643" level="INFO">Successfully created context. </msg>
-<msg time="2024-05-21T21:31:56.417643" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<msg time="2024-05-24T21:30:38.869443" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-24T21:30:38.870237" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-05-21T21:31:56.397171" elapsed="0.020472"/>
+<status status="PASS" start="2024-05-24T21:30:38.814477" elapsed="0.055760"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-05-21T21:31:58.880026" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
+<msg time="2024-05-24T21:30:44.358886" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
 <arg>url=https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-05-21T21:31:56.433474" elapsed="2.447869"/>
+<status status="PASS" start="2024-05-24T21:30:38.876242" elapsed="5.484050"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-05-24T21:30:44.402463" level="INFO">Waited for Element with selector xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span at state visible</msg>
+<arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
+<arg>visible</arg>
+<arg>timeout=60</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-05-24T21:30:44.360292" elapsed="0.042680"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-24T21:30:49.404035" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-24T21:30:44.403797" elapsed="5.000777"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-05-21T21:32:09.054607" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2024-05-21T21:32:09.054607" level="INFO">See also file:///C:/QAX/results/playwright-log-1716337910715530600.txt for additional details.</msg>
-<msg time="2024-05-21T21:32:09.054607" level="FAIL">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('//*[@id="wp_resultados"]/div[1]/div/h2/span')[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
+<msg time="2024-05-24T21:30:49.448374" level="INFO">Text: 'Concurso 3112 (24/05/2024)'</msg>
+<msg time="2024-05-24T21:30:49.448899" level="INFO">${concurso} = Concurso 3112 (24/05/2024)</msg>
 <var>${concurso}</var>
 <arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="FAIL" start="2024-05-21T21:31:58.882351" elapsed="10.205619">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('//*[@id="wp_resultados"]/div[1]/div/h2/span')[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+<status status="PASS" start="2024-05-24T21:30:49.405697" elapsed="0.043841"/>
 </kw>
 <kw name="Get Text" owner="Browser">
+<msg time="2024-05-24T21:30:49.476187" level="INFO">Text: '010203050708091112151618192022'</msg>
+<msg time="2024-05-24T21:30:49.476714" level="INFO">${log} = 010203050708091112151618192022</msg>
 <var>${log}</var>
 <arg>xpath=//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.450043" elapsed="0.027193"/>
 </kw>
 <kw name="Transformar Valor" owner="converter">
+<msg time="2024-05-24T21:30:49.479050" level="INFO">${novo} = [1, 2, 3, 5, 7, 8, 9, 11, 12, 15, 16, 18, 19, 20, 22]</msg>
 <var>${novo}</var>
 <arg>${log}</arg>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.478289" elapsed="0.000761"/>
 </kw>
 <kw name="Resultado 1" owner="converter">
+<msg time="2024-05-24T21:30:49.480900" level="INFO">${jogo1_gus} = ('Jogo1 Gus', [1, 2, 3, 5, 7, 8, 9, 11, 12, 15, 16, 18, 19, 20, 22], 8)</msg>
 <var>${jogo1_gus}</var>
 <arg>${novo}</arg>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.480371" elapsed="0.000529"/>
 </kw>
 <kw name="Resultado 2" owner="converter">
+<msg time="2024-05-24T21:30:49.482499" level="INFO">${jogo2_gus} = ('Jogo2 Gus', [1, 2, 3, 5, 7, 8, 9, 11, 12, 15, 16, 18, 19, 20, 22], 9)</msg>
 <var>${jogo2_gus}</var>
 <arg>${novo}</arg>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.481960" elapsed="0.000866"/>
 </kw>
 <kw name="Resultado 3" owner="converter">
+<msg time="2024-05-24T21:30:49.483929" level="INFO">${jogo1_ana} = ('Jogo1 Ana', [1, 2, 3, 5, 7, 8, 9, 11, 12, 15, 16, 18, 19, 20, 22], 10)</msg>
 <var>${jogo1_ana}</var>
 <arg>${novo}</arg>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.483332" elapsed="0.001406"/>
 </kw>
 <kw name="Resultado 4" owner="converter">
+<msg time="2024-05-24T21:30:49.487328" level="INFO">${jogo2_ana} = ('Jogo2 Ana', [1, 2, 3, 5, 7, 8, 9, 11, 12, 15, 16, 18, 19, 20, 22], 11)</msg>
 <var>${jogo2_ana}</var>
 <arg>${novo}</arg>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.486811" elapsed="0.001535"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${concurso}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-24T21:30:49.489358" elapsed="0.002624"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo1_gus}</arg>
 <arg>no_newline=false</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.492488" elapsed="0.001029"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo2_gus}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.494022" elapsed="0.000531"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo1_ana}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.494815" elapsed="0.001038"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo2_ana}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-05-21T21:32:09.087970" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T21:30:49.496628" elapsed="0.000507"/>
 </kw>
-<status status="FAIL" start="2024-05-21T21:31:53.596672" elapsed="15.491298">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('//*[@id="wp_resultados"]/div[1]/div/h2/span')[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+<status status="PASS" start="2024-05-24T21:30:33.949677" elapsed="15.547721"/>
 </test>
 <doc>Automação lotofacil</doc>
-<status status="FAIL" start="2024-05-21T21:31:50.544374" elapsed="18.609385"/>
+<status status="PASS" start="2024-05-24T21:30:29.720117" elapsed="19.929235"/>
 </suite>
-<status status="FAIL" start="2024-05-21T21:31:50.529022" elapsed="18.632301"/>
+<status status="PASS" start="2024-05-24T21:30:29.716402" elapsed="19.943709"/>
 </suite>
-<status status="FAIL" start="2024-05-21T21:31:50.529022" elapsed="18.634299"/>
+<status status="PASS" start="2024-05-24T21:30:29.711936" elapsed="19.950540"/>
 </suite>
-<status status="FAIL" start="2024-05-21T21:31:50.498058" elapsed="18.667264"/>
+<status status="PASS" start="2024-05-24T21:30:29.678999" elapsed="19.985389"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="QAX">QAX</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Python">QAX.Projects.Python</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Teste">QAX.Projects.Python.Teste</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="QAX">QAX</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Python">QAX.Projects.Python</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Teste">QAX.Projects.Python.Teste</stat>
 </suite>
 </statistics>
 <errors>
