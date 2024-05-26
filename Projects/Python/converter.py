@@ -12,7 +12,7 @@ def resultado1(array0):
         return('Jogo1 Gus',array0,posicoes_encontradas)
 
 def resultado2(array0):
-        array1 = (1,4,5,6,8,9,11,12,13,16,19,20,23,24,25)
+        array1 = (1,3,5,7,8,9,11,13,15,17,19,20,21,23,25)
         posicoes_encontradas = 0
         for elemento in array1:
                 if elemento in array0:
