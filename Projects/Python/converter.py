@@ -9,7 +9,7 @@ def resultado1(array0):
         for elemento in array1:
                 if elemento in array0:
                         posicoes_encontradas +=1
-        return('Jogo1 Gus',array0,posicoes_encontradas)
+        return('Jogo1 Gus',array1,posicoes_encontradas)
 
 def resultado2(array0):
         array1 = (1,3,5,7,8,9,11,13,15,17,19,20,21,23,25)
@@ -17,7 +17,7 @@ def resultado2(array0):
         for elemento in array1:
                 if elemento in array0:
                         posicoes_encontradas +=1
-        return('Jogo2 Gus',array0,posicoes_encontradas)
+        return('Jogo2 Gus',array1,posicoes_encontradas)
 
 def resultado3(array0):
         array1 = (1,3,5,8,9,10,12,13,15,16,18,20,21,23,24)
@@ -25,7 +25,7 @@ def resultado3(array0):
         for elemento in array1:
                 if elemento in array0:
                         posicoes_encontradas +=1
-        return('Jogo1 Ana',array0,posicoes_encontradas)
+        return('Jogo1 Ana',array1,posicoes_encontradas)
 
 def resultado4(array0):
         array1 = (2,4,5,6,8,9,11,12,15,16,18,20,22,23,25)
@@ -33,4 +33,4 @@ def resultado4(array0):
         for elemento in array1:
                 if elemento in array0:
                         posicoes_encontradas +=1
-        return('Jogo2 Ana',array0,posicoes_encontradas)
+        return('Jogo2 Ana',array1,posicoes_encontradas)

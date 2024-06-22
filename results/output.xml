@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-26T19:58:30.132697" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-11T21:49:14.200405" rpa="false" schemaversion="5">
 <suite id="s1" name="QAX" source="C:\QAX">
 <suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
 <suite id="s1-s1-s1" name="Python" source="C:\QAX\Projects\Python">
 <suite id="s1-s1-s1-s1" name="Teste" source="C:\QAX\Projects\Python\teste.robot">
 <test id="s1-s1-s1-s1-t1" name="teste" line="9">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-05-26T19:58:33.739108" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\430b9490-c819-4153-ba03-c94ca2de41d0"}</msg>
-<msg time="2024-05-26T19:58:36.863906" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\430b9490-c819-4153-ba03-c94ca2de41d0"}</msg>
+<msg time="2024-06-11T21:49:14.982238" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\4bc73289-aa5d-4261-bbaa-d87573899124"}</msg>
+<msg time="2024-06-11T21:49:15.435799" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\4bc73289-aa5d-4261-bbaa-d87573899124"}</msg>
 <arg>chromium</arg>
 <arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-05-26T19:58:33.739108" elapsed="3.124798"/>
+<status status="PASS" start="2024-06-11T21:49:14.981237" elapsed="0.454562"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2024-05-26T19:58:36.928704" level="INFO">{
+<msg time="2024-06-11T21:49:15.437799" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -30,126 +30,126 @@
     "width": 1920
   }
 }</msg>
-<msg time="2024-05-26T19:58:36.954266" level="INFO">Successfully created context. </msg>
-<msg time="2024-05-26T19:58:36.954266" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<msg time="2024-06-11T21:49:15.450842" level="INFO">Successfully created context. </msg>
+<msg time="2024-06-11T21:49:15.450842" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-05-26T19:58:36.928704" elapsed="0.025562"/>
+<status status="PASS" start="2024-06-11T21:49:15.436801" elapsed="0.015040"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-05-26T19:58:45.802283" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
+<msg time="2024-06-11T21:49:17.875932" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
 <arg>url=https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-05-26T19:58:36.954266" elapsed="8.848552"/>
+<status status="PASS" start="2024-06-11T21:49:15.451841" elapsed="2.424091"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-05-26T19:58:45.840649" level="INFO">Waited for Element with selector xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span at state visible</msg>
+<msg time="2024-06-11T21:49:17.907497" level="INFO">Waited for Element with selector xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span at state visible</msg>
 <arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
 <arg>visible</arg>
 <arg>timeout=60</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-05-26T19:58:45.803461" elapsed="0.037188"/>
+<status status="PASS" start="2024-06-11T21:49:17.876934" elapsed="0.030563"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-26T19:58:50.840870" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-06-11T21:49:22.908688" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-26T19:58:45.840649" elapsed="5.000221"/>
+<status status="PASS" start="2024-06-11T21:49:17.908494" elapsed="5.000194"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-05-26T19:58:50.873698" level="INFO">Text: 'Concurso 3113 (25/05/2024)'</msg>
-<msg time="2024-05-26T19:58:50.873698" level="INFO">${concurso} = Concurso 3113 (25/05/2024)</msg>
+<msg time="2024-06-11T21:49:22.932652" level="INFO">Text: 'Concurso 3126 (11/06/2024)'</msg>
+<msg time="2024-06-11T21:49:22.932652" level="INFO">${concurso} = Concurso 3126 (11/06/2024)</msg>
 <var>${concurso}</var>
 <arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-05-26T19:58:50.840870" elapsed="0.032828"/>
+<status status="PASS" start="2024-06-11T21:49:22.908688" elapsed="0.023964"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-05-26T19:58:50.898473" level="INFO">Text: '010305060809111416182122232425'</msg>
-<msg time="2024-05-26T19:58:50.898473" level="INFO">${log} = 010305060809111416182122232425</msg>
+<msg time="2024-06-11T21:49:22.947165" level="INFO">Text: '010405060709101314161921232425'</msg>
+<msg time="2024-06-11T21:49:22.947165" level="INFO">${log} = 010405060709101314161921232425</msg>
 <var>${log}</var>
 <arg>xpath=//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-05-26T19:58:50.873698" elapsed="0.025801"/>
+<status status="PASS" start="2024-06-11T21:49:22.933651" elapsed="0.013514"/>
 </kw>
 <kw name="Transformar Valor" owner="converter">
-<msg time="2024-05-26T19:58:50.900498" level="INFO">${novo} = [1, 3, 5, 6, 8, 9, 11, 14, 16, 18, 21, 22, 23, 24, 25]</msg>
+<msg time="2024-06-11T21:49:22.948165" level="INFO">${novo} = [1, 4, 5, 6, 7, 9, 10, 13, 14, 16, 19, 21, 23, 24, 25]</msg>
 <var>${novo}</var>
 <arg>${log}</arg>
-<status status="PASS" start="2024-05-26T19:58:50.899499" elapsed="0.000999"/>
+<status status="PASS" start="2024-06-11T21:49:22.948165" elapsed="0.000000"/>
 </kw>
 <kw name="Resultado 1" owner="converter">
-<msg time="2024-05-26T19:58:50.901498" level="INFO">${jogo1_gus} = ('Jogo1 Gus', [1, 3, 5, 6, 8, 9, 11, 14, 16, 18, 21, 22, 23, 24, 25], 8)</msg>
+<msg time="2024-06-11T21:49:22.949671" level="INFO">${jogo1_gus} = ('Jogo1 Gus', (2, 3, 4, 6, 7, 10, 11, 14, 15, 17, 18, 19, 21, 22, 25), 8)</msg>
 <var>${jogo1_gus}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-05-26T19:58:50.900498" elapsed="0.001000"/>
+<status status="PASS" start="2024-06-11T21:49:22.948165" elapsed="0.001506"/>
 </kw>
 <kw name="Resultado 2" owner="converter">
-<msg time="2024-05-26T19:58:50.902513" level="INFO">${jogo2_gus} = ('Jogo2 Gus', [1, 3, 5, 6, 8, 9, 11, 14, 16, 18, 21, 22, 23, 24, 25], 9)</msg>
+<msg time="2024-06-11T21:49:22.950677" level="INFO">${jogo2_gus} = ('Jogo2 Gus', (1, 3, 5, 7, 8, 9, 11, 13, 15, 17, 19, 20, 21, 23, 25), 9)</msg>
 <var>${jogo2_gus}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-05-26T19:58:50.901498" elapsed="0.001015"/>
+<status status="PASS" start="2024-06-11T21:49:22.949671" elapsed="0.001006"/>
 </kw>
 <kw name="Resultado 3" owner="converter">
-<msg time="2024-05-26T19:58:50.902513" level="INFO">${jogo1_ana} = ('Jogo1 Ana', [1, 3, 5, 6, 8, 9, 11, 14, 16, 18, 21, 22, 23, 24, 25], 10)</msg>
+<msg time="2024-06-11T21:49:22.951680" level="INFO">${jogo1_ana} = ('Jogo1 Ana', (1, 3, 5, 8, 9, 10, 12, 13, 15, 16, 18, 20, 21, 23, 24), 9)</msg>
 <var>${jogo1_ana}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-05-26T19:58:50.902513" elapsed="0.000981"/>
+<status status="PASS" start="2024-06-11T21:49:22.951680" elapsed="0.000000"/>
 </kw>
 <kw name="Resultado 4" owner="converter">
-<msg time="2024-05-26T19:58:50.903494" level="INFO">${jogo2_ana} = ('Jogo2 Ana', [1, 3, 5, 6, 8, 9, 11, 14, 16, 18, 21, 22, 23, 24, 25], 10)</msg>
+<msg time="2024-06-11T21:49:22.952677" level="INFO">${jogo2_ana} = ('Jogo2 Ana', (2, 4, 5, 6, 8, 9, 11, 12, 15, 16, 18, 20, 22, 23, 25), 7)</msg>
 <var>${jogo2_ana}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-05-26T19:58:50.903494" elapsed="0.001000"/>
+<status status="PASS" start="2024-06-11T21:49:22.952677" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${concurso}</arg>
+<arg>${concurso} \n "............."${novo}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-26T19:58:50.904494" elapsed="0.001011"/>
+<status status="PASS" start="2024-06-11T21:49:22.952677" elapsed="0.001001"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo1_gus}</arg>
 <arg>no_newline=false</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-26T19:58:50.905505" elapsed="0.000991"/>
+<status status="PASS" start="2024-06-11T21:49:22.953678" elapsed="0.001002"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo2_gus}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-26T19:58:50.906496" elapsed="0.001002"/>
+<status status="PASS" start="2024-06-11T21:49:22.954680" elapsed="0.000998"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo1_ana}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-26T19:58:50.907498" elapsed="0.000000"/>
+<status status="PASS" start="2024-06-11T21:49:22.955678" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${jogo2_ana}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-26T19:58:50.908495" elapsed="0.000000"/>
+<status status="PASS" start="2024-06-11T21:49:22.955678" elapsed="0.000999"/>
 </kw>
-<status status="PASS" start="2024-05-26T19:58:33.735087" elapsed="17.174903"/>
+<status status="PASS" start="2024-06-11T21:49:14.977904" elapsed="7.978773"/>
 </test>
 <doc>Automação lotofacil</doc>
-<status status="PASS" start="2024-05-26T19:58:30.204346" elapsed="20.805830"/>
+<status status="PASS" start="2024-06-11T21:49:14.248543" elapsed="8.790535"/>
 </suite>
-<status status="PASS" start="2024-05-26T19:58:30.200669" elapsed="20.819237"/>
+<status status="PASS" start="2024-06-11T21:49:14.246543" elapsed="8.799583"/>
 </suite>
-<status status="PASS" start="2024-05-26T19:58:30.187681" elapsed="20.834024"/>
+<status status="PASS" start="2024-06-11T21:49:14.244548" elapsed="8.803578"/>
 </suite>
-<status status="PASS" start="2024-05-26T19:58:30.171990" elapsed="20.850596"/>
+<status status="PASS" start="2024-06-11T21:49:14.228961" elapsed="8.821674"/>
 </suite>
 <statistics>
 <total>
