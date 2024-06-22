@@ -13,7 +13,7 @@ ${delay}                                  10
 ${qtd_itens}                              5 ITEMS
 
 #VARIÁVEIS DE CONTROLE dos IF's
-${new_account}                            SIM        #NOVO CLIENTE = SIM
+${new_account}                            NAO        #NOVO CLIENTE = SIM
 ${tipo_pagamento}                         cartao     # safepay ou cartao
 
 #VARIÁVEIS API
@@ -21,7 +21,7 @@ ${api_correios}                           https://brasilapi.com.br/api/
 &{headers}                                accept=application/json
 
 #DICIONÁRIOS DE MASSAS DE DAODS
-&{new_user}                               name=Usuarioteste41    #Alterar a massa para não dar erro    
+&{new_user}                               name=Usuarioteste3    #Alterar a massa para não dar erro    
 ...                                       password=12Qazxsw    
 ...                                       first_name=Usuario    
 ...                                       last_name=teste    
@@ -34,7 +34,7 @@ ${api_correios}                           https://brasilapi.com.br/api/
 ...                                       year=2033
 
 #valor fixo
-${usuario_cadastrado}                     Usuarioteste28
+${usuario_cadastrado}                     Usuarioteste3
 
 
 #LOCATORS
@@ -83,6 +83,8 @@ ${name_passwordInOrderPayment}            css=[name="passwordInOrderPayment"]
 ${id_login_btn}                           css=[id="login_btn"]
 ${class_hi-use}                           css=[class="hi-user containMiniTitle ng-binding"]
 ${name_save_master_credit}                css=[name="save_master_credit"]
+${label_mensagem}                         //label[contains(text(),'User name already exists')]
+${mensagem}                               User name already exists
 
 
 *** Keywords ***
@@ -178,7 +180,21 @@ Confirmar cadastro
     Capture Page Screenshot               ${evidencia_eccomerce}
     Click Button                          ${btn_next}
 
-#Validar mensagem impeditiva  
+Usario invalido
+    Click Button                      ${button_registration}
+    Account details
+    Personal details
+    Consultar cep
+    Endereço 
+
+Validar mensagem impeditiva
+    Click Element                         ${class_checkboxText}
+    Sleep    1    
+    Capture Page Screenshot               ${evidencia_eccomerce}              
+    Click Button                          ${button_register}            
+    Wait Until Element Is Visible         ${label_mensagem}                   ${delay}       
+    Element Should Contain                ${label_mensagem}                         ${mensagem}
+    
 
 logar usuario  
     Input Text                            ${name_usernameInOrderPayment}      ${usuario_cadastrado}
