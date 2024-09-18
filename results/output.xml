@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-09-08T12:31:07.750715" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-09-18T13:14:00.899829" rpa="false" schemaversion="5">
 <suite id="s1" name="QAX" source="C:\QAX">
 <suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
 <suite id="s1-s1-s1" name="Python" source="C:\QAX\Projects\Python">
 <suite id="s1-s1-s1-s1" name="Teste" source="C:\QAX\Projects\Python\teste.robot">
 <test id="s1-s1-s1-s1-t1" name="teste" line="9">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-09-08T12:31:12.190190" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\054f6a0b-6373-4a72-9a86-60a7ecfe4b37"}</msg>
-<msg time="2024-09-08T12:31:17.206181" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\054f6a0b-6373-4a72-9a86-60a7ecfe4b37"}</msg>
+<msg time="2024-09-18T13:14:05.044940" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\cf3d96dc-3bd8-4abd-9807-b3d021f15c96"}</msg>
+<msg time="2024-09-18T13:14:09.847082" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\cf3d96dc-3bd8-4abd-9807-b3d021f15c96"}</msg>
 <arg>chromium</arg>
 <arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-09-08T12:31:12.190190" elapsed="5.019498"/>
+<status status="PASS" start="2024-09-18T13:14:05.044940" elapsed="4.802142"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2024-09-08T12:31:17.214174" level="INFO">{
+<msg time="2024-09-18T13:14:09.847082" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -30,126 +30,114 @@
     "height": 1080
   }
 }</msg>
-<msg time="2024-09-08T12:31:17.231419" level="INFO">Successfully created context. </msg>
-<msg time="2024-09-08T12:31:17.231419" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<msg time="2024-09-18T13:14:09.902400" level="INFO">Successfully created context. </msg>
+<msg time="2024-09-18T13:14:09.902400" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-09-08T12:31:17.214174" elapsed="0.017245"/>
+<status status="PASS" start="2024-09-18T13:14:09.847082" elapsed="0.056762"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-09-08T12:31:28.578734" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
+<msg time="2024-09-18T13:14:19.599500" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
 <arg>url=https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-09-08T12:31:17.249428" elapsed="11.329306"/>
+<status status="PASS" start="2024-09-18T13:14:09.948472" elapsed="9.652492"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-09-08T12:31:28.637777" level="INFO">Waited for Element with selector xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span at state visible</msg>
+<msg time="2024-09-18T13:14:19.643387" level="INFO">Waited for Element with selector xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span at state visible</msg>
 <arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
 <arg>visible</arg>
 <arg>timeout=60</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-09-08T12:31:28.584279" elapsed="0.053498"/>
+<status status="PASS" start="2024-09-18T13:14:19.601583" elapsed="0.042607"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-08T12:31:33.649145" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-09-18T13:14:24.645869" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-08T12:31:28.648798" elapsed="5.000347"/>
+<status status="PASS" start="2024-09-18T13:14:19.645084" elapsed="5.000974"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-09-08T12:31:33.715197" level="INFO">Text: 'Concurso 3189 (23/08/2024)'</msg>
-<msg time="2024-09-08T12:31:33.715197" level="INFO">${concurso} = Concurso 3189 (23/08/2024)</msg>
+<msg time="2024-09-18T13:14:24.692859" level="INFO">Text: 'Concurso 3197 (17/09/2024)'</msg>
+<msg time="2024-09-18T13:14:24.692859" level="INFO">${concurso} = Concurso 3197 (17/09/2024)</msg>
 <var>${concurso}</var>
 <arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-09-08T12:31:33.649145" elapsed="0.066052"/>
+<status status="PASS" start="2024-09-18T13:14:24.646058" elapsed="0.046801"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-09-08T12:31:33.751810" level="INFO">Text: '020407091112131518192021232425'</msg>
-<msg time="2024-09-08T12:31:33.751810" level="INFO">${log} = 020407091112131518192021232425</msg>
+<msg time="2024-09-18T13:14:24.727733" level="INFO">Text: '030406091112131516181920222425'</msg>
+<msg time="2024-09-18T13:14:24.727733" level="INFO">${log} = 030406091112131516181920222425</msg>
 <var>${log}</var>
 <arg>xpath=//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-09-08T12:31:33.715197" elapsed="0.038792"/>
+<status status="PASS" start="2024-09-18T13:14:24.692859" elapsed="0.035876"/>
 </kw>
 <kw name="Transformar Valor" owner="converter">
-<msg time="2024-09-08T12:31:33.757120" level="INFO">${novo} = [2, 4, 7, 9, 11, 12, 13, 15, 18, 19, 20, 21, 23, 24, 25]</msg>
+<msg time="2024-09-18T13:14:24.729677" level="INFO">${novo} = [3, 4, 6, 9, 11, 12, 13, 15, 16, 18, 19, 20, 22, 24, 25]</msg>
 <var>${novo}</var>
 <arg>${log}</arg>
-<status status="PASS" start="2024-09-08T12:31:33.755020" elapsed="0.002474"/>
+<status status="PASS" start="2024-09-18T13:14:24.729677" elapsed="0.000000"/>
 </kw>
-<kw name="Resultado 1" owner="converter">
-<msg time="2024-09-08T12:31:33.759174" level="INFO">${jogo1_gus} = ('Jogo1 Gus', (2, 3, 4, 6, 7, 10, 11, 14, 15, 17, 18, 19, 21, 22, 25), 9)</msg>
-<var>${jogo1_gus}</var>
+<kw name="Jogo 1" owner="converter">
+<msg time="2024-09-18T13:14:24.729677" level="INFO">${jogo1} = ('jogo1', (2, 3, 5, 6, 8, 9, 11, 13, 15, 16, 17, 21, 22, 23, 25), 9)</msg>
+<var>${jogo1}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-09-08T12:31:33.758134" elapsed="0.001563"/>
+<status status="PASS" start="2024-09-18T13:14:24.729677" elapsed="0.000000"/>
 </kw>
-<kw name="Resultado 2" owner="converter">
-<msg time="2024-09-08T12:31:33.761274" level="INFO">${jogo2_gus} = ('Jogo2 Gus', (1, 3, 5, 7, 8, 9, 11, 13, 15, 17, 19, 20, 21, 23, 25), 10)</msg>
-<var>${jogo2_gus}</var>
+<kw name="Jogo 2" owner="converter">
+<msg time="2024-09-18T13:14:24.729677" level="INFO">${jogo2} = ('Jogo2', (2, 3, 5, 6, 9, 10, 11, 12, 16, 17, 19, 20, 21, 22, 24), 10)</msg>
+<var>${jogo2}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-09-08T12:31:33.760747" elapsed="0.001056"/>
+<status status="PASS" start="2024-09-18T13:14:24.729677" elapsed="0.000000"/>
 </kw>
-<kw name="Resultado 3" owner="converter">
-<msg time="2024-09-08T12:31:33.762591" level="INFO">${jogo1_ana} = ('Jogo1 Ana', (1, 3, 5, 8, 9, 10, 12, 13, 15, 16, 18, 20, 21, 23, 24), 9)</msg>
-<var>${jogo1_ana}</var>
+<kw name="Jogo 3" owner="converter">
+<msg time="2024-09-18T13:14:24.729677" level="INFO">${jogo3} = ('Jogo3', (5, 6, 8, 9, 10, 11, 12, 14, 15, 18, 20, 21, 22, 24, 25), 10)</msg>
+<var>${jogo3}</var>
 <arg>${novo}</arg>
-<status status="PASS" start="2024-09-08T12:31:33.761803" elapsed="0.001360"/>
-</kw>
-<kw name="Resultado 4" owner="converter">
-<msg time="2024-09-08T12:31:33.764196" level="INFO">${jogo2_ana} = ('Jogo2 Ana', (2, 4, 5, 6, 8, 9, 11, 12, 15, 16, 18, 20, 22, 23, 25), 10)</msg>
-<var>${jogo2_ana}</var>
-<arg>${novo}</arg>
-<status status="PASS" start="2024-09-08T12:31:33.763671" elapsed="0.000525"/>
+<status status="PASS" start="2024-09-18T13:14:24.729677" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${concurso} \n "............."${novo}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-08T12:31:33.764732" elapsed="0.001582"/>
+<status status="PASS" start="2024-09-18T13:14:24.729677" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${jogo1_gus}</arg>
-<arg>no_newline=false</arg>
+<arg>${jogo1} no_newline=false</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-08T12:31:33.766836" elapsed="0.000529"/>
+<status status="PASS" start="2024-09-18T13:14:24.729677" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${jogo2_gus}</arg>
+<arg>${jogo2}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-08T12:31:33.767903" elapsed="0.001050"/>
+<status status="PASS" start="2024-09-18T13:14:24.729677" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${jogo1_ana}</arg>
+<arg>${jogo3}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-08T12:31:33.768953" elapsed="0.001359"/>
+<status status="PASS" start="2024-09-18T13:14:24.729677" elapsed="0.011146"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${jogo2_ana}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-09-08T12:31:33.770312" elapsed="0.001515"/>
-</kw>
-<status status="PASS" start="2024-09-08T12:31:12.183374" elapsed="21.588453"/>
+<status status="PASS" start="2024-09-18T13:14:05.044940" elapsed="19.696874"/>
 </test>
 <doc>Automação lotofacil</doc>
-<status status="PASS" start="2024-09-08T12:31:07.906270" elapsed="26.057700"/>
+<status status="PASS" start="2024-09-18T13:14:00.965893" elapsed="23.878378"/>
 </suite>
-<status status="PASS" start="2024-09-08T12:31:07.900851" elapsed="26.073810"/>
+<status status="PASS" start="2024-09-18T13:14:00.949281" elapsed="23.906300"/>
 </suite>
-<status status="PASS" start="2024-09-08T12:31:07.893250" elapsed="26.084426"/>
+<status status="PASS" start="2024-09-18T13:14:00.949281" elapsed="23.909568"/>
 </suite>
-<status status="PASS" start="2024-09-08T12:31:07.832429" elapsed="26.148463"/>
+<status status="PASS" start="2024-09-18T13:14:00.915791" elapsed="23.945065"/>
 </suite>
 <statistics>
 <total>

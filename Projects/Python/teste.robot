@@ -18,13 +18,11 @@ teste
    
     ${log}            Get Text    xpath=//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul
     ${novo}           transformar_valor     ${log}
-    ${jogo1_gus}      Resultado1    ${novo}
-    ${jogo2_gus}      Resultado2    ${novo}
-    ${jogo1_ana}      Resultado3    ${novo}
-    ${jogo2_ana}      Resultado4    ${novo}
-    Log To Console    ${concurso} \n "............."${novo}
-    Log To Console    ${jogo1_gus}    no_newline=false
-    Log To Console    ${jogo2_gus}
-    Log To Console    ${jogo1_ana}
-    Log To Console    ${jogo2_ana} 
+    ${jogo1}          jogo1         ${novo}
+    ${jogo2}          jogo2         ${novo}
+    ${jogo3}          jogo3         ${novo}
+    Log To Console    ${concurso}     \n     "............."${novo}
+    Log To Console    ${jogo1}    no_newline=false
+    Log To Console    ${jogo2}
+    Log To Console    ${jogo3} 
     
