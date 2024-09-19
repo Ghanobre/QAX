@@ -8,7 +8,7 @@ def jogo1(array0):
         for elemento in array1:
                 if elemento in array0:
                         posicoes_encontradas +=1
-        return('jogo1',array1,posicoes_encontradas)
+        return 'jogo1',array1,posicoes_encontradas
 
 def jogo2(array0):
         array1 = (2,3,5,6,9,10,11,12,16,17,19,20,21,22,24)

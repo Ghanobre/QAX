@@ -21,8 +21,10 @@ teste
     ${jogo1}          jogo1         ${novo}
     ${jogo2}          jogo2         ${novo}
     ${jogo3}          jogo3         ${novo}
-    Log To Console    ${concurso}     \n     "............."${novo}
-    Log To Console    ${jogo1}    no_newline=false
-    Log To Console    ${jogo2}
-    Log To Console    ${jogo3} 
+    Log To Console    \n
+    Log To Console    ${concurso}        no_newline=false        
+    Log To Console    'Resultado,'${novo}            no_newline=false
+    Log To Console    ${jogo1}        no_newline=false    
+    Log To Console    ${jogo2}        no_newline=false
+    Log To Console    ${jogo3}        no_newline=false 
     
