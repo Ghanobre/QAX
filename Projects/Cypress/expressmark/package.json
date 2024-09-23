@@ -6,6 +6,6 @@
   "author": "Ghanobre",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "12.2.0"
+    "cypress": "13.10.0"
   }
 }

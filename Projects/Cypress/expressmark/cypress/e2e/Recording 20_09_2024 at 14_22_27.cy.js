@@ -1,0 +1,31 @@
+describe("Recording 20/09/2024 at 14:22:27", () => {
+  it("tests Recording 20/09/2024 at 14:22:27", () => {
+    cy.viewport(1180, 945);
+    cy.visit("https://qa.egerdau.com.br/auth");
+    cy.get("[data-testid='sso-login-button']").click();
+    cy.location("href").should("eq", "https://login.microsoftonline.com/461fd7ef-0eb3-4420-b044-310dc2914d64/oauth2/v2.0/authorize?client_id=540193ba-f3f9-4a7a-91ec-22a4de58117f&response_type=code&redirect_uri=https://qa.egerdau.com.br/auth&response_mode=query&scope=offline_access%20user.read%20mail.read");
+    cy.get("#tilesHolder > div:nth-of-type(1) div:nth-of-type(2) > small").click();
+    cy.location("href").should("eq", "https://qa.egerdau.com.br/auth?code=0.AXsA79cfRrMOIESwRDENwpFNZLqTAVT583pKkewipN5YEX8PAFM.AgABBAIAAAApTwJmzXqdR4BN2miheQMYAwDs_wUA9P8yibLbl002Xb9KRlqQiQrVGJaKVZmDXXy2wqmQnuVivqWbMVO7-N0WhKZTWhYBniNgyaP9QtZgsNpRMpR7Hi3gYpt4hPZIYToQjyauCfH0UCsk2GwY0G1xL6X99PbgAwrzKHXaDEUhel9eKDDEtH9JMHaopxNFwVFBG-wOpJgSozcW94K4d6dKh-GFxH2y2DeM5cDsR0sL6ddzyA0Fjph2S9PWpn_89d6QO8zdW_UNfIS27BhWGcjrYCEx0w1hrmQZKq87TtZO7f9jz2zgIR3RYVRHEsD5LWNm0rEiVq5TgjEmLOJelrc733p0tce8n8-VU6tbaFyijsly42ApzgcVPCHOaknYhmSqYCOHX4jFeNaXQakqdXGEBn4lkWF32mmv_avmGVCAa52Vzqlc8dUyxDLxjodcmb9Wy1FkDsO0OZ8E5BX_-T_Nr8qHnmOA8QMVvdAHxLYdVK9xODoU9BmVplKYZbfzcCtfV8uik7dECfaGirfQiN2Q3gcMA63QgtsfktPohsRH_2tKYfVsgOB6EtOCzDlx8fLsNFDp8FLftw2on9tKjQzSm3F0x6dvoAPrarQZev3kbV1yeWrBWX5bQTuU9rcgpKxYp56bYo81RiWiO_u_yT61L9D4rrB5tS1fM2K0Hj1bwlRxLIspOMpZnnRj5Q11rhGLWMkyJETQYZb5AGiPcqlpGoSfgYxNMJWfeIALul8P8qCtcQQlTY4q79WTma2pFCbuyQsGw1ky8w-lBMKgTI1gXqum-TW8bn621TRXWH_jhGXwmjUujCkW7q6S&session_state=48e12d71-21cd-4d96-b3f2-6a3f1e2b0b89#");
+    cy.get("li:nth-of-type(1) span").click();
+    cy.get("div.cards-container > div:nth-of-type(1) canvas").click();
+    cy.get("div.sc-cmvVVv > div:nth-of-type(1) > div:nth-of-type(1) div.input-helpers__right").click();
+    cy.get("h").click();
+    cy.get("html > body > #root > div.sc-jMKfon > section.sc-gVIfzB > div.sc-gpxMCN > div.sc-boKtkb > div.sc-ihYDVE > div:nth-of-type(7) > div.sc-eTtvFv > div.sc-dNezTh > div.sc-lkcIho > [data-testid='hefesto-button'] canvas").click();
+    cy.get("div.cart path").click();
+    cy.get("button:nth-of-type(1) > svg").click();
+    cy.get("button:nth-of-type(1) > svg").click();
+    cy.get("button:nth-of-type(1) > svg").click();
+    cy.get("button:nth-of-type(1) > svg").click();
+    cy.get("[data-testid='hefesto-chip-container'] div:nth-of-type(2)").click();
+    cy.get("section.sc-foDcoF > section:nth-of-type(2) div.dcoxwx > div:nth-of-type(2) svg").click();
+    cy.get("button.react-calendar__tile--now > abbr").click();
+    cy.get("section.sc-foDcoF > section:nth-of-type(2) div.dcoxwx > div:nth-of-type(3) [data-testid='hefesto-select-container'] > div").click();
+    cy.get("section.sc-foDcoF > section:nth-of-type(2) div.dcoxwx > div:nth-of-type(3) [data-testid='hefesto-select-container'] > div").click();
+    cy.get("html > body > div:nth-of-type(3) > div > div > [data-testid='hefesto-dropdown'] > [data-testid='hefesto-select-dropdown'] > [data-testid='hefesto-select-option']").click();
+    cy.get("html > body > #root > div.sc-jMKfon > section.sc-gVIfzB > section > div.sc-chKnlQ > div.sc-bAKPPm > [data-testid='hefesto-button'] canvas").click();
+    cy.get("html > body > #root > div.sc-jMKfon > section.sc-gVIfzB > section > div.sc-chKnlQ > div.sc-bAKPPm > [data-testid='hefesto-button'] canvas").click();
+    cy.get("section.sc-gVIfzB > div > div:nth-of-type(1) [data-testid='hefesto-textfield-input']").click();
+    cy.get("section.sc-gVIfzB > div > div:nth-of-type(1) [data-testid='hefesto-textfield-input']").type("teste002");
+    cy.get("html > body > #root > div.sc-jMKfon > section.sc-gVIfzB > div > div.sc-ldZUWu > div.sc-lbhYTY > [data-testid='hefesto-button'] canvas").click();
+  });
+});
