@@ -2,7 +2,7 @@
 Documentation    Automação lotofacil
 
 Library    Browser
-Library    ./converter.py
+Library    ./conferir_jogos.py
 
 
 *** Test Cases ***
