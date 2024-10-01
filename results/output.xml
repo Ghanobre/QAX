@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-10-01T14:18:04.595025" rpa="false" schemaversion="5">
+<suite id="s1" name="QAX" source="C:\QAX">
+<suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
+<suite id="s1-s1-s1" name="Python" source="C:\QAX\Projects\Python">
+<suite id="s1-s1-s1-s1" name="Teste" source="C:\QAX\Projects\Python\teste.robot">
+<test id="s1-s1-s1-s1-t1" name="teste" line="15">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-10-01T14:18:09.659725" level="INFO">${json} = {'Jogo1': [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 17, 18, 20, 21, 24], 'Jogo2': [1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23], 'Jogo3': [1, 2, 4, 5, 6, 7, 8, 10, 12, 14, 16, 19, 20, 22, 25]}</msg>
+<var>${json}</var>
+<arg>${EXECDIR}${/}Projects${/}Python${/}fixtures${/}jogos.json</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-10-01T14:18:09.658710" elapsed="0.002014"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-10-01T14:18:09.700297" level="INFO">${array1} = [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 17, 18, 20, 21, 24]</msg>
+<var>${array1}</var>
+<arg>json_object=${json}</arg>
+<arg>json_path=$.Jogo1[*]</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-10-01T14:18:09.661722" elapsed="0.039270"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-10-01T14:18:09.736261" level="INFO">${array2} = [1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23]</msg>
+<var>${array2}</var>
+<arg>json_object=${json}</arg>
+<arg>json_path=$.Jogo2[*]</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-10-01T14:18:09.702064" elapsed="0.034197"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-10-01T14:18:09.772492" level="INFO">${array3} = [1, 2, 4, 5, 6, 7, 8, 10, 12, 14, 16, 19, 20, 22, 25]</msg>
+<var>${array3}</var>
+<arg>json_object=${json}</arg>
+<arg>json_path=$.Jogo3[*]</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-10-01T14:18:09.737269" elapsed="0.035758"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${array1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-01T14:18:09.773564" elapsed="0.001096"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<msg time="2024-10-01T14:18:09.784499" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\bff4fea7-9611-4dde-a287-84cd8c636c67"}</msg>
+<msg time="2024-10-01T14:18:15.539998" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\bff4fea7-9611-4dde-a287-84cd8c636c67"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-10-01T14:18:09.782497" elapsed="5.758781"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-10-01T14:18:15.576808" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg time="2024-10-01T14:18:15.670345" level="INFO">Successfully created context. </msg>
+<msg time="2024-10-01T14:18:15.670345" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-10-01T14:18:15.575800" elapsed="0.095544"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-10-01T14:18:29.155284" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
+<arg>url=https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-10-01T14:18:15.687877" elapsed="13.467407"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-01T14:18:29.188847" level="INFO">Waited for Element with selector xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span at state visible</msg>
+<arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
+<arg>visible</arg>
+<arg>timeout=60</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-01T14:18:29.156791" elapsed="0.032056"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-01T14:18:34.191168" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-01T14:18:29.189850" elapsed="5.001318"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-01T14:18:34.224907" level="INFO">Text: 'Concurso 3208 (30/09/2024)'</msg>
+<msg time="2024-10-01T14:18:34.225915" level="INFO">${concurso} = Concurso 3208 (30/09/2024)</msg>
+<var>${concurso}</var>
+<arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-01T14:18:34.192176" elapsed="0.033739"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-01T14:18:34.246991" level="INFO">Text: '010608091012131415161819202225'</msg>
+<msg time="2024-10-01T14:18:34.246991" level="INFO">${log} = 010608091012131415161819202225</msg>
+<var>${log}</var>
+<arg>xpath=//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-01T14:18:34.226907" elapsed="0.020084"/>
+</kw>
+<kw name="Transformar Valor" owner="conferir_jogos">
+<msg time="2024-10-01T14:18:34.248997" level="INFO">${novo} = [1, 6, 8, 9, 10, 12, 13, 14, 15, 16, 18, 19, 20, 22, 25]</msg>
+<var>${novo}</var>
+<arg>${log}</arg>
+<status status="PASS" start="2024-10-01T14:18:34.247997" elapsed="0.001000"/>
+</kw>
+<kw name="Jogo 1" owner="conferir_jogos">
+<msg time="2024-10-01T14:18:34.250073" level="INFO">${jogo1} = ('jogo1', [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 17, 18, 20, 21, 24], 7)</msg>
+<var>${jogo1}</var>
+<arg>${novo}</arg>
+<arg>${array1}</arg>
+<status status="PASS" start="2024-10-01T14:18:34.249998" elapsed="0.000618"/>
+</kw>
+<kw name="Jogo 2" owner="conferir_jogos">
+<msg time="2024-10-01T14:18:34.250616" level="INFO">${jogo2} = ('Jogo2', [1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23], 9)</msg>
+<var>${jogo2}</var>
+<arg>${novo}</arg>
+<arg>${array2}</arg>
+<status status="PASS" start="2024-10-01T14:18:34.250616" elapsed="0.000000"/>
+</kw>
+<kw name="Jogo 3" owner="conferir_jogos">
+<msg time="2024-10-01T14:18:34.251623" level="INFO">${jogo3} = ('Jogo3', [1, 2, 4, 5, 6, 7, 8, 10, 12, 14, 16, 19, 20, 22, 25], 11)</msg>
+<var>${jogo3}</var>
+<arg>${novo}</arg>
+<arg>${array3}</arg>
+<status status="PASS" start="2024-10-01T14:18:34.251623" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-01T14:18:34.252623" elapsed="0.000998"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${concurso}</arg>
+<arg>no_newline=false</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-01T14:18:34.253621" elapsed="0.001001"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>'Resultado,'${novo}</arg>
+<arg>no_newline=false</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-01T14:18:34.254622" elapsed="0.001000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${jogo1}</arg>
+<arg>no_newline=false</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-01T14:18:34.255622" elapsed="0.000999"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${jogo2}</arg>
+<arg>no_newline=false</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-01T14:18:34.256621" elapsed="0.001004"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${jogo3}</arg>
+<arg>no_newline=false</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-01T14:18:34.258626" elapsed="0.000663"/>
+</kw>
+<status status="PASS" start="2024-10-01T14:18:09.651897" elapsed="24.607392"/>
+</test>
+<doc>Automação lotofacil</doc>
+<status status="PASS" start="2024-10-01T14:18:04.668486" elapsed="29.733268"/>
+</suite>
+<status status="PASS" start="2024-10-01T14:18:04.665425" elapsed="29.748321"/>
+</suite>
+<status status="PASS" start="2024-10-01T14:18:04.661515" elapsed="29.755238"/>
+</suite>
+<status status="PASS" start="2024-10-01T14:18:04.630523" elapsed="29.791272"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="QAX">QAX</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Python">QAX.Projects.Python</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Teste">QAX.Projects.Python.Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
