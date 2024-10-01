@@ -3,7 +3,7 @@ def transformar_valor(valor_original):
         return(numeros)
 
 def jogo1(array0):
-        array1 = (2,3,5,6,8,9,11,13,15,16,17,21,22,23,25)
+        array1 = (1,2,3,6,7,8,9,11,13,15,17,18,19,20,21)
         posicoes_encontradas = 0
         for elemento in array1:
                 if elemento in array0:
@@ -11,7 +11,7 @@ def jogo1(array0):
         return 'jogo1',array1,posicoes_encontradas
 
 def jogo2(array0):
-        array1 = (2,3,5,6,9,10,11,12,16,17,19,20,21,22,24)
+        array1 = (1,4,5,6,8,9,11,12,13,15,16,17,20,23,25)
         posicoes_encontradas = 0
         for elemento in array1:
                 if elemento in array0:
@@ -19,7 +19,7 @@ def jogo2(array0):
         return('Jogo2',array1,posicoes_encontradas)
 
 def jogo3(array0):
-        array1 = (5,6,8,9,10,11,12,14,15,18,20,21,22,24,25)
+        array1 = (1,2,3,4,5,6,10,13,15,18,19,20,21,22,24)
         posicoes_encontradas = 0
         for elemento in array1:
                 if elemento in array0:
