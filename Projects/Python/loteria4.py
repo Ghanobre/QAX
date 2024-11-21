@@ -2,9 +2,9 @@ import pandas    as  pd
 
 
 array4 = (2,4,5,6,8,9,11,12,15,16,18,20,22,23,25)
-i=3059
+i=3118
 
-while i < 3101:
+while i < 3190:
  
     resultanalise =list(pd.read_excel('C:\QAX\Projects\Python\Fixtures\Lotofacil.xlsx',skiprows=i, usecols="C:Q"))
     # print(i, resultanalise)
