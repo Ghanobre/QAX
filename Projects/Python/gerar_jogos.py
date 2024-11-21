@@ -32,4 +32,4 @@ with open(caminho_arquivo, "w") as file:
     json.dump(jogos, file)
 
 # Exibir a confirmação de que o arquivo foi salvo
-print(f"Arquivo salvo em: {caminho_arquivo}")
+print(f"Arquivo salvo em: {caminho_arquivo}",jogos)
