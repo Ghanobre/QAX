@@ -1,0 +1,66 @@
+{"level":30,"time":"2024-10-01T14:09:18.696Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Listening on 51309"}
+(node:28096) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-10-01T14:09:19.072Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:19.073Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:19.080Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:19.080Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:19.089Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-10-01T14:09:24.682Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-10-01T14:09:24.683Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-10-01T14:09:24.682Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-10-01T14:09:24.716Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-10-01T14:09:24.717Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-10-01T14:09:24.717Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Trace file: "}
+{"level":30,"time":"2024-10-01T14:09:24.767Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
+{"level":30,"time":"2024-10-01T14:09:24.768Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method newContext"}
+{"level":30,"time":"2024-10-01T14:09:24.811Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-10-01T14:09:24.811Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-10-01T14:09:29.112Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Video path: undefined"}
+{"level":30,"time":"2024-10-01T14:09:29.113Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active page"}
+{"level":30,"time":"2024-10-01T14:09:39.118Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: Timeout 10000ms exceeded.
+Call log:
+  [2m- navigating to "https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx", waiting until "load"[22m
+
+    at newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10372:18)
+    at async PlaywrightServer.newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2024-10-01T14:09:39.246Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8714:11)
+    at takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:8758:3)
+    at PlaywrightServer.takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10708:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-01T14:09:39.246Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2024-10-01T14:09:39.425Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:39.425Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:39.429Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:39.429Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:39.432Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
+{"level":30,"time":"2024-10-01T14:09:39.436Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:39.436Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:39.439Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-01T14:09:39.439Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-01T14:09:39.442Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-01T14:09:39.443Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-01T14:09:39.447Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:39.448Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:39.450Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Changed active context"}
+{"level":30,"time":"2024-10-01T14:09:39.452Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-10-01T14:09:39.462Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-10-01T14:09:39.477Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:39.477Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-01T14:09:40.725Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-10-01T14:09:41.285Z","pid":28096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method closeAllBrowsers"}
