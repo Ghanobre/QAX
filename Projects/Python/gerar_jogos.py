@@ -6,16 +6,20 @@ import os
 lista = list(range(1, 26))
 
 # Gerar 3 listas de 15 números aleatórios e ordená-las
-jogo1 = sorted(random.sample(lista, 15))
-jogo2 = sorted(random.sample(lista, 15))
-jogo3 = sorted(random.sample(lista, 15))
+jogo1 = sorted(random.sample(lista, 10))
+jogo2 = sorted(random.sample(lista, 10))
+# jogo3 = sorted(random.sample(lista, 10))
+# jogo4 = sorted(random.sample(lista, 10))
+# jogo5 = sorted(random.sample(lista, 10))
 
 # Criar um dicionário para armazenar os jogos
 jogos = {
     "Jogo1": jogo1,
-    "Jogo2": jogo2,
-    "Jogo3": jogo3
-}
+    "Jogo2": jogo2
+#     "Jogo3": jogo3,
+#     "Jogo4": jogo4,
+#     "Jogo5": jogo5
+ }
 
 # Caminho da pasta onde deseja salvar (usando caminho relativo)
 caminho_pasta = 'C:\QAX\Projects\Python\Fixtures'

@@ -10,7 +10,7 @@ Library    Collections
     ...           Content-Type=application/json
 
 &{body}           nome=Fulano da Silva
-    ...           email=gbhhyttddnb@qa.com.br
+    ...           email=gbashhb@qa.com.br
     ...           password=teste
     ...           administrador=true
 
@@ -24,7 +24,7 @@ Cadastro de usuario
     Create Session    alias=Teste1    url=https://serverest.dev/    headers=${headers}    disable_warnings=true
     ${response}    POST On Session    alias=Teste1    url=usuarios    expected_status=any    json=${body}
     ${_id}    Get From Dictionary   ${response.json()}       _id
-    Set Suite Variable     ${_id_suite}    ${_id}  
+    Set Suite Variable     ${_id_suite}    ${_id}    # robotcode: ignore 
     Status Should Be    201    ${response}
     Dictionary Should Contain Item    ${response.json()}       message    Cadastro realizado com sucesso
 

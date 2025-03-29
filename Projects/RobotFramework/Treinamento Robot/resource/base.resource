@@ -17,6 +17,7 @@ Start execution
     [Arguments]           ${pagina}
     Open Browser          url=${pagina}    browser=chrome
     Maximize Browser Window
+    
 
 Finish execution
     Close Browser

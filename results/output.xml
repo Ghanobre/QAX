@@ -1,333 +1,906 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-09-09T21:18:10.862064" rpa="false" schemaversion="5">
-=======
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-10-16T15:54:51.889698" rpa="false" schemaversion="5">
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
+<robot generator="Robot 7.2.2 (Python 3.12.9 on win32)" generated="2025-03-09T22:26:46.548821" rpa="false" schemaversion="5">
 <suite id="s1" name="QAX" source="C:\QAX">
 <suite id="s1-s1" name="Projects" source="C:\QAX\Projects">
-<suite id="s1-s1-s1" name="Python" source="C:\QAX\Projects\Python">
-<suite id="s1-s1-s1-s1" name="Validar resultado" source="C:\QAX\Projects\Python\Validar resultado.robot">
-<test id="s1-s1-s1-s1-t1" name="Validar resultado" line="9">
-<kw name="Set Browser Timeout" owner="Browser">
-<arg>timeout=60</arg>
-<tag>Config</tag>
-<tag>Setter</tag>
-<doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2024-10-16T15:54:59.592964" elapsed="0.086477"/>
+<suite id="s1-s1-s1" name="RobotFramework" source="C:\QAX\Projects\RobotFramework">
+<suite id="s1-s1-s1-s1" name="Desafio Robot Framework" source="C:\QAX\Projects\RobotFramework\Desafio_Robot_Framework">
+<suite id="s1-s1-s1-s1-s1" name="Tests" source="C:\QAX\Projects\RobotFramework\Desafio_Robot_Framework\tests">
+<suite id="s1-s1-s1-s1-s1-s1" name="Ecommerce" source="C:\QAX\Projects\RobotFramework\Desafio_Robot_Framework\tests\ecommerce.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="realizar uma compra com sucesso" line="13">
+<kw name="Start execution" owner="base" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-03-09T22:26:48.266074" level="INFO">${prefs} = {'credentials_enable_service': False}</msg>
+<var>${prefs}</var>
+<arg>credentials_enable_service=${false}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-03-09T22:26:48.266074" elapsed="0.000000"/>
 </kw>
-<kw name="Load Json From File" owner="JSONLibrary">
-<msg time="2024-10-16T15:54:59.691588" level="INFO">${json} = {'Jogo1': [1, 2, 3, 5, 12, 13, 14, 15, 18, 19, 20, 21, 22, 24, 25], 'Jogo2': [1, 2, 8, 9, 10, 11, 13, 14, 17, 18, 19, 21, 22, 23, 25], 'Jogo3': [1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 18, 20, 23, 24, 25]}</msg>
-<var>${json}</var>
-<arg>${EXECDIR}${/}Projects${/}Python${/}fixtures${/}jogos.json</arg>
-<doc>Load JSON from file.</doc>
-<status status="PASS" start="2024-10-16T15:54:59.681064" elapsed="0.011565"/>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:26:48.266074" level="INFO">Opening browser 'chrome' to base url 'https://www.advantageonlineshopping.com/#/'.</msg>
+<arg>url=${page}</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--disable-notifications")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-09T22:26:48.266074" elapsed="15.411201"/>
 </kw>
-<kw name="Get Value From Json" owner="JSONLibrary">
-<msg time="2024-10-16T15:54:59.796454" level="INFO">${array1} = [1, 2, 3, 5, 12, 13, 14, 15, 18, 19, 20, 21, 22, 24, 25]</msg>
-<var>${array1}</var>
-<arg>json_object=${json}</arg>
-<arg>json_path=$.Jogo1[*]</arg>
-<doc>Get Value From JSON using JSONPath</doc>
-<status status="PASS" start="2024-10-16T15:54:59.693639" elapsed="0.103815"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-09T22:27:03.677943" elapsed="3.487577"/>
 </kw>
-<kw name="Get Value From Json" owner="JSONLibrary">
-<msg time="2024-10-16T15:54:59.819491" level="INFO">${array2} = [1, 2, 8, 9, 10, 11, 13, 14, 17, 18, 19, 21, 22, 23, 25]</msg>
-<var>${array2}</var>
-<arg>json_object=${json}</arg>
-<arg>json_path=$.Jogo2[*]</arg>
-<doc>Get Value From JSON using JSONPath</doc>
-<status status="PASS" start="2024-10-16T15:54:59.798455" elapsed="0.022145"/>
+<status status="PASS" start="2025-03-09T22:26:48.266074" elapsed="18.899446"/>
 </kw>
-<kw name="Get Value From Json" owner="JSONLibrary">
-<msg time="2024-10-16T15:54:59.938063" level="INFO">${array3} = [1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 18, 20, 23, 24, 25]</msg>
-<var>${array3}</var>
-<arg>json_object=${json}</arg>
-<arg>json_path=$.Jogo3[*]</arg>
-<doc>Get Value From JSON using JSONPath</doc>
-<status status="PASS" start="2024-10-16T15:54:59.821107" elapsed="0.117963"/>
+<kw name="Selecinar um produto" owner="ecommerce">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_layer}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:07.168488" elapsed="0.264227"/>
 </kw>
-<kw name="New Browser" owner="Browser">
-<<<<<<< HEAD
-<msg time="2024-09-09T21:18:12.284763" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\0e7904b2-48ca-4afc-ab32-54b9b18192ea"}</msg>
-<msg time="2024-09-09T21:18:14.784235" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\0e7904b2-48ca-4afc-ab32-54b9b18192ea"}</msg>
-=======
-<msg time="2024-10-16T15:54:59.941535" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAX\\results\\browser\\traces\\d1cc5b24-087c-4581-9c65-5504603978f8"}</msg>
-<msg time="2024-10-16T15:55:09.950998" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAX\\results\\browser\\traces\\d1cc5b24-087c-4581-9c65-5504603978f8"}</msg>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
-<arg>chromium</arg>
-<arg>headless=false</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:12.283758" elapsed="2.501477"/>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:07.456368" level="INFO">Current page contains element 'css=[id="Layer_1"]'.</msg>
+<arg>${id_layer}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-03-09T22:27:07.432715" elapsed="0.025347"/>
 </kw>
-<kw name="New Context" owner="Browser">
-<msg time="2024-09-09T21:18:14.787236" level="INFO">{
-=======
-<status status="PASS" start="2024-10-16T15:54:59.940072" elapsed="10.011926"/>
-</kw>
-<kw name="New Context" owner="Browser">
-<msg time="2024-10-16T15:55:10.119208" level="INFO">{
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
-  "acceptDownloads": true,
-  "bypassCSP": false,
-  "forcedColors": "none",
-  "ignoreHTTPSErrors": false,
-  "javaScriptEnabled": true,
-  "offline": false,
-  "reducedMotion": "no-preference",
-  "serviceWorkers": "allow",
-  "viewport": {
-    "height": 1080,
-    "width": 1920
-  }
-}</msg>
-<<<<<<< HEAD
-<msg time="2024-09-09T21:18:14.807285" level="INFO">Successfully created context. </msg>
-<msg time="2024-09-09T21:18:14.807285" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
-=======
-<msg time="2024-10-16T15:55:10.169435" level="INFO">Successfully created context. </msg>
-<msg time="2024-10-16T15:55:10.170435" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
-<arg>viewport={'width': 1920, 'height': 1080}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new BrowserContext with specified options.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:14.786233" elapsed="0.022053"/>
-</kw>
-<kw name="New Page" owner="Browser">
-<msg time="2024-09-09T21:18:17.846395" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
-=======
-<status status="PASS" start="2024-10-16T15:55:10.116687" elapsed="0.053748"/>
-</kw>
-<kw name="New Page" owner="Browser">
-<msg time="2024-10-16T15:55:27.126627" level="INFO">Successfully initialized new page object and opened url: https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</msg>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
-<arg>url=https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:14.809285" elapsed="3.038110"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-09-09T21:18:17.879023" level="INFO">Waited for Element with selector xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span at state visible</msg>
-=======
-<status status="PASS" start="2024-10-16T15:55:10.201095" elapsed="16.926546"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-16T15:55:27.198412" level="INFO">Waited for Element with selector xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span at state visible</msg>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
-<arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
-<arg>visible</arg>
-<arg>timeout=60</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:17.847395" elapsed="0.032628"/>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${id_speakersImg}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-09T22:27:07.458574" elapsed="3.928105"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-09T21:18:22.880344" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-03-09T22:27:12.387655" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-09T21:18:17.880023" elapsed="5.000321"/>
+<status status="PASS" start="2025-03-09T22:27:11.387313" elapsed="1.001240"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-09-09T21:18:22.906438" level="INFO">Text: 'Concurso 3189 (23/08/2024)'</msg>
-<msg time="2024-09-09T21:18:22.907435" level="INFO">${concurso} = Concurso 3189 (23/08/2024)</msg>
-=======
-<status status="PASS" start="2024-10-16T15:55:27.130492" elapsed="0.068751"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:12.739582" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000001.png"&gt;&lt;img src="Screenshot/Evidencia0000000001.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:27:12.389069" elapsed="0.351434"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:12.743160" level="INFO">Clicking element 'xpath=//*[@id="speakersImg"]'.</msg>
+<arg>${id_speakersImg}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:12.741924" elapsed="0.127912"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:27:07.166914" elapsed="5.702922"/>
+</kw>
+<kw name="Escolher produto" owner="ecommerce">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_produto}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:12.872333" elapsed="2.703369"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:15.575702" level="INFO">Clicking image 'css=[id="23"]'.</msg>
+<arg>${id_produto}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:15.575702" elapsed="0.415348"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-16T15:55:32.201464" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-03-09T22:27:18.994467" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-16T15:55:27.200281" elapsed="5.001183"/>
+<status status="PASS" start="2025-03-09T22:27:15.992938" elapsed="3.001529"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-10-16T15:55:32.255980" level="INFO">Text: 'Concurso 3220 (15/10/2024)'</msg>
-<msg time="2024-10-16T15:55:32.256972" level="INFO">${concurso} = Concurso 3220 (15/10/2024)</msg>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
-<var>${concurso}</var>
-<arg>xpath=//*[@id="wp_resultados"]/div[1]/div/h2/span</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:22.880344" elapsed="0.027091"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:19.177016" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000002.png"&gt;&lt;img src="Screenshot/Evidencia0000000002.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:27:18.994467" elapsed="0.182549"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-09-09T21:18:22.922047" level="INFO">Text: '020407091112131518192021232425'</msg>
-<msg time="2024-09-09T21:18:22.922047" level="INFO">${log} = 020407091112131518192021232425</msg>
-=======
-<status status="PASS" start="2024-10-16T15:55:32.202475" elapsed="0.054497"/>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${class_plus}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:19.194277" elapsed="0.030623"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-10-16T15:55:32.288417" level="INFO">Text: '010304060709101113151718192022'</msg>
-<msg time="2024-10-16T15:55:32.288417" level="INFO">${log} = 010304060709101113151718192022</msg>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
-<var>${log}</var>
-<arg>xpath=//*[@id="wp_resultados"]/div[2]/div/div/div[1]/ul</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:22.907435" elapsed="0.014612"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:19.225788" level="INFO">Clicking element 'css=.plus'.</msg>
+<arg>${class_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:19.225788" elapsed="0.087734"/>
 </kw>
-<kw name="Transformar Valor" owner="converter">
-<msg time="2024-09-09T21:18:22.923551" level="INFO">${novo} = [2, 4, 7, 9, 11, 12, 13, 15, 18, 19, 20, 21, 23, 24, 25]</msg>
-<var>${novo}</var>
-<arg>${log}</arg>
-<status status="PASS" start="2024-09-09T21:18:22.922047" elapsed="0.001504"/>
+<var name="${index}">1</var>
+<status status="PASS" start="2025-03-09T22:27:19.193235" elapsed="0.120287"/>
+</iter>
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${class_plus}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:19.313522" elapsed="0.033552"/>
 </kw>
-<kw name="Resultado 1" owner="converter">
-<msg time="2024-09-09T21:18:22.924558" level="INFO">${jogo1_gus} = ('Jogo1 Gus', (2, 3, 4, 6, 7, 10, 11, 14, 15, 17, 18, 19, 21, 22, 25), 9)</msg>
-<var>${jogo1_gus}</var>
-<arg>${novo}</arg>
-<status status="PASS" start="2024-09-09T21:18:22.923551" elapsed="0.001007"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:19.347074" level="INFO">Clicking element 'css=.plus'.</msg>
+<arg>${class_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:19.347074" elapsed="0.079339"/>
 </kw>
-<kw name="Resultado 2" owner="converter">
-<msg time="2024-09-09T21:18:22.925561" level="INFO">${jogo2_gus} = ('Jogo2 Gus', (1, 3, 5, 7, 8, 9, 11, 13, 15, 17, 19, 20, 21, 23, 25), 10)</msg>
-<var>${jogo2_gus}</var>
-<arg>${novo}</arg>
-<status status="PASS" start="2024-09-09T21:18:22.925561" elapsed="0.000000"/>
+<var name="${index}">2</var>
+<status status="PASS" start="2025-03-09T22:27:19.313522" elapsed="0.112891"/>
+</iter>
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${class_plus}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:19.426413" elapsed="0.032458"/>
 </kw>
-<kw name="Resultado 3" owner="converter">
-<msg time="2024-09-09T21:18:22.926560" level="INFO">${jogo1_ana} = ('Jogo1 Ana', (1, 3, 5, 8, 9, 10, 12, 13, 15, 16, 18, 20, 21, 23, 24), 9)</msg>
-<var>${jogo1_ana}</var>
-<arg>${novo}</arg>
-<status status="PASS" start="2024-09-09T21:18:22.926560" elapsed="0.000000"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:19.458871" level="INFO">Clicking element 'css=.plus'.</msg>
+<arg>${class_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:19.458871" elapsed="0.072049"/>
 </kw>
-<kw name="Resultado 4" owner="converter">
-<msg time="2024-09-09T21:18:22.927558" level="INFO">${jogo2_ana} = ('Jogo2 Ana', (2, 4, 5, 6, 8, 9, 11, 12, 15, 16, 18, 20, 22, 23, 25), 10)</msg>
-<var>${jogo2_ana}</var>
-<arg>${novo}</arg>
-<status status="PASS" start="2024-09-09T21:18:22.927558" elapsed="0.000000"/>
-=======
-<status status="PASS" start="2024-10-16T15:55:32.258087" elapsed="0.031332"/>
+<var name="${index}">3</var>
+<status status="PASS" start="2025-03-09T22:27:19.426413" elapsed="0.105790"/>
+</iter>
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${class_plus}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:19.532715" elapsed="0.027110"/>
 </kw>
-<kw name="Transformar Valor" owner="conferir_jogos">
-<msg time="2024-10-16T15:55:32.291417" level="INFO">${novo} = [1, 3, 4, 6, 7, 9, 10, 11, 13, 15, 17, 18, 19, 20, 22]</msg>
-<var>${novo}</var>
-<arg>${log}</arg>
-<status status="PASS" start="2024-10-16T15:55:32.290417" elapsed="0.001000"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:19.559825" level="INFO">Clicking element 'css=.plus'.</msg>
+<arg>${class_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:19.559825" elapsed="0.073197"/>
 </kw>
-<kw name="Jogo 1" owner="conferir_jogos">
-<msg time="2024-10-16T15:55:32.292414" level="INFO">${jogo1} = ('jogo1', [1, 2, 3, 5, 12, 13, 14, 15, 18, 19, 20, 21, 22, 24, 25], 8)</msg>
-<var>${jogo1}</var>
-<arg>${novo}</arg>
-<arg>${array1}</arg>
-<status status="PASS" start="2024-10-16T15:55:32.292414" elapsed="0.001470"/>
+<var name="${index}">4</var>
+<status status="PASS" start="2025-03-09T22:27:19.532203" elapsed="0.100819"/>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>5</value>
+<value>1</value>
+<status status="PASS" start="2025-03-09T22:27:19.177016" elapsed="0.456006"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:27:20.639980" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:27:19.639105" elapsed="1.000875"/>
 </kw>
-<kw name="Jogo 2" owner="conferir_jogos">
-<msg time="2024-10-16T15:55:32.294895" level="INFO">${jogo2} = ('Jogo2', [1, 2, 8, 9, 10, 11, 13, 14, 17, 18, 19, 21, 22, 23, 25], 9)</msg>
-<var>${jogo2}</var>
-<arg>${novo}</arg>
-<arg>${array2}</arg>
-<status status="PASS" start="2024-10-16T15:55:32.293884" elapsed="0.002012"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:20.890327" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000003.png"&gt;&lt;img src="Screenshot/Evidencia0000000003.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:27:20.639980" elapsed="0.250347"/>
 </kw>
-<kw name="Jogo 3" owner="conferir_jogos">
-<msg time="2024-10-16T15:55:32.297297" level="INFO">${jogo3} = ('Jogo3', [1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 18, 20, 23, 24, 25], 9)</msg>
-<var>${jogo3}</var>
-<arg>${novo}</arg>
-<arg>${array3}</arg>
-<status status="PASS" start="2024-10-16T15:55:32.295896" elapsed="0.001401"/>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:20.890327" level="INFO">Clicking button 'ADD TO CART'.</msg>
+<arg>${button_add}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:20.890327" elapsed="0.185407"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>\n</arg>
-<doc>Logs the given message to the console.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:22.928556" elapsed="0.000000"/>
-=======
-<status status="PASS" start="2024-10-16T15:55:32.298310" elapsed="0.000000"/>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
+<status status="PASS" start="2025-03-09T22:27:12.869836" elapsed="8.207274"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${concurso}</arg>
-<arg>no_newline=false</arg>
-<doc>Logs the given message to the console.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:22.929558" elapsed="0.000000"/>
-=======
-<status status="PASS" start="2024-10-16T15:55:32.301067" elapsed="0.000000"/>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
+<kw name="Realizar checkout" owner="ecommerce">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:21.079261" level="INFO">Simulating Mouse Over on element 'css=[id="menuCart"]'.</msg>
+<arg>${id_menuCart}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:21.078196" elapsed="0.314460"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>'Resultado,'${novo}</arg>
-<arg>no_newline=false</arg>
-<doc>Logs the given message to the console.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:22.929558" elapsed="0.001000"/>
-=======
-<status status="PASS" start="2024-10-16T15:55:32.302541" elapsed="0.001007"/>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:27:22.392688" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:27:21.392656" elapsed="1.000924"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${jogo1}</arg>
-<arg>no_newline=false</arg>
-<doc>Logs the given message to the console.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:22.930558" elapsed="0.001001"/>
-=======
-<status status="PASS" start="2024-10-16T15:55:32.304054" elapsed="0.000000"/>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:22.627129" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000004.png"&gt;&lt;img src="Screenshot/Evidencia0000000004.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:27:22.393580" elapsed="0.233549"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${jogo2}</arg>
-<arg>no_newline=false</arg>
-<doc>Logs the given message to the console.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2024-09-09T21:18:22.931559" elapsed="0.000000"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_checkOutPopUp}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:22.627129" elapsed="0.037868"/>
 </kw>
-<status status="PASS" start="2024-09-09T21:18:12.280250" elapsed="10.651309"/>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:22.664997" level="INFO">Clicking button 'xpath=//*[@id="checkOutPopUp"]'.</msg>
+<arg>${id_checkOutPopUp}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:22.664997" elapsed="0.190321"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_qtd_item}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:22.855318" elapsed="0.489227"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:23.345058" level="INFO">Verifying element '//*[@id="userCart"]/span' contains exact text '5 ITEMS'.</msg>
+<arg>${id_qtd_item}</arg>
+<arg>${qtd_itens}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-03-09T22:27:23.345058" elapsed="0.046331"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${id_checkOutPopUp}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:23.391389" elapsed="3.005257"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:27:27.397119" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:27:26.396646" elapsed="1.000473"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:27.576420" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000005.png"&gt;&lt;img src="Screenshot/Evidencia0000000005.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:27:27.397119" elapsed="0.181181"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:27:21.077656" elapsed="6.501216"/>
+</kw>
+<kw name="verificar usuario" owner="ecommerce">
+<if>
+<branch type="IF" condition="$new_account == &quot;SIM&quot;">
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${button_registration}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-09T22:27:27.583728" elapsed="0.000562"/>
+</kw>
+<kw name="Account details" owner="ecommerce">
+<status status="NOT RUN" start="2025-03-09T22:27:27.584851" elapsed="0.000564"/>
+</kw>
+<kw name="Personal details" owner="ecommerce">
+<status status="NOT RUN" start="2025-03-09T22:27:27.585975" elapsed="0.000558"/>
+</kw>
+<kw name="Consultar cep" owner="ecommerce">
+<status status="NOT RUN" start="2025-03-09T22:27:27.587091" elapsed="0.000559"/>
+</kw>
+<kw name="Endereço" owner="ecommerce">
+<status status="NOT RUN" start="2025-03-09T22:27:27.588211" elapsed="0.000710"/>
+</kw>
+<kw name="Confirmar cadastro" owner="ecommerce">
+<status status="NOT RUN" start="2025-03-09T22:27:27.589545" elapsed="0.001140"/>
+</kw>
+<status status="NOT RUN" start="2025-03-09T22:27:27.582085" elapsed="0.008600"/>
+</branch>
+<branch type="ELSE">
+<kw name="logar usuario" owner="ecommerce">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:27.591196" level="INFO">Typing text 'Usuarioteste3' into text field 'css=[name="usernameInOrderPayment"]'.</msg>
+<arg>${name_usernameInOrderPayment}</arg>
+<arg>${usuario_cadastrado}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:27.591196" elapsed="0.234323"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:27.825519" level="INFO">Typing text '12Qazxsw' into text field 'css=[name="passwordInOrderPayment"]'.</msg>
+<arg>${name_passwordInOrderPayment}</arg>
+<arg>${new_user}[password]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:27.825519" elapsed="0.160990"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:27:28.989769" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:27:27.986509" elapsed="1.004741"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:29.184484" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000006.png"&gt;&lt;img src="Screenshot/Evidencia0000000006.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:27:28.991250" elapsed="0.193748"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:29.184998" level="INFO">Clicking button 'css=[id="login_btn"]'.</msg>
+<arg>${id_login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:27:29.184998" elapsed="0.185679"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:39.643448" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-09T22:27:39.643448" level="FAIL">Element 'css=[class="hi-user containMiniTitle ng-binding"]' not visible after 10 seconds.</msg>
+<arg>${class_hi-use}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-03-09T22:27:29.371169" elapsed="10.282485">Element 'css=[class="hi-user containMiniTitle ng-binding"]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${class_hi-use}</arg>
+<arg>${usuario_cadastrado}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-03-09T22:27:39.653654" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${id_userCart}</arg>
+<arg>${qtd_itens}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-03-09T22:27:39.653654" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${btn_next}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-03-09T22:27:39.653654" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-09T22:27:39.653654" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-03-09T22:27:39.653654" elapsed="0.011622"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${btn_next}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-09T22:27:39.665276" elapsed="0.000789"/>
+</kw>
+<status status="FAIL" start="2025-03-09T22:27:27.591196" elapsed="12.074869">Element 'css=[class="hi-user containMiniTitle ng-binding"]' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-03-09T22:27:27.591196" elapsed="12.074869">Element 'css=[class="hi-user containMiniTitle ng-binding"]' not visible after 10 seconds.</status>
+</branch>
+<status status="FAIL" start="2025-03-09T22:27:27.582085" elapsed="12.085491">Element 'css=[class="hi-user containMiniTitle ng-binding"]' not visible after 10 seconds.</status>
+</if>
+<status status="FAIL" start="2025-03-09T22:27:27.580567" elapsed="12.087009">Element 'css=[class="hi-user containMiniTitle ng-binding"]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Pagamento" owner="ecommerce">
+<status status="NOT RUN" start="2025-03-09T22:27:39.667576" elapsed="0.000000"/>
+</kw>
+<kw name="Validar pedido" owner="ecommerce">
+<status status="NOT RUN" start="2025-03-09T22:27:39.667576" elapsed="0.000000"/>
+</kw>
+<kw name="Finish execution" owner="base" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-09T22:27:39.667576" elapsed="2.585968"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:27:39.667576" elapsed="2.586500"/>
+</kw>
+<tag>sucesso</tag>
+<status status="FAIL" start="2025-03-09T22:26:48.266074" elapsed="53.988002">Element 'css=[class="hi-user containMiniTitle ng-binding"]' not visible after 10 seconds.</status>
 </test>
-<doc>Automação lotofacil</doc>
-<status status="PASS" start="2024-09-09T21:18:10.913080" elapsed="12.106221"/>
-</suite>
-<status status="PASS" start="2024-09-09T21:18:10.910565" elapsed="12.116690"/>
-</suite>
-<status status="PASS" start="2024-09-09T21:18:10.909564" elapsed="12.118688"/>
-</suite>
-<status status="PASS" start="2024-09-09T21:18:10.891159" elapsed="12.139097"/>
-=======
-<status status="PASS" start="2024-10-16T15:55:32.305062" elapsed="0.000000"/>
+<test id="s1-s1-s1-s1-s1-s1-t2" name="realizar uma compra com impedimeto" line="22">
+<kw name="Start execution" owner="base" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-03-09T22:27:42.270738" level="INFO">${prefs} = {'credentials_enable_service': False}</msg>
+<var>${prefs}</var>
+<arg>credentials_enable_service=${false}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-03-09T22:27:42.268727" elapsed="0.002011"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${jogo3}</arg>
-<arg>no_newline=false</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-16T15:55:32.306470" elapsed="0.000000"/>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:42.270738" level="INFO">Opening browser 'chrome' to base url 'https://www.advantageonlineshopping.com/#/'.</msg>
+<arg>url=${page}</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--disable-notifications")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-09T22:27:42.270738" elapsed="15.909805"/>
 </kw>
-<status status="PASS" start="2024-10-16T15:54:59.585488" elapsed="32.722032"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-09T22:27:58.180543" elapsed="0.043158"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:27:42.267863" elapsed="15.956454"/>
+</kw>
+<kw name="Selecinar um produto" owner="ecommerce">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_layer}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:27:58.226611" elapsed="0.064206"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:27:58.305362" level="INFO">Current page contains element 'css=[id="Layer_1"]'.</msg>
+<arg>${id_layer}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-03-09T22:27:58.292367" elapsed="0.012995"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${id_speakersImg}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-03-09T22:27:58.305362" elapsed="3.752547"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:28:03.061966" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:28:02.061478" elapsed="1.001040"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:03.193103" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000007.png"&gt;&lt;img src="Screenshot/Evidencia0000000007.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:28:03.063530" elapsed="0.131787"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:03.197357" level="INFO">Clicking element 'xpath=//*[@id="speakersImg"]'.</msg>
+<arg>${id_speakersImg}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:03.196191" elapsed="0.114927"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:27:58.225450" elapsed="5.086551"/>
+</kw>
+<kw name="Escolher produto" owner="ecommerce">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_produto}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:28:03.314061" elapsed="3.059078"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:06.373139" level="INFO">Clicking image 'css=[id="23"]'.</msg>
+<arg>${id_produto}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:06.373139" elapsed="0.339905"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:28:09.714942" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:28:06.714065" elapsed="3.000877"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:09.940800" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000008.png"&gt;&lt;img src="Screenshot/Evidencia0000000008.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:28:09.716965" elapsed="0.223835"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${class_plus}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:28:09.940800" elapsed="0.058495"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:10.001825" level="INFO">Clicking element 'css=.plus'.</msg>
+<arg>${class_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:09.999295" elapsed="0.115257"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2025-03-09T22:28:09.940800" elapsed="0.174986"/>
+</iter>
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${class_plus}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:28:10.116921" elapsed="0.036590"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:10.155858" level="INFO">Clicking element 'css=.plus'.</msg>
+<arg>${class_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:10.153511" elapsed="0.331121"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2025-03-09T22:28:10.116293" elapsed="0.368339"/>
+</iter>
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${class_plus}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:28:10.486876" elapsed="0.043681"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:10.530557" level="INFO">Clicking element 'css=.plus'.</msg>
+<arg>${class_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:10.530557" elapsed="0.204561"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2025-03-09T22:28:10.484632" elapsed="0.250486"/>
+</iter>
+<iter>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${class_plus}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:28:10.737130" elapsed="0.035764"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:10.774246" level="INFO">Clicking element 'css=.plus'.</msg>
+<arg>${class_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:10.773713" elapsed="0.239314"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2025-03-09T22:28:10.736625" elapsed="0.276402"/>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>5</value>
+<value>1</value>
+<status status="PASS" start="2025-03-09T22:28:09.940800" elapsed="1.072227"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:28:12.017882" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:28:11.013027" elapsed="1.004855"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:12.229098" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000009.png"&gt;&lt;img src="Screenshot/Evidencia0000000009.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:28:12.017882" elapsed="0.211216"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:12.238605" level="INFO">Clicking button 'ADD TO CART'.</msg>
+<arg>${button_add}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:12.229098" elapsed="0.730005"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:28:03.313029" elapsed="9.646580"/>
+</kw>
+<kw name="Realizar checkout" owner="ecommerce">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:12.967935" level="INFO">Simulating Mouse Over on element 'css=[id="menuCart"]'.</msg>
+<arg>${id_menuCart}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:12.967159" elapsed="0.418051"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:28:14.387862" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:28:13.385210" elapsed="1.002652"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:14.675474" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000010.png"&gt;&lt;img src="Screenshot/Evidencia0000000010.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:28:14.387862" elapsed="0.287612"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_checkOutPopUp}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:28:14.675474" elapsed="0.089291"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:14.764765" level="INFO">Clicking button 'xpath=//*[@id="checkOutPopUp"]'.</msg>
+<arg>${id_checkOutPopUp}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:14.764765" elapsed="0.269627"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_qtd_item}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:28:15.035561" elapsed="1.027438"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:16.066020" level="INFO">Verifying element '//*[@id="userCart"]/span' contains exact text '5 ITEMS'.</msg>
+<arg>${id_qtd_item}</arg>
+<arg>${qtd_itens}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-03-09T22:28:16.064992" elapsed="0.080891"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${id_checkOutPopUp}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-03-09T22:28:16.145883" elapsed="2.018148"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:28:19.166546" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:28:18.164031" elapsed="1.002515"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:19.335182" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000011.png"&gt;&lt;img src="Screenshot/Evidencia0000000011.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:28:19.166546" elapsed="0.169154"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:28:12.966140" elapsed="6.369560"/>
+</kw>
+<kw name="Usario invalido" owner="ecommerce">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:19.335700" level="INFO">Clicking button 'xpath=//*[@id="registration_btn"]'.</msg>
+<arg>${button_registration}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:19.335700" elapsed="0.146917"/>
+</kw>
+<kw name="Account details" owner="ecommerce">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${id_usernameRegisterPage}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-09T22:28:19.484625" elapsed="0.471508"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:19.958147" level="INFO">Typing text 'Usuarioteste3' into text field 'usernameRegisterPage'.</msg>
+<arg>${id_usernameRegisterPage}</arg>
+<arg>${new_user}[name]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:19.956133" elapsed="0.214815"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:20.173782" level="INFO">Typing text 'Usuarioteste3@teste.com' into text field 'emailRegisterPage'.</msg>
+<arg>${id_emailRegisterPage}</arg>
+<arg>${new_user}[name]@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:20.171959" elapsed="0.326532"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:20.500483" level="INFO">Typing text '12Qazxsw' into text field 'passwordRegisterPage'.</msg>
+<arg>${id_passwordRegisterPage}</arg>
+<arg>${new_user}[password]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:20.498491" elapsed="0.251591"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:20.752590" level="INFO">Typing text '12Qazxsw' into text field 'css=input[name="confirm_passwordRegisterPage"]'.</msg>
+<arg>${confirm_passwordRegisterPage}</arg>
+<arg>${new_user}[password]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:20.751587" elapsed="0.263634"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:28:19.482617" elapsed="1.533600"/>
+</kw>
+<kw name="Personal details" owner="ecommerce">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:21.020612" level="INFO">Typing text 'Usuario' into text field 'css=[name="first_nameRegisterPage"]'.</msg>
+<arg>${first_nameRegisterPage}</arg>
+<arg>${new_user}[first_name]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:21.019756" elapsed="0.321201"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:21.343949" level="INFO">Typing text 'teste' into text field 'css=[name="last_nameRegisterPage"]'.</msg>
+<arg>${nameRegisterPage}</arg>
+<arg>${new_user}[last_name]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:21.342441" elapsed="0.356353"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:21.705848" level="INFO">Typing text '(81)999999999' into text field 'css=[name="phone_numberRegisterPage"]'.</msg>
+<arg>${numberRegisterPage}</arg>
+<arg>${new_user}[phone]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:21.699992" elapsed="0.360499"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:28:23.062887" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:28:22.061508" elapsed="1.001379"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:23.233370" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000012.png"&gt;&lt;img src="Screenshot/Evidencia0000000012.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:28:23.062887" elapsed="0.170483"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:28:21.017218" elapsed="2.216152"/>
+</kw>
+<kw name="Consultar cep" owner="ecommerce">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-03-09T22:28:23.233370" level="INFO">Creating Session using : alias=Teste1, url=https://brasilapi.com.br/api/, headers={'accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=Teste1</arg>
+<arg>url=${api_correios}</arg>
+<arg>headers=&amp;{headers}</arg>
+<arg>disable_warnings=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-03-09T22:28:23.233370" elapsed="0.000000"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-03-09T22:28:27.049532" level="INFO">GET Request : url=https://brasilapi.com.br/api/cep/v1/50030150 
+ path_url=/api/cep/v1/50030150 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-03-09T22:28:27.049532" level="INFO">GET Response : url=https://brasilapi.com.br/api/cep/v1/50030150 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 10 Mar 2025 01:28:27 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Age': '0', 'Cache-Control': 'max-age=0, public', 'Server': 'cloudflare', 'Strict-Transport-Security': 'max-age=63072000', 'X-Matched-Path': '/api/cep/v1/[cep]', 'X-Vercel-Cache': 'MISS', 'X-Vercel-Id': 'gru1::sfo1::lf9bl-1741570106386-7bb74dd3b662', 'Cf-Cache-Status': 'DYNAMIC', 'Etag': 'W/"qj82b62wgd3i"', 'Content-Encoding': 'gzip', 'CF-RAY': '91df090cdfa00301-GRU', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"cep":"50030150","state":"PE","city":"Recife","neighborhood":"Recife","street":"Avenida Alfredo Lisboa","service":"open-cep"} 
+ </msg>
+<msg time="2025-03-09T22:28:27.049532" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>alias=Teste1</arg>
+<arg>url=cep/v1/${address}[zip_code]</arg>
+<arg>expected_status=any</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-03-09T22:28:23.233370" elapsed="3.816162"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-03-09T22:28:27.049532" level="INFO">${city} = Recife</msg>
+<var>${city}</var>
+<arg>${response.json()}</arg>
+<arg>city</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.049532" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-03-09T22:28:27.065176" level="INFO">${city_api} = Recife</msg>
+<arg>${city_api}</arg>
+<arg>${city}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.065176" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-03-09T22:28:27.065176" level="INFO">${street} = Avenida Alfredo Lisboa</msg>
+<var>${street}</var>
+<arg>${response.json()}</arg>
+<arg>street</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.065176" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-03-09T22:28:27.080817" level="INFO">${street_api} = Avenida Alfredo Lisboa</msg>
+<arg>${street_api}</arg>
+<arg>${street}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.065176" elapsed="0.016439"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-03-09T22:28:27.082634" level="INFO">${state} = PE</msg>
+<var>${state}</var>
+<arg>${response.json()}</arg>
+<arg>state</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.081615" elapsed="0.001019"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-03-09T22:28:27.082634" level="INFO">${state_api} = PE</msg>
+<arg>${state_api}</arg>
+<arg>${state}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.082634" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:28:23.233370" elapsed="3.849264"/>
+</kw>
+<kw name="Endereço" owner="ecommerce">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:27.082634" level="INFO">Selecting options from selection list '//select' by label Brazil.</msg>
+<arg>${select_country}</arg>
+<arg>${address}[country]</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.082634" elapsed="0.174935"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:27.259075" level="INFO">Typing text 'Recife' into text field 'css=[name="cityRegisterPage"]'.</msg>
+<arg>${input_city}</arg>
+<arg>${city_api}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.257935" elapsed="0.141289"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:27.400232" level="INFO">Typing text 'Avenida Alfredo Lisboa' into text field 'addressRegisterPage'.</msg>
+<arg>${id_addressRegisterPage}</arg>
+<arg>${street_api}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.400232" elapsed="0.258103"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:27.661350" level="INFO">Typing text 'PE' into text field 'xpath=//*[@id="formCover"]/div[3]/div[2]/sec-view[2]/div/input'.</msg>
+<arg>${id_state}</arg>
+<arg>${state_api}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.660348" elapsed="0.204607"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:27.867149" level="INFO">Typing text '50030150' into text field 'css=[name="postal_codeRegisterPage"]'.</msg>
+<arg>${name_postal_codeRegisterPage}</arg>
+<arg>${address}[zip_code]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:27.865184" elapsed="0.256178"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:28:29.121498" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:28:28.121362" elapsed="1.000136"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:29.308704" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000013.png"&gt;&lt;img src="Screenshot/Evidencia0000000013.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:28:29.121498" elapsed="0.187206"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:28:27.082634" elapsed="2.226070"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:28:19.335700" elapsed="9.973004"/>
+</kw>
+<kw name="Validar mensagem impeditiva" owner="ecommerce">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:29.314526" level="INFO">Clicking element 'css=.checkboxText'.</msg>
+<arg>${class_checkboxText}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:29.314526" elapsed="0.191009"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-09T22:28:30.505709" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-09T22:28:29.505535" elapsed="1.000174"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:30.632270" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshot/Evidencia0000000014.png"&gt;&lt;img src="Screenshot/Evidencia0000000014.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${evidencia_eccomerce}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-09T22:28:30.505709" elapsed="0.126561"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:30.632270" level="INFO">Clicking button 'register_btn'.</msg>
+<arg>${button_register}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-09T22:28:30.632270" elapsed="0.156318"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-09T22:28:40.934326" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-09T22:28:40.934326" level="FAIL">Element '//label[contains(text(),'User name already exists')]' not visible after 10 seconds.</msg>
+<arg>${label_mensagem}</arg>
+<arg>${delay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-03-09T22:28:30.789125" elapsed="10.145201">Element '//label[contains(text(),'User name already exists')]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${label_mensagem}</arg>
+<arg>${mensagem}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2025-03-09T22:28:40.934326" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-09T22:28:29.308704" elapsed="11.625622">Element '//label[contains(text(),'User name already exists')]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Finish execution" owner="base" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-09T22:28:40.934326" elapsed="2.514575"/>
+</kw>
+<status status="PASS" start="2025-03-09T22:28:40.934326" elapsed="2.515638"/>
+</kw>
+<tag>impedimento</tag>
+<status status="FAIL" start="2025-03-09T22:27:42.263428" elapsed="61.187731">Element '//label[contains(text(),'User name already exists')]' not visible after 10 seconds.</status>
 </test>
-<doc>Automação lotofacil</doc>
-<status status="PASS" start="2024-10-16T15:54:51.966461" elapsed="40.453236"/>
+<doc>Realizar compra em um site de ecomerce</doc>
+<status status="FAIL" start="2025-03-09T22:26:46.619994" elapsed="116.838464"/>
 </suite>
-<status status="PASS" start="2024-10-16T15:54:51.962945" elapsed="40.498845"/>
+<status status="FAIL" start="2025-03-09T22:26:46.619994" elapsed="116.853400"/>
 </suite>
-<status status="PASS" start="2024-10-16T15:54:51.957385" elapsed="40.531723"/>
+<status status="FAIL" start="2025-03-09T22:26:46.619994" elapsed="116.877817"/>
 </suite>
-<status status="PASS" start="2024-10-16T15:54:51.926194" elapsed="40.570090"/>
->>>>>>> 304c4ebef903b1035afa73ab4c4c9a57d1ead065
+<status status="FAIL" start="2025-03-09T22:26:46.619477" elapsed="116.883845"/>
+</suite>
+<status status="FAIL" start="2025-03-09T22:26:46.612022" elapsed="116.905051"/>
+</suite>
+<status status="FAIL" start="2025-03-09T22:26:46.577262" elapsed="116.948418"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">impedimento</stat>
+<stat pass="0" fail="1" skip="0">sucesso</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="QAX">QAX</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projects">QAX.Projects</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Python">QAX.Projects.Python</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Validar resultado">QAX.Projects.Python.Validar resultado</stat>
+<stat name="QAX" id="s1" pass="0" fail="2" skip="0">QAX</stat>
+<stat name="Projects" id="s1-s1" pass="0" fail="2" skip="0">QAX.Projects</stat>
+<stat name="RobotFramework" id="s1-s1-s1" pass="0" fail="2" skip="0">QAX.Projects.RobotFramework</stat>
+<stat name="Desafio Robot Framework" id="s1-s1-s1-s1" pass="0" fail="2" skip="0">QAX.Projects.RobotFramework.Desafio Robot Framework</stat>
+<stat name="Tests" id="s1-s1-s1-s1-s1" pass="0" fail="2" skip="0">QAX.Projects.RobotFramework.Desafio Robot Framework.Tests</stat>
+<stat name="Ecommerce" id="s1-s1-s1-s1-s1-s1" pass="0" fail="2" skip="0">QAX.Projects.RobotFramework.Desafio Robot Framework.Tests.Ecommerce</stat>
 </suite>
 </statistics>
 <errors>

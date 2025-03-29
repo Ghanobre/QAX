@@ -22,8 +22,8 @@ Usando tipos de variaveis
 Variavel scalar
     ${varlocal}    Set Variable    Apenas local
     Log    ${varlocal}
-    Set Suite Variable    ${varsuit}    em toda suit de teste      
-    Set Global Variable    ${varglobal}    em todas as suites
+    Set Suite Variable    ${varsuit}    em toda suit de teste      # robotcode: ignore
+    Set Global Variable    ${varglobal}    em todas as suites      # robotcode: ignore
 
 verificando as variaveis
     Log To Console    ${varsuit}    # robotcode: ignore

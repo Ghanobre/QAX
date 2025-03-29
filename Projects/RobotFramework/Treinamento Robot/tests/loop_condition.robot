@@ -17,8 +17,10 @@ Imprimir a list
 verificar a lista
     IF    $list[2]=='coelho'
         Log To Console    o valor é igual
-    ELSE
+    ELSE IF    $list[2]=='coelho'
         Log To Console    o valor é diferente
+    ELSE IF    $list[2]=='coelho'
+    Log To Console    o valor é diferente
         
     END
 
