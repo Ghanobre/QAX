@@ -6,14 +6,18 @@ Library    Mainframe3270
 
 *** Test Cases ***
 Example
-    Open Connection    host=127.0.0.1    port=23
-    Change Wait Time    0.4 seconds
-    Change Wait Time After Write    0.4 seconds
-    Set Screenshot Folder    C:\\Temp\\IMG
-    ${value}    Read    3    10    17
-    Page Should Contain String    ENTER APPLICATION
-    Wait Field Detected
-    Write Bare    applicationname
+    Open Connection    host=185.113.5.134    port=23   
+    Change Wait Time    wait_time=5.0
+    Write Bare    GHANOBRE
+    Execute Command    tab
+    Write Bare    ghanobre1284
     Send Enter
-    Take Screenshot        
-    Close Connection
+    Write Bare In Position    1    ypos=020    xpos=007
+    Send Enter
+    Write Bare In Position    1    ypos=020    xpos=007
+    Send Enter
+    Write Bare In Position    1    ypos=020    xpos=007
+    Send Enter
+    # Send Enter
+    # Page Should Contain String    CPF1296 - Sign-on information required.
+    # Close Connection
