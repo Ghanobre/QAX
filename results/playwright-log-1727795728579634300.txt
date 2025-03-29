@@ -1,7 +1,0 @@
-{"level":30,"time":"2024-10-01T15:15:31.211Z","pid":13096,"hostname":"CPX-IEBDTQKYZXG","msg":"Listening on 63761"}
-(node:13096) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-10-01T15:15:31.743Z","pid":13096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-10-01T15:15:31.744Z","pid":13096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-10-01T15:15:31.747Z","pid":13096,"hostname":"CPX-IEBDTQKYZXG","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-10-01T15:15:31.747Z","pid":13096,"hostname":"CPX-IEBDTQKYZXG","msg":"End of node method getBrowserCatalog"}
